@@ -12,7 +12,7 @@ const Header = ({layout}) => {
     setNavCollapse(!navCollapse);
   };
   return (
-    <header className={`fixed top-0 w-full -z-10  ${layout === 'Services' ? 'bg-secondary':"bg-white"}`}>
+    <header className={`fixed top-0 w-full -z-10   ${layout === 'Services' ? 'bg-[#0d1117]  ':"bg-white"}`}>
    
       <div className="p-4 mx-4 md:p-7 flex items-center justify-between">
         <div className="">

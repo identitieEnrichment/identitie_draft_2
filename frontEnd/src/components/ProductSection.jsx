@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import ProductsCard from "./ProductsCard";
+import { products } from "../utils/data";
 import '../css/ProductSection.css'
 gsap.registerPlugin(ScrollTrigger)
 
@@ -11,7 +13,24 @@ const ProductsSection = () => {
 	const img3 = useRef(null)
 	const img4 = useRef(null)
 	const container = useRef(null)
+	const cards = useRef(null)
 	useGSAP(()=>{
+		gsap.from(cards.current,{
+			y : 80,
+			opacity : 0,
+			duration : 2,
+			scrollTrigger: {
+				trigger : cards.current,
+				scroller:"body",
+				scrub : true,
+				markers : true,
+				start : 'top 3%',
+				end : 'bottom -5%',
+				
+				
+				
+			}
+		})
 		
 		gsap.to(img4.current,{
 			x : 790,
@@ -81,9 +100,9 @@ const ProductsSection = () => {
 
 
 	return (
-		<div ref={container} className="sticky inset-0 h-[100vh] w-full flex justify-center items-center">
+		<div ref={container} className="sticky inset-0 h-[80vh] w-full flex justify-center items-center ">
 			
-			<div className="container relative w-full mt-64 ml-32">
+			<div className="container relative w-full  ml-32">
 				<img
 				ref={img1}
 					src="../assets/chips.webp"
@@ -109,6 +128,9 @@ const ProductsSection = () => {
 					className="layer h-72 object-cover "
 					alt="one"
 				/>
+			</div>
+			<div ref={cards} className="absolute bottom-56 w-full grid grid-cols-4 pl-36 pr-24">
+				{products.map(item => <ProductsCard title={item.title} description={item.description}/>)}
 			</div>
 			
 		</div>

@@ -1,31 +1,31 @@
 .layer {
-    position: absolute;
-    top: 0;
-    left: 100px;
-    transition: transform 0.5s ease;
-    z-index: 10; /* Smooth transition for transform */
-  }
+  position: absolute;
+  top: 0;
+  left: 100px;
+  transition: transform 0.5s ease;
+  z-index: 10; /* Smooth transition for transform */
+}
+
+.layer:nth-child(2) {
+  z-index: 0;
+  transform: translateZ(-50px);
+  top: -100px;
+  left: 120px; /* Translate the second image back by 50px */
+}
+
+.layer:nth-child(3) {
+  transform: translateZ(-100px);
+  top: -300px;
+  left: 200px;
+  z-index: -10; /* Translate the third image back by 100px */
+}
+.layer:nth-child(4) {
+  transform: translateZ(-150px);
+  top: -480px;
+  left: 230px;
+  z-index: -20; /* Translate the third image back by 100px */
+}
+.container {
   
-  .layer:nth-child(2) {
-    z-index: 0;
-    transform: translateZ(-50px);
-    top: -100px;
-    left: 120px; /* Translate the second image back by 50px */
-  }
-  
-  .layer:nth-child(3) {
-    transform: translateZ(-100px);
-    top: -300px;
-    left: 200px;
-    z-index: -10; /* Translate the third image back by 100px */
-  }
-  .layer:nth-child(4) {
-    transform: translateZ(-150px);
-    top: -480px;
-    left: 230px;
-    z-index: -20; /* Translate the third image back by 100px */
-  }
-  .container {
-    
-    perspective: 1000px; /* Perspective for 3D effect */
-  }
+  perspective: 1000px; /* Perspective for 3D effect */
+}

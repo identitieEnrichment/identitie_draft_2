@@ -35,6 +35,15 @@ const ServicesSection = () => {
             return <ServicesCard key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
           })
         }
+		<svg
+					className="-bottom-1 absolute wave"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1440 320">
+					<path
+						fill="#ffffff"
+						fill-opacity="1"
+						d="M0,288L120,277.3C240,267,480,245,720,245.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+				</svg>
       </div>
     )
 };

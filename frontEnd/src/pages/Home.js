@@ -9,6 +9,8 @@ import ServicesSection from '../components/ServicesSection'
 import AboutUS from '../components/AboutUs'
 import Sectors from '../components/Sectors'
 import ProductsSection from '../components/ProductSection'
+import Intro from '../components/Intro'
+import ProductsIntro from '../components/ProductsIntro'
 const Home = () => {
 
   useEffect( () => {
@@ -24,11 +26,24 @@ const Home = () => {
 
   return (
     <div >
-
-      <Sectors />
-      {/* <IphoneSession /> 
-      <ZoomParalax />
-      <ServicesSection /> */}
+        {/* <div id="header" className=" fixed top-0 w-full z-10 ">
+        <Header layout={"Services"} />
+        </div> */}
+      <Intro />
+      {/* <IphoneSession /> */}
+      <div className='pt-32'>
+      <ZoomParalax /> 
+      </div>
+   
+      
+     <ServicesSection />
+     <div className="h-[250vh] relative ">
+        <ProductsSection/>
+        <ProductsIntro/>
+      </div>
+     <div className='h-[220vh] relative my-40'>
+         <Sectors />
+      </div>
     {/* <AboutUS /> */}
      
 

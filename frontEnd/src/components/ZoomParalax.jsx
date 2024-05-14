@@ -50,7 +50,7 @@ const ZoomParalax = () => {
     ]
 
     return (
-        <div ref={container} className={styles.container}>
+        <div  ref={container} className={styles.container}>
             <div className={styles.sticky}>
                 {
                     pictures.map( ({src, scale}, index) => {
@@ -58,7 +58,7 @@ const ZoomParalax = () => {
                             <div className={styles.imageContainer}>
                                 <img
                                     src={src}
-                                    className="absolute inset-0 w-full h-full object-cover " 
+                                    className="absolute inset-0 w-full h-full object-cover  " 
                                     
                                     alt="img"
                                     placeholder='blur'
