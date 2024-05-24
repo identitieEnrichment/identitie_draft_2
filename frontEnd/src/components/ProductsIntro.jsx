@@ -17,7 +17,7 @@ const ProductsIntro = () => {
     })
     
   return (
-    <div ref={container} className='absolute top-[15%] left-[50%]'>
+    <div ref={container} className='absolute top-[6%] left-[50%]'>
         <div className='space-y-5'>
             <h1 className='text-8xl font-bold '>Discover your<br></br> Favorites</h1>
             <p className=' font-poppins w-8/12'>Identitie: Where Every Discovery Tells Your Story - Find Your Products , Craft Your Identity!!</p>

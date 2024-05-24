@@ -12,7 +12,7 @@ const Header = ({layout}) => {
     setNavCollapse(!navCollapse);
   };
   return (
-    <header className={`fixed top-0 w-full -z-10   ${layout === 'Services' ? 'bg-[#0d1117]  ':"bg-white"}`}>
+    <header className={`fixed top-0 w-full z-50   ${layout === 'Services' ? 'bg-[#0d1117]  ':"bg-white"}`}>
    
       <div className="p-4 mx-4 md:p-7 flex items-center justify-between">
         <div className="">
@@ -29,7 +29,7 @@ const Header = ({layout}) => {
             </button>
           </li>
           <li className={`${layout === 'Services' ? 'text-white':'text-black'} hover:text-primary`}>
-          <MegaMenu.Dropdown className={` bg-black border-none mt-7`} toggle={<>Services</>}>
+          <MegaMenu.Dropdown className={` bg-black h-fit border-none mt-7 z-50`} toggle={<>Services</>}>
               <ul className="grid grid-cols-3">
                 <div className="space-y-4 p-4">
                   <li>
@@ -106,7 +106,7 @@ const Header = ({layout}) => {
             </MegaMenu.Dropdown>
           </li>
           <li className={`${layout === 'Services' ? 'text-white':'text-black'} hover:text-primary`}>
-          <MegaMenu.Dropdown className="bg-black mt-7 border-none " toggle={<>Products</>}>
+          <MegaMenu.Dropdown className="bg-black h-fit mt-7 border-none " toggle={<>Products</>}>
               <ul className="grid grid-cols-1">
                 <div className="space-y-4 p-4  px-10">
                   <li>
@@ -157,7 +157,7 @@ const Header = ({layout}) => {
           <RiMenu3Fill className="text-black text-2xl" />
         </button>
         <div
-          className={`fixed top-0 right-0 bottom-0 z-50 md:hidden ${
+          className={`fixed top-0 right-0 bottom-0 z-50 hidden md:hidden ${
             navCollapse ? "-right-full" : "right-0"
           } bg-secondary backdrop-filter backdrop-blur-sm dark:bg-gray-900/95 flex flex-col p-4 gap-5 w-3/4`}
         >

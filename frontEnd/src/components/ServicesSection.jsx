@@ -28,15 +28,19 @@ const ServicesSection = () => {
 	  
 	});
 	return (
-        <div ref={container} className='relative bg-[#0d1117] -translate-y-20'>
+        <div ref={container} className='relative bg-transparent lg:bg-[#0d1117]  lg:-translate-y-20 '>
         {
           projects.map( (project, i) => {
             const targetScale = 1 - ( (projects.length - i) * 0.05);
-            return <ServicesCard key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+			const isLastCard = i === projects.length - 1;
+            return <ServicesCard key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}  isLastCard={isLastCard}/>
           })
         }
+	
+	
+			
 		<svg
-					className="-bottom-1 absolute wave"
+					className="mt-32 wave"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 1440 320">
 					<path

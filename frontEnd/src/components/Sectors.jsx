@@ -12,6 +12,8 @@ const Sectors = () => {
         const typeWriter = useRef(null)
         const [sectorsData,setSectorData] = useState(() =>[{name:"B2B",src:"../assets/b2bService.jpeg"},{name:"B2C",src:"../assets/b2cService.jpeg"},{name:"E-COMMERCE",src:"../assets/ecommerceService.jpeg"},{name:"EDUCATION",src:"../assets/educationService.jpeg"},{name:"STARTUPS",src:"../assets/startupsService.jpeg"},])
         useGSAP(() => {
+            const mm = gsap.matchMedia();
+            mm.add("(min-width:769px)",()=>{
                 sectorsData.forEach((data, index) => {
                     const scaleImg = container.current.children[index];
                     gsap.from(scaleImg, {
@@ -20,7 +22,8 @@ const Sectors = () => {
                         scrollTrigger: {
                             trigger: container.current,
                             start: "top top",
-                            scrub: 1,
+                            end:'top -120%',
+                            scrub: true,
                             onUpdate: (self) => {
                                 // Check if animation of scaleImg is complete
                                 if (self.progress === 1) {
@@ -44,14 +47,7 @@ const Sectors = () => {
                                                     gsap.set(typeWriter.current, { visibility:'hidden'})
                                                 }
                                             });
-                                        // Array.from(container.current.children).forEach((child, idx) => {
-                                        //     if (idx !== index) {
-                                        //         gsap.set(child, { visibility: 'hidden' });
-                                        //         console.log('if child is ',child);
-                                        //     }else{
-                                              
-                                        //     }
-                                        // });
+                                  
                                     }
                                 
                                 }
@@ -59,23 +55,29 @@ const Sectors = () => {
                         },
                     });
                 });
+            })
+                
             }, );
 
 
-useEffect(() => {
-        sectorsData.forEach((data, index) => {
-            const scaleImg = container.current.children[2];
-            if (scaleImg !== null && scaleImg !== undefined) {
-                // Check if the scaleImg exists before setting visibility
-                if (container.current.children !== scaleImg) {
-
-                    gsap.set(container.current.children[index], { visibility: "hidden" });
+useGSAP(() => {
+        const mm = gsap.matchMedia();
+        mm.add("(min-width:769px)",()=>{
+            sectorsData.forEach((data, index) => {
+                const scaleImg = container.current.children[2];
+                if (scaleImg !== null && scaleImg !== undefined) {
+                    // Check if the scaleImg exists before setting visibility
+                    if (container.current.children !== scaleImg) {
+    
+                        gsap.set(container.current.children[index], { visibility: "hidden" });
+                    }
+                    gsap.set(typeWriter.current, { visibility:'hidden'})
+                    gsap.set(scaleImg, { visibility: "visible" });
                 }
-                gsap.set(typeWriter.current, { visibility:'hidden'})
-                gsap.set(scaleImg, { visibility: "visible" });
-            }
-        });
-    }, [sectorsData]);
+            });
+        })
+     
+    }, );
     
     function handlePrevious(){
 
@@ -87,54 +89,39 @@ useEffect(() => {
     }
    
     return (
-        <div  className='flex top-0 h-[100vh] w-full overflow-hidden sticky bg-black '>
-              
-                <div ref={container} className='flex  space-x-4  mt-[40vh]  '>
-                        {sectorsData.map((data,index)=>{
-                              return (<div key={data.name}  className="w-72 h-48 relative bg-gray-900 rounded-lg ">
-                              <img alt={data.name} src={data.src} className='w-full h-full object-cover rounded-lg  absolute inset-0 opacity-30'></img>
-                              <h1 className='absolute text-white bottom-10 right-10 font-bold text-3xl '>{data.name}</h1>
-                      </div>
-                      )  
-                        })}
+        <div className='  lg:h-[300vh] relative  bg-yellow-100' >
+              <div className='flex top-0  lg:h-[100vh] w-full lg:overflow-x-hidden lg:px-2  sticky bg-black '>
+                <div ref={container} className='flex  space-x-3 px-3 lg:p-0  w-full overflow-x-auto lg:overflow-visible lg:space-x-4  mt-[20vh] lg:mt-[40vh]  '>
+                            {sectorsData.map((data,index)=>{
+                                return (<div key={data.name}  className="lg:w-72 w-44 h-28 shrink-0 lg:h-48 relative bg-gray-900 rounded-lg ">
+                                    <img alt={data.name} src={data.src} className='w-full h-full object-cover rounded-lg  absolute inset-0 opacity-30'></img>
+                                    <h1 className='absolute text-white bottom-2 lg:bottom-10 right-3 lg:right-10 font-bold lg:text-3xl text-lg '>{data.name}</h1>
+                                </div>
+                        )  
+                            })}
                 </div> 
-                <h1 className='text-9xl  text-red-400'>Helo</h1>
-                <div ref={typeWriter} className="flex  flex-row items-start md:items-center gap-1.5 absolute top-48 px-2">
-                        <h2 className="text-lg md:text-4xl text-white dark:text-white mr-2" >
-                        We offer services across
-                        </h2>
-                        <Typewriter
-                            options={{
-                                strings: titles,
-                                autoStart: true,
-                                loop: true,
-                                deleteSpeed: 50,
-                                delay: 50,
-                                wrapperClassName: "text-violet-700 dark:text-violet-600 text-lg md:text-4xl font-medium",
-                                cursorClassName: "text-violet-700 dark:text-violet-600 text-lg md:text-4xl"
-                            }}
-                        />
+                    <div ref={typeWriter} className="flex -my-2    flex-row items-start md:items-center gap-1.5 absolute top-8 lg:top-48 px-2">
+                            <h2 className="text-xl font-poppins md:text-4xl text-white dark:text-white  lg:mr-2 whitespace-nowrap" >
+                            We offer services across
+                            </h2>
+                            <div className='block font-poppins     whitespace-nowrap mt-6 pl-2 lg:mt-10'>
+                                <Typewriter
+                                    options={{
+                                        strings: titles,
+                                        autoStart: true,
+                                        loop: true,
+                                        deleteSpeed: 50,
+                                        delay: 50,
+                                        wrapperClassName: "text-[#FFD700]  text-xl md:text-4xl font-medium",
+                                        cursorClassName: "text-[#FFD700]   text-xl md:text-4xl"
+                                    }}
+                                />
+                            </div>
+                            
                     </div>
-
-             
+              </div>
                
-                {/* <button onClick={handlePrevious} type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                        </span>
-                </button>
-                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                        </span>
-                </button> */}
         </div>
-    );
+    );  
 };
 export default Sectors;
