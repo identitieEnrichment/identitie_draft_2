@@ -16,7 +16,32 @@ const ProductsSection = () => {
 	const imgDiv = useRef(null)
 	const mm = gsap.matchMedia();
 	useGSAP(() => {
+		mm.add("(max-width: 768px)", () => {
+			const tl3 = gsap.timeline({
+				scrollTrigger:{
+					trigger:mainDiv.current,
+					start:"bottom 100%",
+						end:"bottom 102%",
+					scrub:2,
+				}
+			})
+			tl3.to(mainDiv.current,{backgroundColor:"black",})
+			.to(".toWhite",{color:'white'},"<")
+			.to(".bgToWhite",{backgroundColor:"white"},"<")
+			.to('.toBlack',{color:'black'},"<")
+		})
+		
+		
 		mm.add("(min-width : 769px)", () => {
+			const tl = gsap.timeline({
+				scrollTrigger : {
+					trigger : mainDiv.current,
+					start : '-50% top',
+					scrub : 1,
+				}
+			})
+			tl.to('.menuText',{color:"black"})
+			tl.to('.burgerMenu',{color:"black"},"<")
 			gsap.to(container.current, {
 				y: -600,
 
@@ -27,6 +52,14 @@ const ProductsSection = () => {
 					end: "200% bottom",
 				},
 			});
+			gsap.to('.menu',{
+				color:"black",
+				scrollTrigger : {
+					trigger : mainDiv.current,
+					start : '-50% top',
+					scrub : 1,
+				}
+			})
 			gsap.from(".img0", {
 				y: -350,
 				scrollTrigger: {
@@ -182,31 +215,48 @@ const ProductsSection = () => {
 	});
 
 	return (
-		<div ref={mainDiv} className="lg:h-[200vh] relative ">
+		<div ref={mainDiv} className="lg:h-[180vh] relative ">
 			<div ref={imgDiv} className="md:hidden flex mb-5">
-				<img
-					src="../assets/chips.webp"
-					className={`${"card0"} h-24 object-cover `}
-					alt="one"
-				/>
-				<img
-					src="../assets/fruit.png"
-					className={`${"card1"} h-24 object-cover -translate-x-8 translate-y-4`}
-					alt="one"
-				/>
-				<img
-					src="../assets/skincare.png"
-					className={`${"card2"} h-28 object-cover -translate-x-24 translate-y-3`}
-					alt="one"
-				/>
-				<img
-					src="../assets/fur3.png"
-					className={`${"card3"} h-40 object-cover -translate-x-36 translate-y-4`}
-					alt="one"
-				/>
+				<picture>
+					<source type="image/webp" srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/chips-optimized.webp?alt=media&token=6769ba31-7a62-4a95-ba01-0672570a1f0d" />
+					<img
+						src="../assets/optimized/chips-optimized.webp"
+						className={`${"card0"} h-24 object-cover `}
+						alt="one"
+						loading="lazy"
+					/>
+				</picture>
+				<picture>
+					<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/fruit-optimized.webp?alt=media&token=41fe4e86-c3ef-4525-9459-638699876c5f" />
+					<img
+						src="../assets/optimized/fruit-optimized.png"
+						className={`${"card1"} h-24 object-cover -translate-x-8 translate-y-4`}
+						alt="one"
+						loading="lazy"
+					/>
+				</picture>
+				<picture>
+					<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Skincare-optimized.webp?alt=media&token=cbe5a99b-bd70-49fe-b9d8-f34aabf49618" />
+					<img
+						src="../assets/optimized/skincare-optimized.png"
+						className={`${"card2"} h-28 object-cover -translate-x-24 translate-y-3`}
+						alt="one"
+						loading="lazy"
+					/>
+				</picture>
+				<picture>
+						<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/fur3-optimized.webp?alt=media&token=2c27ff34-5d1e-4db8-b69e-4acfbffd4249" />
+						<img
+								src="../assets/optimized/fur3-optimized.png"
+								className={`${"card3"} h-40 object-cover -translate-x-36 translate-y-4`}
+								alt="one"
+								loading="lazy"
+						/>	
+				</picture>
+			
 			</div>
-			<div className="lg:h-[100vh] lg:sticky lg:top-0 flex items-center justify-end -mt-2 lg:mt-0 lg:pr-40 lg:pt-8 ">
-				<div ref={container} className="space-y-5 px-4 md:px-0">
+			<div className="lg:h-[100vh] lg:sticky lg:top-0 flex items-center justify-end -mt-2 lg:mt-0 lg:pr-40 ">
+				<div ref={container} className="space-y-5 px-4 md:px-0 lg:-translate-y-44">
 					<h1 ref={productTitle} className="lg:text-8xl text-4xl font-semibold font-poppns">
 						Discover your<br></br> Favorites
 					</h1>
@@ -230,19 +280,25 @@ const ProductsSection = () => {
 						return (
 							<div className={`${"productcard" + index}`}>
 								<div className="flex flex-col items-center justify-center p-8 md:gap-6">
-									<img
-										src={data.image}
-										className={`${"img" + index} h-44 object-cover `}
-										alt="one"
-									/>
-									<div className="flex flex-col gap-4 md:gap-6 items-center">
+									<picture>
+										<source  srcSet={data.webp}/>
+										<img
+											src={data.image}
+											className={`${"img" + index} h-44 object-cover `}
+											alt="one"
+											loading="lazy"
+										/>
+
+									</picture>
+								
+									<div className="flex flex-col gap-4 md:gap-6 items-center toWhite">
 										<h1 className="lg:text-4xl text-2xl font-semibold font-poppins whitespace-nowrap">
 											{data.title}
 										</h1>
 										<p className=" text-center font-poppins">
 											{data.description}
 										</p>
-										<button className="px-12 rounded-full p-2.5 text-white bg-black font-poppins">
+										<button className="px-12 rounded-full p-2.5 text-white bg-black font-poppins bgToWhite toBlack">
 											Lets Explore
 										</button>
 									</div>

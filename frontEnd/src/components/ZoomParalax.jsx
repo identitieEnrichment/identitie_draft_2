@@ -1,10 +1,26 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Lenis from '@studio-freight/lenis';
 import styles from './styles.module.scss';
 import useIsMobile from '../hooks/useIsMobile';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const ZoomParalax = () => {
+    useGSAP(() => {
+
+        
+        //new code
+        const tl = gsap.timeline({
+            scrollTrigger : {
+				trigger : container.current,
+				start : '10% top',
+				scrub : 1,
+			}
+        })
+		tl.to('.burgerMenu',{color:"white"})
+        tl.to('.menuText',{color:"white"},"<")
+	})
     useEffect(() => {
         const lenis = new Lenis();
         function raf(time) {
@@ -42,37 +58,44 @@ const ZoomParalax = () => {
 
     const pictures = [
         {
-            src: '../assets/servicetest2.jpg',
+            src: '../assets/optimized/servicetest2-optimized.jpg',
+            webp: 'https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/servicetest2-optimized.webp?alt=media&token=ea786202-f131-4213-9e86-33bcfad17610',
             scale: scale4,
             scaleMob: scale4Mob,
         },
         {
-            src: '../assets/restraunt.jpeg',
+            src: '../assets/optimized/restraunt-optimized.jpeg',
+            webp:'https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/restraunt-optimized.webp?alt=media&token=25098e71-e23c-46c0-bf67-32aeb9940c85',
             scale: scale5,
             scaleMob: scale5Mob,
         },
         {
-            src: '../assets/realEstate.jpeg',
+            src: '../assets/optimized/realEstate-optimized.jpeg',
+            webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/realEstate-optimized.webp?alt=media&token=9efc58cb-ac01-4970-9726-12dedd8d3318",
             scale: scale6,
             scaleMob: scale6Mob,
         },
         {
-            src: '../assets/wareHouse.jpeg',
+            src: '../assets/optimized/wareHouse-optimized.jpeg',
             scale: scale8,
+            webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/wareHouse-optimized.webp?alt=media&token=fd06f8f4-bea1-4305-af33-c953b324737e",
             scaleMob: scale8Mob,
         },
         {
-            src: '../assets/Skincare.jpeg',
+            src: '../assets/optimized/Skincare-optimized.jpeg',
+            webp:'https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Skincare.jpeg?alt=media&token=c95bb481-e71f-4450-9778-f0496f7a0a80',
             scale: scale6,
             scaleMob: scale6Mob,
         },
         {
-            src: '../assets/Marketing.jpg',
+            src: '../assets/optimized/Marketing-optimized.jpg',
+            webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
             scale: scale8,
             scaleMob: scale8Mob,
         },
         {
-            src: '../assets/Event Management.jpg',
+            src: '../assets/optimized/Event Management-optimized.jpg',
+            webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Event%20Management-optimized.webp?alt=media&token=7392d2cd-1d72-46d6-bdbc-64d2ea433dfa",
             scale: scale9,
             scaleMob: scale9Mob,
         },
@@ -82,19 +105,23 @@ const ZoomParalax = () => {
         <div className="bg-white hidden lg:block">
             <div ref={container} className={styles.container}>
                 <div className={styles.sticky}>
-                    {pictures.map(({ src, scale, scaleMob }, index) => (
+                    {pictures.map(({ src, scale, scaleMob,webp }, index) => (
                         <motion.div
                             key={index}
                             style={isMobile ?{scale:scaleMob} :{scale:scale}}
                             className={styles.el}
                         >
                             <div className={styles.imageContainer}>
-                                <img
+                                <picture>
+                                    <source type="image/webp"  srcSet={webp}></source>
+                                    <img
                                     src={src}
                                     className="absolute inset-0 w-full h-full object-cover"
                                     alt="img"
                                     placeholder="blur"
                                 />
+                                </picture>
+                               
                             </div>
                         </motion.div>
                     ))}

@@ -114,7 +114,7 @@ const Services = () => {
       <Header layout={"Services"} />
       <div className=" lg:flex lg:gap-32">
         {/* Left ServiceList  */}
-        <div className="lg:flex hidden flex-col  gap-5 shadow-r-lg w-max p-12 py-32 fixed bg-secondary">
+        <div className="lg:flex hidden flex-col   gap-5 shadow-r-lg w-max p-12 py-32 fixed bg-secondary">
           {allServicesData.map((item, index) => (
             <button className="flex gap-4 items-center first-line:">
               <div
@@ -159,11 +159,15 @@ const Services = () => {
                   {item.title}
                 </h1>
                 <div className="lg:hidden relative w-full h-48 rounded-2xl overflow-hidden">
-                  <img
+                  <picture>
+                    <source type="image/webp" srcSet={item.webp} />
+                    <img
                     className="w-full h-full object-cover brightness-75"
                     src={item.img}
                     alt="thumb"
                   />
+                  </picture>
+                
                   <h1 className="font-poppins absolute  lg:block text-white bottom-3 z-20 left-2 brightness-100 text-4xl font-semibold ">
                     {item.title}
                   </h1>
@@ -174,11 +178,15 @@ const Services = () => {
                   {item.Description}
                 </p>
               </div>
-              <img
-                className="lg:w-5/12 hidden lg:block w-full h-96 object-cover rounded-2xl "
-                src={item.img}
-                alt="thumb"
-              />
+             
+              <picture className="w-5/12">
+                    <source type="image/webp" srcSet={item.webp} />
+                    <img
+                    className=" lg:w-full hidden lg:block w-full h-96 object-cover rounded-2xl"
+                    src={item.img}
+                    alt="thumb"
+                  />
+                  </picture>
             </div>
           ))}
         </div>
