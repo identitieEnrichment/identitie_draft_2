@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaMapMarkerAlt, FaRegClock } from "react-icons/fa";
 
 const ContactUs = () => {
 	return (
-		<div className="p-6 lg:px-32">
+		<div className="p-6 lg:px-32 bg-black text-gray-400 ">
 			<div className="space-y-3">
 				<h1 className="font-koulen text-4xl">LET'S CONNECT</h1>
 				<p className="font-poppins">
@@ -15,7 +15,7 @@ const ContactUs = () => {
 				<div className="w-full">
 					<img
 						className="h-96 object-cover w-full rounded-3xl hidden md:block"
-						src="../assets/contactus.png"
+						src="../assets/optimized/contactus-optimized.png"
 						alt="contact"
 					/>
 					<div className="mt-12 grid md:grid-cols-2 gap-5">
@@ -52,28 +52,38 @@ const ContactUs = () => {
 					</div>
 				</div>
 				<div className="w-full">
-					<form className="space-y-5 pt-6">
+					<form action="https://api.web3forms.com/submit" method="POST" className="space-y-5 pt-6">
+					<input hidden name="access_key" value={"5df84430-8f84-4448-92ae-2362d5a20571"}></input>
 						<input
-							className="rounded-md p-3 bg-gray-200 md:w-9/12 w-full"
+							name="name"
+							className="rounded-md p-3 bg-black  border  border-[#57606a]  md:w-9/12 w-full"
 							placeholder="Your Name"
+							required
 						/>
 						<input
-							className="rounded-md p-3 bg-gray-200 md:w-9/12 w-full"
+							className="rounded-md p-3 bg-black  border  border-[#57606a] md:w-9/12 w-full"
 							placeholder="Your Email"
+							required
+							name="email"
+							type="email"
 						/>
 						<input
-							className="rounded-md p-3 bg-gray-200 md:w-9/12 w-full"
+							name="subject"
+							required
+							className="rounded-md p-3 bg-black  border  border-[#57606a]  md:w-9/12 w-full"
 							placeholder="Subject"
 						/>
 						<textarea
-							className="rounded-md p-3 bg-gray-200 md:w-9/12 h-44 w-full"
+							className="rounded-md p-3 bg-black  border  border-[#57606a] md:w-9/12 h-44 w-full"
 							placeholder="Message"
+							required
+							name="message"
 						/>
-						<button class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-black bg-transparent px-3 text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+						<button type="submit" class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2">
 								Send Message
 							</span>
-							<span class="relative z-10 ml-2">&rarr; </span>
+						
 						</button>
 					</form>
 				</div>

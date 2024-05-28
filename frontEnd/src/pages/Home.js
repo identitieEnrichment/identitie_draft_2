@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
-import Header from '../components/Header'
+
 import IphoneSession from '../components/IphoneSession'
 import ZoomParalax from '../components/ZoomParalax'
 import Zoom2 from '../components/Zoom2'
@@ -21,26 +21,38 @@ import CardSlider from '../components/CardSlider'
 import SimpleCardSlider from '../components/SimpleCardSlider'
 import ContactUs from '../components/ContactUs'
 import AboutUS from './AboutUS'
-
+import NavigationBar from '../components/Navigation/NavigationBar'
 const Home = () => {
   const intro = useRef(null)
-
-useGSAP(()=>{
-  gsap.to('#header',{
-    y:-50,
-    opacity:0,
-    duration:.01,
-   
-    scrollTrigger:{
-      trigger:intro.current,
-      start:'top top',
-      scrub:true,
-    }
+  useGSAP(()=>{
+    //new code
+    gsap.to('#nav', {
+      opacity : 1,
+      display : 'block',
+      scrollTrigger : {
+        trigger : intro.current,
+        start : "1% top",
+        end : "2% 10%",
+        scrub : 1,
+      }
+    });
+    gsap.to('#header',{
+      y:-50,
+      opacity:0,
+      duration:.01,
+     
+      scrollTrigger:{
+        trigger:intro.current,
+        start:'top top',
+        scrub:true,
+      }
+    })
   })
-})
+// })
   return (
-    <div >
-      {/* <Intro />
+    <div className=''>
+      <NavigationBar />
+      <Intro />
       <ZoomParalax /> 
       <ServicesSection />
      
@@ -49,19 +61,12 @@ useGSAP(()=>{
         <div className=' bg-black '>
           <UserTestimonials />
         </div>
-        <ContactUs /> */}
-
+        <ContactUs />
+        <Footer />
         {/* <Services /> */}
         {/* <AboutUS /> */}
-
-
-
-    {/* <AboutUS /> */}
-    {/* <div className='-translate-y-52'>
-      <Footer />
-    </div> */}
     
-    <Products />
+    {/* <Products /> */}
 
     </div>
 

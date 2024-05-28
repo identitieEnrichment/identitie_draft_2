@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
 
-const About = () => {
+const AboutWWW = () => {
 	const container = useRef(null);
 	const what = useRef(null);
 	const whatContainer = useRef(null);
@@ -22,7 +22,7 @@ const About = () => {
 			fill: "#e5e5e5",
 		});
 		gsap.to(whatContainer.current, {
-			width: 600,
+			width: '100%',
 			padding: "10 10 10 10",
 		});
 		gsap.to(why.current, {
@@ -30,7 +30,7 @@ const About = () => {
 			fill: "#e5e5e5",
 		});
 		gsap.to(whyContainer.current, {
-			width: 600,
+			width: '100%',
 			padding: "10 10 10 10",
 		});
 		gsap.to(who.current, {
@@ -38,290 +38,106 @@ const About = () => {
 			fill: "#e5e5e5",
 		});
 		gsap.to(whoContainer.current, {
-			width: 600,
+			width: '100%',
 			padding: "10 10 10 10",
 		});
 
 
-
-
-
-
-
-
-
+		const tl1 = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				start: "2% top",
+				end: "16% center",
+				scrub: 1,
+				
+			},
+		})
+		const tl2 = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				start: "4% top",
+				end: "16% center",
+				scrub: 1,
+			},
+		})
+		const tl3 = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				start: "16% top",
+				end: "32% center",
+				scrub: 1,
+			},
+		})
+		const tl4 = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				start: "20% top",
+				end: "32% center",
+				scrub: 1,
+			},
+		})
+		const tl5 = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				start: "32% top",
+				end: "64% center",
+				scrub: 1,
+			},
+		})
+		const tl6 = gsap.timeline({
+			scrollTrigger: {
+				trigger: container.current,
+				start: "44% top",
+				end: "64% center",
+				scrub: 1,
+			},
+		})
 
 		//svg what in
-		gsap.to(what.current, {
-			width: 500,
-			fill: "black",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "2% top",
-				end: "16% center",
-				scrub: true,
-			},
-		});
-		// container what in
-		gsap.to(whatContainer.current, {
-			width: 600,
-			padding: "30 30 30 30",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "2% top",
-				end: "16% center",
-				scrub: true,
-			},
-		});
+		tl1.to(what.current, {width: 500,fill: "black"})
+		//container what in
+		.to(whatContainer.current, {width: 600,padding: "30 30 30 30"},"<")
 		// title what in
-		gsap.from(whatSpan.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "4% top",
-				end: "16% center",
-				scrub: true,
-			},
-		});
+		tl2.from(whatSpan.current, {opacity: 0,})
 		// description what in
-		gsap.from(whatDescription.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "4% top",
-				end: "16% center",
-				scrub: true,
-			},
-		});
+		.from(whatDescription.current, {opacity: 0},"<")
 
 		// container what out
-		gsap.from(whatContainer.current, {
-			width: 600,
-			padding: "30 30 30 30",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		tl3.fromTo(whatContainer.current,{width : 600}, {width: 'fit'})
 		// svg what out
-		gsap.from(what.current, {
-			width: 500,
-			fill: "black",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		.fromTo(what.current,{width : 500 , fill : "black"}, {width: 224,fill: "#e5e5e5"},"<")
 		// title what out
-		gsap.from(whatSpan.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		.fromTo(whatSpan.current,{opacity : 1}, {opacity: 0},"<")
 		// description what out
-		gsap.from(whatDescription.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
-
-
-
-
-
-
-
+		.fromTo(whatDescription.current,{opacity : 1}, {opacity: 0},"<")
 
 		// container why in
-		gsap.to(whyContainer.current, {
-			width: 600,
-			padding: "30 30 30 30",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		.to(whyContainer.current, {width: 600,padding: "30 30 30 30"},"<")
 		// svg why in
-		gsap.to(why.current, {
-			width: 500,
-			fill: "black",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		.to(why.current, {width: 500,fill: "black"},"<")
 		// title why in
-		gsap.from(whySpan.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "20% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		tl4.from(whySpan.current, {opacity: 0})
 		// description why in
-		gsap.from(whyDescription.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "20% top",
-				end: "32% center",
-				scrub: true,
-			},
-		});
+		.from(whyDescription.current, {opacity: 0},"<")
 
-		// container why out
-		gsap.from(whyContainer.current, {
-			width: 600,
-			padding: "30 30 30 30",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "32% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
+		//container why out
+		tl5.fromTo(whyContainer.current,{width : 600}, {width: 'fit'})
 		// svg why out
-		gsap.from(why.current, {
-			width: 500,
-			fill: "black",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "32% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
+		.fromTo(why.current,{width : 500 , fill : "black"}, {width: 224,fill: "#e5e5e5"},"<")
 		// title why out
-		gsap.from(whySpan.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "32% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
+		.fromTo(whySpan.current,{opacity : 1}, {opacity: 0},"<")
 		// description why out
-		gsap.from(whyDescription.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "32% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
-
-
-
-
-
-
-
-
+		.fromTo(whyDescription.current,{opacity : 1}, {opacity: 0},"<")
 
 		// container who in
-		gsap.to(whoContainer.current, {
-			width: 600,
-			padding: "30 30 30 30",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "32% 40%",
-				end: "64% center",
-				scrub: true,
-			},
-		});
+		.to(whoContainer.current, {width: 600,padding: "30 30 30 30"},"<")
 		// svg who in
-		gsap.to(who.current, {
-			width: 500,
-			fill: "black",
-			scrollTrigger: {
-				trigger: container.current,
-				start: "32% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
+		.to(who.current, {width: 500,fill: "black"},"<")
         // title who in
-		gsap.from(whoSpan.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "44% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
+		tl6.from(whoSpan.current, {opacity: 0})
 		// description who in
-		gsap.from(whoDescription.current, {
-			opacity: 0,
-			scrollTrigger: {
-				trigger: container.current,
-				start: "44% top",
-				end: "64% center",
-				scrub: true,
-			},
-		});
-		// // container who out
-		// gsap.from(whoContainer.current, {
-		// 	width: 600,
-		// 	padding: "30 30 30 30",
-		// 	scrollTrigger: {
-		// 		trigger: container.current,
-		// 		start: "64% center",
-		// 		end: "90% center",
-		// 		scrub: true,
-		// 	},
-		// });
-		// // svg who out
-		// gsap.from(who.current, {
-		// 	width: 500,
-		// 	fill: "black",
-		// 	scrollTrigger: {
-		// 		trigger: container.current,
-		// 		start: "64% center",
-		// 		end: "90% center",
-		// 		scrub: true,
-		// 	},
-		// });
-        // // title who out
-		// gsap.from(whoSpan.current, {
-		// 	opacity: 0,
-		// 	scrollTrigger: {
-		// 		trigger: container.current,
-		// 		start: "64% center",
-		// 		end: "72% center",
-		// 		scrub: true,
-		// 	},
-		// });
-		// // description who out
-		// gsap.from(whoDescription.current, {
-		// 	opacity: 0,
-		// 	scrollTrigger: {
-		// 		trigger: container.current,
-		// 		start: "64% center",
-		// 		end: "72% center",
-		// 		scrub: true,
-		// 	},
-		// });
+		.from(whoDescription.current, {opacity: 0});
+
 
 
 	});
@@ -331,7 +147,7 @@ const About = () => {
 
 
 	return (
-		<div ref={container} className=" h-[500vh] w-full relative">
+		<div ref={container} className=" h-[300vh] w-full relative">
 			<div className="h-[100vh] sticky top-0 w-full p-8">
 				<div className="border-[1px] h-full w-full flex">
 					<div className="border-r-[1px] w-1/4 h-full p-8 flex flex-col justify-between flex-shrink-0">
@@ -487,4 +303,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default AboutWWW;

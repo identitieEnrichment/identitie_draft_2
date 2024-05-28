@@ -10,10 +10,20 @@ const Sectors = () => {
         const titles = ["business-to-business","business-to-consumer","Education","E-commerce","Startups","Real Estate"]
         const container = useRef(null)
         const typeWriter = useRef(null)
-        const [sectorsData,setSectorData] = useState(() =>[{name:"B2B",src:"../assets/b2bService.jpeg"},{name:"B2C",src:"../assets/b2cService.jpeg"},{name:"E-COMMERCE",src:"../assets/ecommerceService.jpeg"},{name:"EDUCATION",src:"../assets/educationService.jpeg"},{name:"STARTUPS",src:"../assets/startupsService.jpeg"},])
+        const [sectorsData,setSectorData] = useState(() =>[{name:"B2B",src:"../assets/optimized/b2bService-optimized.jpeg", webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/b2bService-optimized.webp?alt=media&token=b51fcabc-e6b8-4184-8c41-fb8bf070a065"},{name:"B2C",src:"../assets/optimized/b2cService-optimized.jpeg" ,webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/b2cService-optimized.webp?alt=media&token=4e3fffbe-8cb2-4f7a-b750-37bba0cf84f6"},{name:"E-COMMERCE",src:"../assets/optimized/ecommerceService-optimized.jpeg" ,webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/ecommerceService-optimized.webp?alt=media&token=3b0c952b-bc2e-4605-bffb-7079be02a287"},{name:"EDUCATION",src:"../assets/optimized/educationService-optimized.jpeg", webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/educationService-optimized.webp?alt=media&token=2b28742c-ab7e-4daa-bf36-31b96e4d8567"},{name:"STARTUPS",src:"../assets/optimized/startupsService-optimized.jpeg", webp:"https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/startupsService-optimized.webp?alt=media&token=c0d1c944-1207-4ba7-98ae-e1804a006e7e"},])
         useGSAP(() => {
             const mm = gsap.matchMedia();
             mm.add("(min-width:769px)",()=>{
+                const tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: ".mainDiv",
+                        start: "top 30%",
+                        end: "bottom 90%",
+                        scrub: 1,
+                    },
+                });
+                tl.to(".menuText", { color: "white" });
+                tl.to(".burgerMenu", { color: "white" }, "<");
                 sectorsData.forEach((data, index) => {
                     const scaleImg = container.current.children[index];
                     gsap.from(scaleImg, {
@@ -89,12 +99,16 @@ useGSAP(() => {
     }
    
     return (
-        <div className='  lg:h-[300vh] relative  bg-yellow-100' >
-              <div className='flex top-0  lg:h-[100vh] w-full lg:overflow-x-hidden lg:px-2  sticky bg-black '>
-                <div ref={container} className='flex  space-x-3 px-3 lg:p-0  w-full overflow-x-auto lg:overflow-visible lg:space-x-4  mt-[20vh] lg:mt-[40vh]  '>
+        <div className='  lg:h-[300vh] relative lg:-z-10 ' >
+              <div className='flex top-0  lg:h-[100vh] w-full lg:overflow-x-hidden  lg:px-2  sticky bg-black z-10 '>
+                <div ref={container} className='flex  space-x-3 px-3 lg:p-0  w-full overflow-x-scroll lg:overflow-visible lg:space-x-4  mt-[20vh] lg:mt-[40vh]  '>
                             {sectorsData.map((data,index)=>{
                                 return (<div key={data.name}  className="lg:w-72 w-44 h-28 shrink-0 lg:h-48 relative bg-gray-900 rounded-lg ">
-                                    <img alt={data.name} src={data.src} className='w-full h-full object-cover rounded-lg  absolute inset-0 opacity-30'></img>
+                                    <picture>
+                                        <source type='image/webp' srcSet={data.webp} />
+                                        <img alt={data.name} src={data.src} className='w-full h-full object-cover rounded-lg  absolute inset-0 opacity-30'></img>
+                                    </picture>
+                                    
                                     <h1 className='absolute text-white bottom-2 lg:bottom-10 right-3 lg:right-10 font-bold lg:text-3xl text-lg '>{data.name}</h1>
                                 </div>
                         )  

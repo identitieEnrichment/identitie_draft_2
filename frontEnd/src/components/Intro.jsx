@@ -7,6 +7,7 @@ import Header from "./Header";
 import LogoSlider from "./LogoSlider";
 
 const Intro = () => {
+	const knowMoreButton = useRef(null)
 	const bulb = useRef(null);
 	const first = useRef(null);
 	const second = useRef(null);
@@ -20,6 +21,23 @@ const Intro = () => {
 	const tl2 = gsap.timeline();
 	const mm = gsap.matchMedia();
 	useGSAP(() => {
+		const tl3 = gsap.timeline({
+			scrollTrigger:{
+				trigger:second.current,
+				start:"bottom 100%",
+				end:"bottom 140%",
+				scrub:2,
+			}
+		})
+		tl3.to(second.current,{backgroundColor:"white",})
+		.to(container.current,{backgroundColor:"white"},"<")
+		.to(knowMoreButton.current,{backgroundColor:"black"},"<")
+		.to(animateText.current,{color:"black"},"<")
+		.to("#getInTouchBtn",{backgroundColor:"black"},"<")
+		.to("#craft-identitie",{color:"black"},"<")
+		.to("#logoSlider",{color:"black"},"<")
+		.to(".menuText ",{color:"black"},"<")
+		.to(".burgerMenu ",{color:"black"},"<")
 		gsap.to(".lamp", {
 			webkitFilter: "blur(30px)",
 			duration: 2,
@@ -165,29 +183,43 @@ const Intro = () => {
 			<div className="">
 				<div className="flex w-full ">
 					<div className="flex pt-12 md:pt-0">
-						<img
-							ref={leftimg}
-							className="md:absolute translate-x-16 -rotate-[25deg] top-16 lg:top-28 left-16 lg:left-[55%] h-72 lg:h-96 lg:z-50"
-							src="../assets/leftPhoneimg.png"
-							alt="img"
-						/>
-						<img
-							ref={rightimg}
-							className="md:absolute rotate-[20deg] translate-x-20 top-16 lg:top-28 right-16 lg:right-[22%] h-72 lg:h-96 z-50"
-							src="../assets/rightPhoneimg.png"
-							alt="img"
-						/>
+						<picture className="">
+							<source   type="image/webp" srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/leftPhoneimg-optimized.webp?alt=media&token=45121073-8d4a-4828-91a2-acb670225aaf" ></source>
+							<img
+								ref={leftimg}
+								className="md:absolute translate-x-16 -rotate-[25deg] top-16 lg:top-28 left-16 lg:left-[55%] h-72 lg:h-96 lg:z-50"
+								src="../assets/optimized/leftPhoneimg-optimized.png"
+								loading="lazy"
+								alt="img"
+							/>
+						</picture>
+						<picture>
+							<source type="image/webp" srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/rightPhoneimg-optimized.webp?alt=media&token=2c42b512-8dfa-4459-a119-e09375d396b2" ></source>
+							<img
+								ref={rightimg}
+								className="md:absolute rotate-[20deg] translate-x-20 top-16 lg:top-28 right-16 lg:right-[22%] h-72 lg:h-96 z-50"
+								src="../assets/optimized/rightPhoneimg-optimized.png"
+								loading="lazy"
+								alt="img"
+							/>
+						</picture>
+						
 					</div>
 				</div>
 				<div
 					ref={first}
 					className="flex items-center justify-center w-full relative z-20 md:h-[100vh] ">
 					<div ref={bulb} className="hidden lg:block">
-						<img
-							className="h-56 absolute top-0 left-44 swing z-20"
-							src="https://static.vecteezy.com/system/resources/previews/022/716/913/original/black-hanging-lamp-isolated-on-a-transparent-background-png.png"
-							alt="hdk"
-						/>
+						<picture>
+							<source srcSet="https://static.vecteezy.com/system/resources/previews/022/716/913/original/black-hanging-lamp-isolated-on-a-transparent-background-png.png" />
+							<img
+								className="h-56 absolute top-0 left-44 swing z-20"
+								src="/assets/lamp.web"
+								alt="hdk"
+								loading="lazy"
+							/>
+						</picture>
+						
 					</div>
 					<div className="hidden lg:block">
 						<div className=" lamp swing "></div>
@@ -204,7 +236,7 @@ const Intro = () => {
 							of products and services tailored to your needs. Discover how
 							Identitie can help you define and elevate your identity today.
 						</p>
-						<button class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+						<button id="getInTouchBtn" class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 								Get In Touch
 							</span>
@@ -218,11 +250,11 @@ const Intro = () => {
 				</div>
 				<div
 					ref={animateText}
-					className=" py-8 md:hidden flex flex-col w-full items-center justify-center">
-					<span className="text-5xl font-bold text-white font-poppins">
+					className=" py-8 md:hidden flex flex-col w-full items-center justify-center  text-white">
+					<span className="text-5xl font-bold font-poppins">
 						Meet
 					</span>
-					<span className="text-5xl font-bold text-white font-poppins">
+					<span className="text-5xl font-bold  font-poppins">
 						Identitie
 					</span>
 				</div>
@@ -234,12 +266,14 @@ const Intro = () => {
 				className="lg:h-[55vh] mt-0 bg-[#0d1117] lg:relative lg:flex lg:justify-center">
 				
 				<div className="md:hidden px-4 relative">
-					<img
-						className="w-full object-cover mobile"
-						src="../assets/landscapephone2.png"
-						alt="phone"
-					/>
-
+					<picture>
+						<source  srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/landscapephone2-optimized.webp?alt=media&token=fee4db68-5d16-45a3-b23a-433e4305fa75"/>
+						<img
+							className="w-full object-cover mobile"
+							src="../assets/optimized/landscapephone2-optimized.png"
+							alt="phone"
+						/>
+					</picture>
 					<video
 						style={{ borderRadius: "25px" }}
 						className="absolute top-3 left-7 rounded-lg object-cover h-[165px] w-[345px] z-10"
@@ -251,7 +285,7 @@ const Intro = () => {
 				<div
 					ref={cont}
 					className="lg:absolute lg:pt-16 lg:left-96 w-full lg:w-5/12 space-y-5 lg:z-50 px-4 mt-12 md:mt-0 md:translate-y-0">
-					<h1 className="text-white lg:text-6xl text-3xl font-poppins font-bold title">
+					<h1 id="craft-identitie" className="text-white lg:text-6xl text-3xl font-poppins font-bold title">
 						Craft Your Identity
 					</h1>
 					<p className="text-gray-400 font-poppins w-full text-sm md:text-base descr">
@@ -261,7 +295,7 @@ const Intro = () => {
 						management to IT solutions and beyond. Let us help you shape and
 						refine your identity with precision and care
 					</p>
-					<button class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+					<button ref={knowMoreButton} class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 								Know More
 							</span>
@@ -270,7 +304,7 @@ const Intro = () => {
 					
 					
 				</div>
-				<div className="w-[98vw] pt-4 flex items-center md:hidden">
+				<div id="logoSlider" className="w-[98vw] pt-4 flex items-center md:hidden text-white">
 					<LogoSlider />
 				</div>
 				

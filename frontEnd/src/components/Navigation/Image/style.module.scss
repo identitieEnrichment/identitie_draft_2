@@ -1,0 +1,22 @@
+.imageContainer{
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+   
+    .imageContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 450px;
+
+        img{
+            object-fit: cover;
+            height: 450px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+    }
+    
+}

@@ -18,8 +18,8 @@ const UserTestimonials = () => {
        
       };
   return (
-    <div className='lg:py-10 pb-10 lg:-translate-y-56'>
-        <h1 className='lg:text-4xl pl-2 text-2xl flex pt-10 mb-8 justify-center items-center font-bold font-koulen tracking-wider text-[#FFD700]'>WHAT OUR CLIENTS SAY</h1>
+    <div className='lg:py-10 pb-10   lg:-mt-56   '>
+        <h1 className='lg:text-4xl bg-transparent pl-2 text-2xl flex pt-10 mb-8 justify-center items-center font-bold font-koulen tracking-wider text-[#FFD700]'>WHAT OUR CLIENTS SAY</h1>
         <div className='lg:flex lg:space-x-4 w-full px-10 lg:px-0 overflow-hidden '>
         {isMobile ? (
           // Render TestimonialsCard components inside Slider on mobile devices

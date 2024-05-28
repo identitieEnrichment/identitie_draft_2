@@ -1,18 +1,35 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
 
 
 import { Button, MegaMenu, Navbar } from 'flowbite-react';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 
 const Header = ({layout}) => {
   const [navCollapse, setNavCollapse] = useState(true);
+  const headerSection = useRef(null)
   
   const toggleNavCollapse = () => {
     setNavCollapse(!navCollapse);
   };
+  useGSAP(() => {
+    gsap.to(headerSection.current,{
+      opacity : 0,
+      y : -20,
+      scrollTrigger : {
+        trigger : headerSection.current,
+        start : 'bottom 10%',
+        end : 'bottom 20%',
+        scrub : 1,
+        
+      }
+    })
+  })
   return (
-    <header className={`fixed top-0 w-full z-50   ${layout === 'Services' ? 'bg-[#0d1117]  ':"bg-white"}`}>
+    <header ref={headerSection} className={`fixed top-0 w-full z-[999]   ${layout === 'Services' ? 'bg-transparent':"bg-white"}`}>
    
       <div className="p-4 mx-4 md:p-7 flex items-center justify-between">
         <div className="">
@@ -24,89 +41,17 @@ const Header = ({layout}) => {
         {/* Navigation Links */}
         <ul className="hidden md:flex text-black font-poppins space-x-8 items-center">
           <li>
-            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-colors duration-500 hover:text-primary`}>
+            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
               About Us
             </button>
           </li>
           <li className={`${layout === 'Services' ? 'text-white':'text-black'} hover:text-primary`}>
-          <MegaMenu.Dropdown className={` bg-black h-fit border-none mt-7 z-50`} toggle={<>Services</>}>
-              <ul className="grid grid-cols-3">
-                <div className="space-y-4 p-4">
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Real Estate
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Fulfillment
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Furniture
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Event Management
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Food and Beverage
-                    </a>
-                  </li>
-                </div>
-                <div className="space-y-4 p-4">
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Import
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Export
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Trade
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Information Technology
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Architecture
-                    </a>
-                  </li>
-                </div>
-                <div className="space-y-4 p-4">
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Sales
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Branding
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Marketing
-                    </a>
-                  </li>
-                </div>
-              </ul>
-            </MegaMenu.Dropdown>
+            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
+              Services
+            </button>
           </li>
           <li className={`${layout === 'Services' ? 'text-white':'text-black'} hover:text-primary`}>
-          <MegaMenu.Dropdown className="bg-black h-fit mt-7 border-none " toggle={<>Products</>}>
+          <MegaMenu.Dropdown className="bg-black mt-7 border-none " toggle={<>Products</>}>
               <ul className="grid grid-cols-1">
                 <div className="space-y-4 p-4  px-10">
                   <li>
@@ -140,12 +85,12 @@ const Header = ({layout}) => {
             </MegaMenu.Dropdown>
           </li>
           <li>
-            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-colors duration-500 hover:text-primary`}>
+            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
               Contact Us
             </button>
           </li>
           <li className="space-x-2">
-            <button className={`p-2 border transition-all duration-700 border-black ${layout === 'Services' ? 'text-white':'text-black'} ${layout === 'Services' ? 'border-white':'border-black'} hover:bg-black hover:text-white rounded-full px-6 font-poppins`}>
+            <button className={` ${layout === 'Services' ? 'text-white':'text-black'} ${layout === 'Services' ? 'border-white':'border-black'} border-2 border-white px-6 p-2 rounded-full font-poppins`}>
               Login
             </button>
             <button onClick={()=>{alert('hi')}} className={`p-2 border transition-all duration-700 bg-black ${layout === 'Services' ? 'bg-white':'bg-black'} ${layout === 'Services' ? 'text-black':'text-white'} hover:bg-white hover:text-black  cursor-pointer rounded-full px-6 font-poppins`}>
@@ -154,45 +99,9 @@ const Header = ({layout}) => {
           </li>
         </ul>
         <button onClick={toggleNavCollapse} className="md:hidden">
-          <RiMenu3Fill className="text-black text-2xl" />
+          <RiMenu3Fill className="md:text-black text-white text-2xl" />
         </button>
-        <div
-          className={`fixed top-0 right-0 bottom-0 z-50 hidden md:hidden ${
-            navCollapse ? "-right-full" : "right-0"
-          } bg-secondary backdrop-filter backdrop-blur-sm dark:bg-gray-900/95 flex flex-col p-4 gap-5 w-3/4`}
-        >
-          <MdOutlineClose
-            onClick={toggleNavCollapse}
-            className="text-white text-xl self-end rounded-full h-7 w-7 bg-gray-200 flex items-center justify-center"
-          />
-          <ul className="text-white font-poppins space-y-4">
-            <li>
-              <button className="transition-colors delay-50 hover:text-primary">
-                About Us
-              </button>
-            </li>
-            <li>
-              <button className="transition-colors delay-50 hover:text-primary">
-                Services
-              </button>
-            </li>
-            <li>
-              <button className="transition-colors delay-50 hover:text-primary">
-                Products
-              </button>
-            </li>
-            <li>
-              <button className="transition-colors delay-50 hover:text-primary">
-                Contact Us
-              </button>
-            </li>
-            <li>
-              <button className="p-2 bg-primary rounded-full px-8 font-poppins">
-                Login
-              </button>
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </header>
   );
