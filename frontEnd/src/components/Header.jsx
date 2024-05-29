@@ -49,15 +49,15 @@ const Header = ({ layout }) => {
 						<button
 							onClick={() => navigate("/aboutus")}
 							className={`${
-								layout === "Services" ? "text-white" : "text-black"
-							} relative nv`}>
+								layout === "Services" ? "text-white relative nv" : "text-black relative nvw"
+							} `}>
 							About Us
 						</button>
 					</li>
 					<li
 						className={`${
-							layout === "Services" ? "text-white" : "text-black"
-						} hover:text-primary relative nv`}>
+							layout === "Services" ? "text-white relative nv" : "text-black relative nvw"
+						} hover:text-primary `}>
 						<button
 							onClick={() => navigate("/services")}
 							className={`${
@@ -80,9 +80,9 @@ const Header = ({ layout }) => {
 					<li>
 						<button
 							onClick={() => navigate("/contactus")}
-							className={`${
-								layout === "Services" ? "text-white" : "text-black"
-							} relative nv`}>
+							className={`${ 
+								layout === "Services" ? "text-white relative nv" : "text-black relative nvw"
+							} `}>
 							Contact Us
 						</button>
 					</li>
