@@ -2,9 +2,10 @@ import { motion } from 'framer-motion';
 import {Link} from 'react-scroll';
 import styles from './style.module.scss';
 import { blur, translate } from '../../../utils/anim';
+import { useNavigate } from 'react-router-dom';
 
 export default function Body({links, selectedLink, setSelectedLink}) {
-
+    const navigate = useNavigate()
     const getChars = (word) => {
         let chars = [];
         word.split("").forEach( (char, i) => {
@@ -29,6 +30,7 @@ export default function Body({links, selectedLink, setSelectedLink}) {
                 const { title, href } = link;
                 return <Link key={`l_${index}`} href={href}>
                 <motion.p 
+                    onClick={() => navigate(href)}
                     onMouseOver={() => {setSelectedLink({isActive: true, index})}} 
                     onMouseLeave={() => {setSelectedLink({isActive: false, index})}} 
                     variants={blur} 

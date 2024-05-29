@@ -21,7 +21,7 @@ const ProductCard = () => {
     <div>
       <div className='w-full   h-48 md:h-96 p-4 md:block md:space-x-0   flex space-x-4 items-center justify-center rounded-lg bg-[#161b22] '>  {/* Single*/}
             <div className='w-6/12 md:w-full md:h-48 h-full bg-white rounded-lg  object-cover'>
-                <img className='w-full h-full object-cover' src='../assets/chips.webp'></img>
+                <img className='w-full h-full object-cover' src='../assets/optimized/chips-optimized.webp'></img>
             </div>
             <div className='w-8/12 md:w-full md:py-2  text-white flex flex-col justify-between h-full md:h-fit'>
                 <div className=''>

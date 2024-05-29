@@ -19,7 +19,7 @@ import Services from './Services'
 import Products from './Products'
 import CardSlider from '../components/CardSlider'
 import SimpleCardSlider from '../components/SimpleCardSlider'
-import ContactUs from '../components/ContactUs'
+import ContactUs from './ContactUs'
 import AboutUS from './AboutUS'
 import NavigationBar from '../components/Navigation/NavigationBar'
 const Home = () => {

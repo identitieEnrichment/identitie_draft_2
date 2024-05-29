@@ -114,7 +114,7 @@ const AboutThree = () => {
 					<div ref={icon}>
 						<img
 							className="h-16 w-16 rounded-full object-cover"
-							src="../assets/ref.png"
+							src="../assets/optimized/ref-optimized.png"
 							alt="icon"
 						/>
 					</div>

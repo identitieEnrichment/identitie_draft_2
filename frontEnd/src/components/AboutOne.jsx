@@ -77,7 +77,7 @@ const AboutOne = () => {
 					<div  className={`${'imgCard'+index} md:h-80 md:w-44 w-32 h-44 rounded-2xl even:h-60 even:w-56 even:z-30 md:even:w-44 even:-translate-y-8 md:even:-translate-y-0 md:even:h-80 md:rounded-3xl md:odd:-translate-y-8 first:translate-x-3 last:-translate-x-3 md:first:translate-x-0 md:last:-translate-x-0`} ref={(el) => (cards.current[index] = el)}>
 						<img
 							className="h-full w-full rounded-xl  md:rounded-3xl object-cover"
-							src="../assets/realEstate.jpeg"
+							src="../assets/optimized/realEstate-optimized.jpeg"
 							alt="im"
 						/>
 					</div>

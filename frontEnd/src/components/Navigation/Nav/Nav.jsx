@@ -20,22 +20,22 @@ const links = [
   },
   {
     title: "Services",
-    href: "/shop",
+    href: "/services",
     src: "../assets/architects.jpeg"
   },
   {
     title: "Products",
-    href: "/about",
+    href: "/products",
     src: "../assets/architects.jpeg"
   },
   {
     title: "About",
-    href: "/lookbook",
+    href: "/aboutus",
     src: "../assets/architects.jpeg"
   },
   {
     title: "Contact ",
-    href: "/contact",
+    href: "/contactus",
     src: "../assets/architects.jpeg"
   }
 ]

@@ -2,109 +2,116 @@ import React, { useRef, useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdOutlineClose } from "react-icons/md";
 
-
-import { Button, MegaMenu, Navbar } from 'flowbite-react';
+import { Button, Dropdown, MegaMenu, Navbar } from "flowbite-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
 
+const Header = ({ layout }) => {
+	const [navCollapse, setNavCollapse] = useState(true);
+	const headerSection = useRef(null);
+	const navigate = useNavigate();
 
-const Header = ({layout}) => {
-  const [navCollapse, setNavCollapse] = useState(true);
-  const headerSection = useRef(null)
-  
-  const toggleNavCollapse = () => {
-    setNavCollapse(!navCollapse);
-  };
-  useGSAP(() => {
-    gsap.to(headerSection.current,{
-      opacity : 0,
-      y : -20,
-      scrollTrigger : {
-        trigger : headerSection.current,
-        start : 'bottom 10%',
-        end : 'bottom 20%',
-        scrub : 1,
-        
-      }
-    })
-  })
-  return (
-    <header ref={headerSection} className={`fixed top-0 w-full z-[999]   ${layout === 'Services' ? 'bg-transparent':"bg-white"}`}>
-   
-      <div className="p-4 mx-4 md:p-7 flex items-center justify-between">
-        <div className="">
-          {/* Logo */}
-          <span className={`${layout === 'Services' ? 'text-white':'text-black'} text-3xl font-bold tracking-wider`}>
-            IDENTITIE
-          </span>
-        </div>
-        {/* Navigation Links */}
-        <ul className="hidden md:flex text-black font-poppins space-x-8 items-center">
-          <li>
-            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
-              About Us
-            </button>
-          </li>
-          <li className={`${layout === 'Services' ? 'text-white':'text-black'} hover:text-primary`}>
-            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
-              Services
-            </button>
-          </li>
-          <li className={`${layout === 'Services' ? 'text-white':'text-black'} hover:text-primary`}>
-          <MegaMenu.Dropdown className="bg-black mt-7 border-none " toggle={<>Products</>}>
-              <ul className="grid grid-cols-1">
-                <div className="space-y-4 p-4  px-10">
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                     Authentic Food
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                      Snacks Food
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Country Vegetables
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Skincare
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white dark:hover:text-primary-500">
-                    Table & Chair
-                    </a>
-                  </li>
-                </div>
-               
-              </ul>
-            </MegaMenu.Dropdown>
-          </li>
-          <li>
-            <button className={`${layout === 'Services' ? 'text-white':'text-black'} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
-              Contact Us
-            </button>
-          </li>
-          <li className="space-x-2">
-            <button className={` ${layout === 'Services' ? 'text-white':'text-black'} ${layout === 'Services' ? 'border-white':'border-black'} border-2 border-white px-6 p-2 rounded-full font-poppins`}>
-              Login
-            </button>
-            <button onClick={()=>{alert('hi')}} className={`p-2 border transition-all duration-700 bg-black ${layout === 'Services' ? 'bg-white':'bg-black'} ${layout === 'Services' ? 'text-black':'text-white'} hover:bg-white hover:text-black  cursor-pointer rounded-full px-6 font-poppins`}>
-              Get in touch
-            </button>
-          </li>
-        </ul>
-        <button onClick={toggleNavCollapse} className="md:hidden">
-          <RiMenu3Fill className="md:text-black text-white text-2xl" />
-        </button>
-        
-      </div>
-    </header>
-  );
+	const toggleNavCollapse = () => {
+		setNavCollapse(!navCollapse);
+	};
+	useGSAP(() => {
+		gsap.to(headerSection.current, {
+			opacity: 0,
+			y: -20,
+			scrollTrigger: {
+				trigger: headerSection.current,
+				start: "bottom 10%",
+				end: "bottom 20%",
+				scrub: 1,
+			},
+		});
+	});
+	return (
+		<header
+			ref={headerSection}
+			className={`fixed top-0 w-full z-[999]   ${
+				layout === "Services" ? "bg-transparent" : "bg-white"
+			}`}>
+			<div className="p-4 mx-4 md:p-7 flex items-center justify-between">
+				<div onClick={() => navigate("/")} className="cursor-pointer">
+					{/* Logo */}
+					<span
+						className={`${
+							layout === "Services" ? "text-white" : "text-black"
+						} text-3xl font-bold tracking-wider`}>
+						IDENTITIE
+					</span>
+				</div>
+				{/* Navigation Links */}
+				<ul className="hidden md:flex text-black font-poppins space-x-8 items-center">
+					<li>
+						<button
+							onClick={() => navigate("/aboutus")}
+							className={`${
+								layout === "Services" ? "text-white" : "text-black"
+							} transition-all  duration-100 `}>
+							About Us
+						</button>
+					</li>
+					<li
+						className={`${
+							layout === "Services" ? "text-white" : "text-black"
+						} hover:text-primary`}>
+						<button
+							onClick={() => navigate("/services")}
+							className={`${
+								layout === "Services" ? "text-white" : "text-black"
+							} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
+							Services
+						</button>
+					</li>
+					<li
+						className={`${
+							layout === "Services" ? "text-white" : "text-black"
+						} hover:text-primary w-fit `}>
+						<Dropdown className="bg-black border-none" label="Products" inline dismissOnClick={true}>
+							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300">Authentic Foods</Dropdown.Item>
+							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300" >Country Vegitables</Dropdown.Item>
+							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300">Skincare</Dropdown.Item>
+							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300">Table & Chair</Dropdown.Item>
+						</Dropdown>
+					</li>
+					<li>
+						<button
+							onClick={() => navigate("/contactus")}
+							className={`${
+								layout === "Services" ? "text-white" : "text-black"
+							} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
+							Contact Us
+						</button>
+					</li>
+					<li className="space-x-2">
+						<button
+							className={` ${
+								layout === "Services" ? "text-white" : "text-black"
+							} ${
+								layout === "Services" ? "border-white" : "border-black"
+							} border-2 border-white px-6 p-2 rounded-full font-poppins`}>
+							Login
+						</button>
+						<button
+							onClick={() => navigate("/contactus")}
+							className={`p-2 border transition-all duration-700 bg-black ${
+								layout === "Services" ? "bg-white" : "bg-black"
+							} ${
+								layout === "Services" ? "text-black" : "text-white"
+							} hover:bg-white hover:text-black  cursor-pointer rounded-full px-6 font-poppins`}>
+							Get in touch
+						</button>
+					</li>
+				</ul>
+				<button onClick={toggleNavCollapse} className="md:hidden">
+					<RiMenu3Fill className="md:text-black text-white text-2xl" />
+				</button>
+			</div>
+		</header>
+	);
 };
 
 export default Header;
