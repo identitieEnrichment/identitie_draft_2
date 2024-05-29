@@ -36,7 +36,7 @@ const AboutWWW = () => {
 			scrollTrigger: {
 				trigger: container.current,
 				start: "2% top",
-				end: "16% center",
+				end: "28% center",
 				scrub: 1,
 				
 			},
@@ -45,39 +45,39 @@ const AboutWWW = () => {
 			scrollTrigger: {
 				trigger: container.current,
 				start: "4% top",
-				end: "16% center",
+				end: "28% center",
 				scrub: 1,
 			},
 		})
 		const tl3 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
-				start: "16% top",
-				end: "32% center",
+				start: "28% top",
+				end: "48% center",
 				scrub: 1,
 			},
 		})
 		const tl4 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
-				start: "20% top",
-				end: "32% center",
+				start: "30% top",
+				end: "48% center",
 				scrub: 1,
 			},
 		})
 		const tl5 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
-				start: "32% top",
-				end: "64% center",
+				start: "48% top",
+				end: "78% center",
 				scrub: 1,
 			},
 		})
 		const tl6 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
-				start: "44% top",
-				end: "64% center",
+				start: "50% top",
+				end: "78% center",
 				scrub: 1,
 			},
 		})
@@ -136,7 +136,7 @@ const AboutWWW = () => {
 
 
 	return (
-		<div ref={container} className=" h-[300vh] w-full relative mt-8">
+		<div ref={container} className=" h-[350vh] w-full relative mt-8">
 			<div className="h-[100vh] sticky top-0 w-full p-4">
 				<div className="border-[1px] h-full w-full flex">
 					<div className="border-r-[1px] w-1/4 h-full p-8 flex flex-col justify-between flex-shrink-0">

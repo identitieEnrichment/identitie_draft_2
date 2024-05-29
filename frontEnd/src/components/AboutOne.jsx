@@ -10,7 +10,7 @@ const AboutOne = () => {
     const width = window.innerWidth
     useGSAP(() => {
         const mm = gsap.matchMedia()
-        mm.add('(min-width : 400px)',() => {
+        mm.add('(min-width : 769px)',() => {
             cards.current.forEach((element,i) => {
                 if( (i+1)%2 === 0 ){
                     gsap.to(element,{
@@ -36,7 +36,7 @@ const AboutOne = () => {
                 
             });
         })
-        mm.add('(max-width : 400px)',() => {
+        mm.add('(max-width : 769px)',() => {
             gsap.to('.imgCard0',{
                 x : 60,
                 scrollTrigger: {

@@ -27,34 +27,35 @@ const AboutThree = () => {
     const saying = useRef(null)
     const author = useRef(null)
     const icon = useRef(null)
-    const tl = gsap.timeline({
-        scrollTrigger : {
-            trigger : first.current,
-            start : "top 40%",
-            end : "bottom bottom",
-            scrub : 1,
 
-        }
-    })
-    const tl2 = gsap.timeline({
-        scrollTrigger : {
-            trigger : first.current,
-            start : "60% center",
-            end : "bottom center",
-            scrub : 1,
-
-        }
-    })
-    const t = gsap.timeline({
-        scrollTrigger : {
-            trigger : first.current,
-            start : "top 80%",
-            end : "bottom 150%",
-            scrub : 1,
-
-        }
-    })
     useGSAP(() => {
+        const tl = gsap.timeline({
+            scrollTrigger : {
+                trigger : first.current,
+                start : "top 40%",
+                end : "bottom bottom",
+                scrub : 1,
+    
+            }
+        })
+        const tl2 = gsap.timeline({
+            scrollTrigger : {
+                trigger : first.current,
+                start : "60% center",
+                end : "bottom center",
+                scrub : 1,
+    
+            }
+        })
+        const t = gsap.timeline({
+            scrollTrigger : {
+                trigger : first.current,
+                start : "top 80%",
+                end : "bottom 150%",
+                scrub : 1,
+    
+            }
+        })
         const mm = gsap.matchMedia()
         mm.add('(min-width : 769px)',()=> {
             tl.from(icon.current,{
@@ -80,7 +81,7 @@ const AboutThree = () => {
                 })
             })
         })
-        mm.add('(max-width : 400px)',()=> {
+        mm.add('(max-width : 769px)',()=> {
             t.from(icon.current,{
                 opacity : 0,
                 x : -400,

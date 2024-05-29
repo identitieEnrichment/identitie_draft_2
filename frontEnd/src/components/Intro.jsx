@@ -78,7 +78,7 @@ const Intro = () => {
 				},
 			});
 		});
-		mm.add("(max-width: 400px)", () => {
+		mm.add("(max-width: 769px)", () => {
 			gsap.to(rightimg.current, {
 				y: -700,
 				rotate: 0,

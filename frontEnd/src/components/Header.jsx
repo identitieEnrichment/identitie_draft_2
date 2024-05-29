@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
-import { MdOutlineClose } from "react-icons/md";
 
-import { Button, Dropdown, MegaMenu, Navbar } from "flowbite-react";
+import { Dropdown } from "flowbite-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useNavigate } from "react-router-dom";
+import '../css/Header.css'
 
 const Header = ({ layout }) => {
 	const [navCollapse, setNavCollapse] = useState(true);
@@ -50,19 +50,19 @@ const Header = ({ layout }) => {
 							onClick={() => navigate("/aboutus")}
 							className={`${
 								layout === "Services" ? "text-white" : "text-black"
-							} transition-all  duration-100 `}>
+							} relative nv`}>
 							About Us
 						</button>
 					</li>
 					<li
 						className={`${
 							layout === "Services" ? "text-white" : "text-black"
-						} hover:text-primary`}>
+						} hover:text-primary relative nv`}>
 						<button
 							onClick={() => navigate("/services")}
 							className={`${
 								layout === "Services" ? "text-white" : "text-black"
-							} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
+							} `}>
 							Services
 						</button>
 					</li>
@@ -82,14 +82,14 @@ const Header = ({ layout }) => {
 							onClick={() => navigate("/contactus")}
 							className={`${
 								layout === "Services" ? "text-white" : "text-black"
-							} transition-all  duration-100 hover:border-white hover:border-b-2 hover:pb-2`}>
+							} relative nv`}>
 							Contact Us
 						</button>
 					</li>
 					<li className="space-x-2">
 						<button
 							className={` ${
-								layout === "Services" ? "text-white" : "text-black"
+								layout === "Services" ? "text-white hover:bg-white hover:text-black transition-colors duration-500" : "text-black hover:bg-black hover:text-white transition-colors duration-500"
 							} ${
 								layout === "Services" ? "border-white" : "border-gray-900"
 							} border-2 border-white px-6 p-2 rounded-full font-poppins`}>
@@ -98,7 +98,7 @@ const Header = ({ layout }) => {
 						<button
 							onClick={() => navigate("/contactus")}
 							className={`p-2 border transition-all duration-700 bg-black ${
-								layout === "Services" ? "bg-white" : "bg-black"
+								layout === "Services" ? "bg-white hover:bg-black hover:text-white transition-colors duration-500" : "bg-black hover:bg-white hover:text-black transition-colors duration-500"
 							} ${
 								layout === "Services" ? "text-black" : "text-white"
 							} hover:bg-white hover:text-black  cursor-pointer rounded-full px-6 font-poppins`}>
