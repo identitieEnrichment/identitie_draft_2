@@ -85,14 +85,14 @@ const AboutWWW = () => {
 		//svg what in
 		tl1.to(what.current, {width: 500,fill: "black"})
 		//container what in
-		.to(whatContainer.current, {width: 600,padding: "30 30 30 30"},"<")
+		.to(whatContainer.current, {width: '100%',padding: "30 30 30 30"},"<")
 		// title what in
 		tl2.from(whatSpan.current, {opacity: 0,})
 		// description what in
 		.from(whatDescription.current, {opacity: 0},"<")
 
 		// container what out
-		tl3.fromTo(whatContainer.current,{width : 600}, {width: 'fit'})
+		tl3.fromTo(whatContainer.current,{width : '100%'}, {width: 'fit'})
 		// svg what out
 		.fromTo(what.current,{width : 500 , fill : "black"}, {width: 224,fill: "#e5e5e5"},"<")
 		// title what out
@@ -101,7 +101,7 @@ const AboutWWW = () => {
 		.fromTo(whatDescription.current,{opacity : 1}, {opacity: 0},"<")
 
 		// container why in
-		.to(whyContainer.current, {width: 600,padding: "30 30 30 30"},"<")
+		.to(whyContainer.current, {width: '100%',padding: "30 30 30 30"},"<")
 		// svg why in
 		.to(why.current, {width: 500,fill: "black"},"<")
 		// title why in
@@ -110,7 +110,7 @@ const AboutWWW = () => {
 		.from(whyDescription.current, {opacity: 0},"<")
 
 		//container why out
-		tl5.fromTo(whyContainer.current,{width : 600}, {width: 'fit'})
+		tl5.fromTo(whyContainer.current,{width : '100%'}, {width: 'fit'})
 		// svg why out
 		.fromTo(why.current,{width : 500 , fill : "black"}, {width: 224,fill: "#e5e5e5"},"<")
 		// title why out
@@ -119,7 +119,7 @@ const AboutWWW = () => {
 		.fromTo(whyDescription.current,{opacity : 1}, {opacity: 0},"<")
 
 		// container who in
-		.to(whoContainer.current, {width: 600,padding: "30 30 30 30"},"<")
+		.to(whoContainer.current, {width: '100%',padding: "30 30 30 30"},"<")
 		// svg who in
 		.to(who.current, {width: 480,fill: "black"},"<")
         // title who in
@@ -136,8 +136,8 @@ const AboutWWW = () => {
 
 
 	return (
-		<div ref={container} className=" h-[300vh] w-full relative">
-			<div className="h-[100vh] sticky top-0 w-full p-8">
+		<div ref={container} className=" h-[300vh] w-full relative mt-8">
+			<div className="h-[100vh] sticky top-0 w-full p-4">
 				<div className="border-[1px] h-full w-full flex">
 					<div className="border-r-[1px] w-1/4 h-full p-8 flex flex-col justify-between flex-shrink-0">
 						<div className="space-y-5">
@@ -244,7 +244,7 @@ const AboutWWW = () => {
 					</div>
 					<div
 						ref={whoContainer}
-						className="relative border-r-[1px] w-1/4 h-full flex flex-col items-center justify-between">
+						className="relative border-r-[0px] w-1/4 h-full flex flex-col items-center justify-between">
 						<div className="flex flex-col justify-between items-center">
 							<svg
 								ref={who}

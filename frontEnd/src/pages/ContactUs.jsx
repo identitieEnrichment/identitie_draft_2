@@ -53,6 +53,12 @@ const ContactUs = () => {
 				</div>
 				<div className="w-full">
 					<form action="https://api.web3forms.com/submit" method="POST" className="space-y-5 pt-6">
+					<input hidden name="redirect" value="/" />
+								<input
+									type="hidden"
+									name="access_key"
+									value="71e40aaf-1327-4dbd-89ce-a3894eb838e5"
+								/>
 					<input hidden name="access_key" value={"5df84430-8f84-4448-92ae-2362d5a20571"}></input>
 						<input
 							name="name"

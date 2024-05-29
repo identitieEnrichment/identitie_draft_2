@@ -16,11 +16,11 @@ const Contact = () => {
 						</p>
 						<form action="https://api.web3forms.com/submit" method="POST">
 							<div class="space-y-4 mt-8">
-								<input hidden name="redirect" value="/user/home" />
+								<input hidden name="redirect" value="/" />
 								<input
 									type="hidden"
 									name="access_key"
-									value="71e40aaf-1327-4dbd-89ce-a3894eb838e5"
+									value="5df84430-8f84-4448-92ae-2362d5a20571"
 								/>
 								<input
 									name="name"
@@ -31,16 +31,17 @@ const Contact = () => {
 								/>
 
 								<input
-									type="number"
-									placeholder="Phone No."
+									type="email"
+									name="email"
+									placeholder="Email"
 									class="rounded-full px-4 py-3 bg-transparent w-full text-sm border-b-2 border-[#333] outline-none focus:border-white text-white"
 								/>
 
 								<input
-									type="email"
-									name="email"
+									type="text"
+									name="subject"
 									required
-									placeholder="Email"
+									placeholder="Subject"
 									class="rounded-full px-4 py-3 bg-transparent w-full text-sm border-b-2 border-[#333] outline-none focus:border-white text-white"
 								/>
 
