@@ -1,7 +1,5 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
-
-import IphoneSession from '../components/IphoneSession'
 import ZoomParalax from '../components/ZoomParalax'
 import Zoom2 from '../components/Zoom2'
 import Lenis from '@studio-freight/lenis'
@@ -36,17 +34,7 @@ const Home = () => {
         scrub : 1,
       }
     });
-    gsap.to('#header',{
-      y:-50,
-      opacity:0,
-      duration:.01,
-     
-      scrollTrigger:{
-        trigger:intro.current,
-        start:'top top',
-        scrub:true,
-      }
-    })
+    
   })
 // })
   return (

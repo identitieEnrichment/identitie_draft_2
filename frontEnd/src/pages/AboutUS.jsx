@@ -6,10 +6,23 @@ import AboutCard from "../components/AboutCard";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Header from "../components/Header";
+import NavigationBar from "../components/Navigation/NavigationBar";
 
 const AboutUS = () => {
 	const cards = useRef(null);
 	useGSAP(() => {
+        const tl = gsap.timeline({
+            scrollTrigger : {
+                trigger : '.containe',
+                start : "1% top",
+                end : "5% 10%",
+                scrub : 1,
+              }
+        })
+        tl.to('#nav', {opacity : 1,display : 'block'})
+        .to(".menuText ",{color:"black"},"<")
+		.to(".burgerMenu ",{color:"black"},"<")
+        
 		gsap.from(".aboutcard1", {
 			x: -400,
 			opacity: 0,
@@ -52,9 +65,10 @@ const AboutUS = () => {
 		});
 	});
 	return (
-		<div>
+		<div className="containe w-full">
+            <NavigationBar/>
 			<Header layout={"Service"} />
-			<div className="md:pt-12">
+			<div className="md:pt-12 ">
 				<AboutOne />
 				<div ref={cards} className="md:hidden w-full mb-12">
 					<div className="grid grid-cols-1 w-full px-4 gap-4 ">

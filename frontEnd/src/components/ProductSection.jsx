@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -215,7 +215,7 @@ const ProductsSection = () => {
 	});
 
 	return (
-		<div ref={mainDiv} className="lg:h-[180vh] relative ">
+		<div ref={mainDiv} className="lg:min-h-[160vh] 2xl:min-h-[180vh]  relative ">
 			<div ref={imgDiv} className="md:hidden flex mb-5">
 				<picture>
 					<source type="image/webp" srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/chips-optimized.webp?alt=media&token=6769ba31-7a62-4a95-ba01-0672570a1f0d" />

@@ -3,9 +3,25 @@ import ProductCard from "../components/ProductCard";
 import Header from "../components/Header";
 import { CiSearch } from "react-icons/ci";
 import FilterBox from "../components/FilterBox";
+import NavigationBar from "../components/Navigation/NavigationBar";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 const Products = () => {
+  useGSAP(() => {
+    gsap.to('#nav', {
+      opacity : 1,
+      display : 'block',
+      scrollTrigger : {
+        trigger : '.containe',
+        start : "1% top",
+        end : "2% 10%",
+        scrub : 1,
+      }
+    });
+  })
   return (
-    <div className="min-h-[100vh] bg-[#0d1116] w-full ">
+    <div className="min-h-[100vh] bg-[#0d1116] w-full containe">
+      <NavigationBar />
       <Header layout={"Services"} />
       <div className="searchContainer">
         <div className="pt-24  lg:pt-32 px-2 lg:px-5 w-full  lg:flex lg:justify-between lg:items-center">

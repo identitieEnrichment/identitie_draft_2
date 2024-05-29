@@ -11,6 +11,7 @@ import Products from './pages/Products';
 import AboutUS from './pages/AboutUS';
 import ContactUs from './pages/ContactUs';
 import Contact from './pages/Contact';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,7 +46,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   
-    <RouterProvider router={router} />
+    
+      <RouterProvider router={router}/>
+        
   
 );
 

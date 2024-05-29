@@ -3,13 +3,20 @@ import './App.css';
 import Home from './pages/Home';
 import NotFound from './components/NotFound';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 
 function App() {
+  
+ 
 
-  
-  
+const location = useLocation();
+useEffect(() => {
+  window.scrollTo(0,0);
+}, [location]);
   return (
     <div>
+       
       <Outlet/>
     </div>
   );

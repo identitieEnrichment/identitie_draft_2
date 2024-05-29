@@ -7,10 +7,21 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Link, ScrollLink } from "react-scroll";
 import "../css/Services.css";
+import NavigationBar from "../components/Navigation/NavigationBar";
 gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
   const container = useRef(null);
   useGSAP(() => {
+    gsap.to('#nav', {
+      opacity : 1,
+      display : 'block',
+      scrollTrigger : {
+        trigger : container.current,
+        start : "1% top",
+        end : "2% 10%",
+        scrub : 1,
+      }
+    });
     if (container.current) {
       const triggers = container.current.querySelectorAll('[class*="trigger"]');
       const titles = document.querySelectorAll('[class*="title"]');
@@ -112,6 +123,7 @@ const Services = () => {
   return (
     <div className="bg-secondary relative bg-black  ">
       <Header layout={"Services"} />
+      <NavigationBar />
       <div className=" lg:flex lg:gap-32">
         {/* Left ServiceList  */}
         <div className="lg:flex hidden flex-col   gap-5 shadow-r-lg w-max p-12 py-32 fixed bg-secondary">

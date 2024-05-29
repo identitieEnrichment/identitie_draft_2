@@ -17,30 +17,19 @@ const AboutWWW = () => {
 	const whoSpan = useRef(null);
 	const whoDescription = useRef(null);
 	useGSAP(() => {
-		gsap.to(what.current, {
-			width: 224,
-			fill: "#e5e5e5",
-		});
-		gsap.to(whatContainer.current, {
-			width: '100%',
-			padding: "10 10 10 10",
-		});
-		gsap.to(why.current, {
-			width: 224,
-			fill: "#e5e5e5",
-		});
-		gsap.to(whyContainer.current, {
-			width: '100%',
-			padding: "10 10 10 10",
-		});
-		gsap.to(who.current, {
-			width: 224,
-			fill: "#e5e5e5",
-		});
-		gsap.to(whoContainer.current, {
-			width: '100%',
-			padding: "10 10 10 10",
-		});
+		gsap.to(what.current, {width: 224,fill: "#e5e5e5"})
+		gsap.to(whatContainer.current, {width: '100%',padding: "10 10 10 10"})
+		gsap.to(whatSpan.current,{opacity:0})
+		gsap.to(whatDescription.current,{opacity:0})
+		gsap.to(why.current, {width: 224,fill: "#e5e5e5"})
+		gsap.to(whyContainer.current, {width: '100%',padding: "10 10 10 10"})
+		gsap.to(whySpan.current,{opacity:0})
+		gsap.to(whyDescription.current,{opacity:0})
+		gsap.to(who.current, {width: 224,fill: "#e5e5e5"})
+		gsap.to(whoContainer.current, {width: '100%',padding: "10 10 10 10"});
+		gsap.to(whoSpan.current,{opacity:0})
+		gsap.to(whoDescription.current,{opacity:0})
+
 
 
 		const tl1 = gsap.timeline({
@@ -132,7 +121,7 @@ const AboutWWW = () => {
 		// container who in
 		.to(whoContainer.current, {width: 600,padding: "30 30 30 30"},"<")
 		// svg who in
-		.to(who.current, {width: 500,fill: "black"},"<")
+		.to(who.current, {width: 480,fill: "black"},"<")
         // title who in
 		tl6.from(whoSpan.current, {opacity: 0})
 		// description who in

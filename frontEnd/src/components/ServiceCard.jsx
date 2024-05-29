@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import useIsMobile from "../hooks/useIsMobile";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -20,6 +21,7 @@ const ServicesCard = ({
 	isLastCard, 
 	isFirstCard,
 }) => {
+	const navigate = useNavigate()
 	const  isMobile = useIsMobile()
 	const container = useRef(null);
 	const { scrollYProgress } = useScroll({
@@ -74,7 +76,7 @@ const ServicesCard = ({
 											<h1 className="text-white  text-sm ">Explore Our Diverse Range of Services</h1>
 										</div>
 										
-										<button class="  mt-10 hover:before:bg-[#773ec7] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+										<button onClick={() => navigate('/services')} class="z-50  mt-10 hover:before:bg-[#773ec7] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 											<span class="relative z-50 whitespace-nowrap px-2">{isLastCard ? "View All Services" : "See more"}</span><span class="relative z-10 ml-2">&rarr;	</span>
 										</button>
 									</div>
@@ -106,7 +108,7 @@ const ServicesCard = ({
 							{description}
 						</p>
 			
-						<button class="rounded-full mt-8   hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+						<button class="rounded-full mt-8   hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-black md:border-white bg-transparent px-3 md:text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 						<span class="relative z-50 whitespace-nowrap px-2">{isLastCard ? "View All Services" : "See more"}</span><span class="relative z-10 ml-2">&rarr;	</span>
 						</button>
 					</div>

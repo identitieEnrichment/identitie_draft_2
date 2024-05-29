@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import _ from "lodash";
 import React, { useRef } from "react";
+import { allServicesData } from "../utils/constants";
 
 const AboutOne = () => {
     const cards = useRef([])
@@ -60,7 +61,7 @@ const AboutOne = () => {
         
     })
 	return (
-		<div ref={container} className="one md:h-[100vh] w-full flex flex-col items-center md:pt-16 md:gap-5 pt-32 ">
+		<div ref={container} className="one md:h-[100vh] w-full flex flex-col justify-center items-center md:pt-16 md:gap-5 pt-32 ">
 			<div className="md:w-6/12 space-y-6">
 				<h1 className="font-poppins text-2xl md:text-6xl text-center font-bold px-4">
 					Our Creative World of Making Innovative Ideas
@@ -77,7 +78,7 @@ const AboutOne = () => {
 					<div  className={`${'imgCard'+index} md:h-80 md:w-44 w-32 h-44 rounded-2xl even:h-60 even:w-56 even:z-30 md:even:w-44 even:-translate-y-8 md:even:-translate-y-0 md:even:h-80 md:rounded-3xl md:odd:-translate-y-8 first:translate-x-3 last:-translate-x-3 md:first:translate-x-0 md:last:-translate-x-0`} ref={(el) => (cards.current[index] = el)}>
 						<img
 							className="h-full w-full rounded-xl  md:rounded-3xl object-cover"
-							src="../assets/optimized/realEstate-optimized.jpeg"
+							src={allServicesData[index].img}
 							alt="im"
 						/>
 					</div>

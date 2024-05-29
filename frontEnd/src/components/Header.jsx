@@ -18,7 +18,7 @@ const Header = ({ layout }) => {
 	useGSAP(() => {
 		gsap.to(headerSection.current, {
 			opacity: 0,
-			y: -20,
+			y: -80,
 			scrollTrigger: {
 				trigger: headerSection.current,
 				start: "bottom 10%",
@@ -31,7 +31,7 @@ const Header = ({ layout }) => {
 		<header
 			ref={headerSection}
 			className={`fixed top-0 w-full z-[999]   ${
-				layout === "Services" ? "bg-transparent" : "bg-white"
+				layout === "Services" ? "bg-transparent" : "bg-transparent"
 			}`}>
 			<div className="p-4 mx-4 md:p-7 flex items-center justify-between">
 				<div onClick={() => navigate("/")} className="cursor-pointer">
@@ -91,7 +91,7 @@ const Header = ({ layout }) => {
 							className={` ${
 								layout === "Services" ? "text-white" : "text-black"
 							} ${
-								layout === "Services" ? "border-white" : "border-black"
+								layout === "Services" ? "border-white" : "border-gray-900"
 							} border-2 border-white px-6 p-2 rounded-full font-poppins`}>
 							Login
 						</button>

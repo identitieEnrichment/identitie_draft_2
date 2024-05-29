@@ -5,8 +5,10 @@ import React, { useRef, useState } from "react";
 import "../css/intro.css";
 import Header from "./Header";
 import LogoSlider from "./LogoSlider";
+import { useNavigate } from "react-router-dom";
 
 const Intro = () => {
+	const navigate = useNavigate()
 	const knowMoreButton = useRef(null)
 	const bulb = useRef(null);
 	const first = useRef(null);
@@ -29,6 +31,14 @@ const Intro = () => {
 				scrub:2,
 			}
 		})
+		const tl4 = gsap.timeline({
+			scrollTrigger:{
+				trigger:second.current,
+				start:"bottom 100%",
+				
+				scrub:1,
+			}
+		})
 		tl3.to(second.current,{backgroundColor:"white",})
 		.to(container.current,{backgroundColor:"white"},"<")
 		.to(knowMoreButton.current,{backgroundColor:"black"},"<")
@@ -36,7 +46,7 @@ const Intro = () => {
 		.to("#getInTouchBtn",{backgroundColor:"black"},"<")
 		.to("#craft-identitie",{color:"black"},"<")
 		.to("#logoSlider",{color:"black"},"<")
-		.to(".menuText ",{color:"black"},"<")
+		tl4.to(".menuText ",{color:"black"})
 		.to(".burgerMenu ",{color:"black"},"<")
 		gsap.to(".lamp", {
 			webkitFilter: "blur(30px)",
@@ -178,7 +188,7 @@ const Intro = () => {
 	});
 
 	return (
-		<div ref={container} className="bg-[#0d1117] md:h-[200vh] z-0 w-full relative ">
+		<div ref={container} className="bg-[#0d1117] 2xl:h-[200vh] lg:h-[170vh] z-0 w-full relative ">
 			<Header layout={"Services"}/>
 			<div className="">
 				<div className="flex w-full ">
@@ -236,7 +246,7 @@ const Intro = () => {
 							of products and services tailored to your needs. Discover how
 							Identitie can help you define and elevate your identity today.
 						</p>
-						<button id="getInTouchBtn" class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+						<button onClick={() => navigate('/contactus')} id="getInTouchBtn" class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 								Get In Touch
 							</span>
@@ -263,7 +273,7 @@ const Intro = () => {
 			<div
 				ref={second}
 				
-				className="lg:h-[55vh] mt-0 bg-[#0d1117] lg:relative lg:flex lg:justify-center">
+				className="lg:h-[55vh] mt-0 bg-[#0d1117] lg:relative lg:flex lg:justify-center ">
 				
 				<div className="md:hidden px-4 relative">
 					<picture>
@@ -284,18 +294,18 @@ const Intro = () => {
 				</div>
 				<div
 					ref={cont}
-					className="lg:absolute lg:pt-16 lg:left-96 w-full lg:w-5/12 space-y-5 lg:z-50 px-4 mt-12 md:mt-0 md:translate-y-0">
+					className="lg:absolute lg:pt-16 lg:left-96 w-full lg:w-5/12 space-y-5 lg:z-50 px-4 mt-12 md:mt-0 md:translate-y-0 2xl:mt-16">
 					<h1 id="craft-identitie" className="text-white lg:text-6xl text-3xl font-poppins font-bold title">
 						Craft Your Identity
 					</h1>
-					<p className="text-gray-400 font-poppins w-full text-sm md:text-base descr">
+					<p className="text-gray-400 font-poppins w-full text-sm md:text-base descr ">
 						Welcome to Identitie – where every service and product is
 						meticulously crafted to empower your unique identity. Dive into our
 						comprehensive array of offerings, from real estate and event
 						management to IT solutions and beyond. Let us help you shape and
 						refine your identity with precision and care
 					</p>
-					<button ref={knowMoreButton} class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+					<button onClick={() => navigate('/aboutus')} ref={knowMoreButton} class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 								Know More
 							</span>

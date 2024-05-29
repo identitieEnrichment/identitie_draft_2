@@ -14,7 +14,7 @@ const ZoomParalax = () => {
         const tl = gsap.timeline({
             scrollTrigger : {
 				trigger : container.current,
-				start : '10% top',
+				start : '-10% top',
 				scrub : 1,
 			}
         })

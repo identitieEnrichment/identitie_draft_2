@@ -22,10 +22,12 @@ export default function NavigationBar() {
 							header.current.style.backgroundColor = "white";
 							logo.current.style.display = "flex";
 							document.body.style.overflow = "hidden";
+							header.current.style.height = '100%'
 
 						} else {
 							logo.current.style.display = "none";
 							document.body.style.overflow = "auto";
+							header.current.style.height = 'auto'
 							setTimeout(() => {
 								header.current.style.backgroundColor = "transparent";
 							}, 900);
