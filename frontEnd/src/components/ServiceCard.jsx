@@ -62,7 +62,7 @@ const ServicesCard = ({
 									className={`object-cover   w-full lg:rounded-lg  ${isFirstCard?"h-full lg:h-80" : "h-80"} ${isLastCard?"lg:h-full h-full " : "h-80"}`}
 									src={`/images/${src}`}
 									alt="im"
-									loading="lazy"
+									
 									/>
 								</picture>
 						
@@ -72,8 +72,8 @@ const ServicesCard = ({
 								<div className="	absolute inset-0 w-full h-full flex items-center flex-col space-y-2 justify-center">
 									<div className="flex flex-col items-center">
 										<div className="space-y-3 flex flex-col items-center">
-											<h1 className="text-white  text-xl lg:text-4xl font-semibold ">Comprehensive Business Solutions</h1>
-											<h1 className="text-white  text-sm ">Explore Our Diverse Range of Services</h1>
+											<h1 className="text-white  text-xl lg:text-4xl font-bold ">Comprehensive Business Solutions</h1>
+											<h1 className="text-white  text-sm font-medium">Explore Our Diverse Range of Services</h1>
 										</div>
 										
 										<button onClick={() => navigate('/services')} class="z-50  mt-10 hover:before:bg-[#773ec7] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
@@ -85,7 +85,7 @@ const ServicesCard = ({
 							)}
 								{isFirstCard && isMobile && (
 								<>
-								<div className="bg-black w-full h-full absolute inset-0 opacity-85"></div>
+								<div className="bg-black w-full h-full absolute inset-0 opacity-75"></div>
 								<div className="	absolute inset-0 w-full h-full flex items-center flex-col space-y-2 justify-center">
 									<div className="flex flex-col space-y-4 items-center">
 									

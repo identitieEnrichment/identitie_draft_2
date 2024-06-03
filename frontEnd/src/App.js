@@ -5,9 +5,10 @@ import NotFound from './components/NotFound';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 function App() {
-  
+ 
  
 
 const location = useLocation();

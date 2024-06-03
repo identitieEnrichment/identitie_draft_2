@@ -29,6 +29,14 @@ const ProductsSection = () => {
 			.to(".toWhite",{color:'white'},"<")
 			.to(".bgToWhite",{backgroundColor:"white"},"<")
 			.to('.toBlack',{color:'black'},"<")
+			const tl = gsap.timeline({
+				scrollTrigger : {
+					trigger : mainDiv.current,
+					start : '-50% top',
+					scrub : 1,
+				}
+			})
+			tl.to('.burgerMenu',{color:"white"},"<")
 		})
 		
 		
@@ -60,90 +68,33 @@ const ProductsSection = () => {
 					scrub : 1,
 				}
 			})
-			gsap.from(".img0", {
-				y: -350,
+			const tl2 = gsap.timeline({
 				scrollTrigger: {
 					trigger: container.current,
 					scrub: true,
 					start: "top 30%",
 					end: "bottom -40%",
 				},
-			});
-			gsap.from(".img1", {
-				x: -230,
-				y: -430,
-				scrollTrigger: {
-					trigger: container.current,
-					scroller: "body",
-					scrub: true,
-					start: "top 30%",
-					end: "bottom -40%",
-				},
-			});
-			gsap.from(".img2", {
-				x: -470,
-				y: -560,
-				scrollTrigger: {
-					trigger: container.current,
-					scroller: "body",
-					scrub: true,
-					start: "top 30%",
-					end: "bottom -40%",
-				},
-			});
-			gsap.from(".img3", {
-				x: -700,
-				y: -650,
-				scrollTrigger: {
-					trigger: container.current,
-					scroller: "body",
-					scrub: true,
-					start: "top 30%",
-					end: "bottom -40%",
-				},
-			});
+			})
+			tl2.from(".img0", {y: -350})
+			.from(".img1", {x: -230,y: -430},"<")
+			.from(".img2", {x: -470,y: -560},"<")
+			.from(".img3", {x: -700,y: -650},"<")
 		});
-		mm.add("(max-width : 400px)",() => {
-			
-			gsap.from(".card0", {
-				x: -150,
+		mm.add("(max-width : 769px)",() => {
+			const tl3 = gsap.timeline({
 				scrollTrigger: {
 					trigger: mainDiv.current,
-					scrub: true,
-					start: "top 90%",
+					scrub: 1,
+					start: "top 150%",
 					end : "30% bottom",
 				},
-			});
-			gsap.from(".card1", {
-				x: -300,
-				scrollTrigger: {
-					trigger: mainDiv.current,
-					scroller: "body",
-					scrub: true,
-					start: "top 90%",
-					end: "30% bottom",
-				},
-			});
-			gsap.from(".card2", {
-				x: -500,
-				scrollTrigger: {
-					trigger: mainDiv.current,
-					scroller: "body",
-					scrub: true,
-					start: "top 90%",
-					end: "30% bottom",
-				},
-			});
-			gsap.from(".card3", {
-				x: -600,
-				scrollTrigger: {
-					trigger: mainDiv.current,
-					scroller: "body",
-					scrub: true,
-					start: "top 90%",
-					end: "30% bottom",
-				},
-			});
+			})
+			tl3.from(".card0", {x: -150})
+			.from(".card1", {x: -300},"<")
+			.from(".card2", {x: -450},"<")
+			.from(".card3", {x: -600},"<");
+
 			const t1 = gsap.timeline({
 				scrollTrigger: {
 					trigger: container.current,
@@ -216,41 +167,41 @@ const ProductsSection = () => {
 
 	return (
 		<div ref={mainDiv} className="lg:min-h-[160vh] 2xl:min-h-[180vh]  relative ">
-			<div ref={imgDiv} className="md:hidden flex mb-5">
+			<div ref={imgDiv} className="md:hidden flex mb-5 pl-2">
 				<picture>
 					<source type="image/webp" srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/chips-optimized.webp?alt=media&token=6769ba31-7a62-4a95-ba01-0672570a1f0d" />
 					<img
 						src="../assets/optimized/chips-optimized.webp"
-						className={`${"card0"} h-24 object-cover `}
+						className={`${"card0"} h-24 object-cover translate-x-2`}
 						alt="one"
-						loading="lazy"
+						
 					/>
 				</picture>
 				<picture>
 					<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/fruit-optimized.webp?alt=media&token=41fe4e86-c3ef-4525-9459-638699876c5f" />
 					<img
 						src="../assets/optimized/fruit-optimized.png"
-						className={`${"card1"} h-24 object-cover -translate-x-8 translate-y-4`}
+						className={`${"card1"} h-24 object-cover -translate-x-2 translate-y-4`}
 						alt="one"
-						loading="lazy"
+						
 					/>
 				</picture>
 				<picture>
 					<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Skincare-optimized.webp?alt=media&token=cbe5a99b-bd70-49fe-b9d8-f34aabf49618" />
 					<img
 						src="../assets/optimized/skincare-optimized.png"
-						className={`${"card2"} h-28 object-cover -translate-x-24 translate-y-3`}
+						className={`${"card2"} h-28 object-cover -translate-x-8 translate-y-3`}
 						alt="one"
-						loading="lazy"
+						
 					/>
 				</picture>
 				<picture>
 						<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/fur3-optimized.webp?alt=media&token=2c27ff34-5d1e-4db8-b69e-4acfbffd4249" />
 						<img
 								src="../assets/optimized/fur3-optimized.png"
-								className={`${"card3"} h-40 object-cover -translate-x-36 translate-y-4`}
+								className={`${"card3"} h-40 object-cover -translate-x-14 translate-y-4`}
 								alt="one"
-								loading="lazy"
+								
 						/>	
 				</picture>
 			

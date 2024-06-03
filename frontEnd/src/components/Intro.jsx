@@ -189,7 +189,7 @@ const Intro = () => {
 
 	return (
 		<div ref={container} className="bg-[#0d1117] 2xl:h-[200vh] lg:h-[170vh] z-0 w-full relative ">
-			<Header layout={"Services"}/>
+			
 			<div className="">
 				<div className="flex w-full ">
 					<div className="flex pt-12 md:pt-0">
@@ -284,13 +284,13 @@ const Intro = () => {
 							alt="phone"
 						/>
 					</picture>
-					<video
+					{/* <video
 						style={{ borderRadius: "25px" }}
 						className="absolute top-3 left-7 rounded-lg object-cover h-[165px] w-[345px] z-10"
 						src="../assets/video.mp4"
 						muted
 						loop
-						autoPlay></video>
+						autoPlay></video> */}
 				</div>
 				<div
 					ref={cont}

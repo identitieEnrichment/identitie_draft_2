@@ -6,6 +6,7 @@ import FilterBox from "../components/FilterBox";
 import NavigationBar from "../components/Navigation/NavigationBar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+gsap.registerPlugin(useGSAP)
 const Products = () => {
   useGSAP(() => {
     gsap.to('#nav', {
@@ -26,7 +27,7 @@ const Products = () => {
       <div className="searchContainer">
         <div className="pt-24  lg:pt-32 px-2 lg:px-5 w-full  lg:flex lg:justify-between lg:items-center">
           <h1 className="text-white text-lg lg:text-2xl px-3  lg:block hidden">
-            Discover Top <span className="text-[#c9be25]">SkinCare</span>{" "}
+            Discover Top <span className="text-[#773ec7]">SkinCare</span>{" "}
             Products at Idenitie
           </h1>
           <div className="w-full lg:w-3/12 h-fit flex space-x-1 border-[#57606a] border-[.2px] rounded-md items-center  bg-[#273040] ">

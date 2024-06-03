@@ -8,7 +8,7 @@ import { useGSAP } from "@gsap/react";
 import { Link, ScrollLink } from "react-scroll";
 import "../css/Services.css";
 import NavigationBar from "../components/Navigation/NavigationBar";
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP)
 const Services = () => {
   const container = useRef(null);
   useGSAP(() => {

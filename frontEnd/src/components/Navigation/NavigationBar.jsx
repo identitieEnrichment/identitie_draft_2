@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { opacity, background } from "../../utils/anim";
 import Nav from "./Nav/Nav";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
+import { RiMenu3Fill } from "react-icons/ri";
 
 export default function NavigationBar() {
 	const [isActive, setIsActive] = useState(false);
@@ -21,13 +22,12 @@ export default function NavigationBar() {
 						) {
 							header.current.style.backgroundColor = "white";
 							logo.current.style.display = "flex";
-							document.body.style.overflow = "hidden";
-							header.current.style.height = '100%'
 
+							header.current.style.height = "100%";
 						} else {
 							logo.current.style.display = "none";
-							document.body.style.overflow = "auto";
-							header.current.style.height = 'auto'
+
+							header.current.style.height = "auto";
 							setTimeout(() => {
 								header.current.style.backgroundColor = "transparent";
 							}, 900);
@@ -42,22 +42,14 @@ export default function NavigationBar() {
 						alt="logo"
 						className="h-8 md:h-12 absolute left-0 md:top-3 hidden top-2 "
 					/>
+
 					<div
 						className={`${styles.burger} ${
 							isActive ? styles.burgerActive : ""
 						} `}></div>
 					<div className={styles.label}>
-						<IoIosMenu
-							className={`text-white text-xl translate-x-10 burgerMenu ${
-								isActive ? "hidden" : "inline-block"
-							}`}
-						/>
-						<motion.p
-							variants={opacity}
-							animate={!isActive ? "open" : "closed"}
-							className="text-white translate-x-12 menuText">
-							Menu
-						</motion.p>
+						<RiMenu3Fill className={`md:text-black text-white text-2xl translate-x-12 burgerMenu ${isActive ? "hidden" : "flex"}`} />
+
 						<motion.button
 							variants={opacity}
 							animate={isActive ? "open" : "closed"}

@@ -19,7 +19,7 @@ const ProductCard = () => {
   }, []);
   return (
     <div>
-      <div className='w-full   h-48 md:h-96 p-4 md:block md:space-x-0   flex space-x-4 items-center justify-center rounded-lg bg-[#161b22] '>  {/* Single*/}
+      <div className='w-full   h-48 md:h-96 p-4 md:block md:space-x-0   flex space-x-4 items-center justify-center rounded-lg bg-[#161b22] lg:h-[25rem]'>  {/* Single*/}
             <div className='w-6/12 md:w-full md:h-48 h-full bg-white rounded-lg  object-cover'>
                 <img className='w-full h-full object-cover' src='../assets/optimized/chips-optimized.webp'></img>
             </div>
@@ -35,7 +35,7 @@ const ProductCard = () => {
                 </div>
                 <div className='flex md:block md:mt-2 md:space-y-2 items-center justify-between'>
                     <span className='text-xl md:text-base font-bold md:my-10 md:hidden'>₹199</span>
-                    <button className='px-5 py-2 bg-[#feb043] md:w-full rounded-lg text-black font-medium '>Buy Now</button>
+                    <button className='px-5 py-2 bg-[#773ec7] md:w-full rounded-lg text-white font-medium '>Buy Now</button>
                 </div>
             </div>
        </div>
