@@ -123,7 +123,7 @@ const Services = () => {
   return (
     <div className="bg-secondary relative bg-black  ">
       <Header layout={"Services"} />
-      <NavigationBar />
+      <NavigationBar layout={""} />
       <div className=" lg:flex lg:gap-32">
         {/* Left ServiceList  */}
         <div className="lg:flex hidden flex-col   gap-5 shadow-r-lg w-max p-12 py-32 fixed bg-secondary">

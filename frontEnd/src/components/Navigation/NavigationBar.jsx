@@ -6,7 +6,7 @@ import Nav from "./Nav/Nav";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
 import { RiMenu3Fill } from "react-icons/ri";
 
-export default function NavigationBar() {
+export default function NavigationBar({layout}) {
 	const [isActive, setIsActive] = useState(false);
 	const header = useRef(null);
 	const logo = useRef(null);
@@ -48,7 +48,7 @@ export default function NavigationBar() {
 							isActive ? styles.burgerActive : ""
 						} `}></div>
 					<div className={styles.label}>
-						<RiMenu3Fill className={`md:text-black text-white text-2xl translate-x-12 burgerMenu ${isActive ? "hidden" : "flex"}`} />
+						<RiMenu3Fill className={` text-2xl translate-x-12 burgerMenu ${isActive ? "hidden" : "flex"} ${layout === "About" ? "text-black" : "text-white"}`} />
 
 						<motion.button
 							variants={opacity}

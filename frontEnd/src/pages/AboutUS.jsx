@@ -11,18 +11,31 @@ import NavigationBar from "../components/Navigation/NavigationBar";
 const AboutUS = () => {
 	const cards = useRef(null);
 	useGSAP(() => {
-        const tl = gsap.timeline({
-            scrollTrigger : {
-                trigger : '.containe',
-                start : "1% top",
-                end : "5% 10%",
-                scrub : 1,
-              }
-        })
-        tl.to('#nav', {opacity : 1,display : 'block'})
-        .to(".menuText ",{color:"black"},"<")
-		.to(".burgerMenu ",{color:"black"},"<")
-        
+		const mm = gsap.matchMedia();
+		mm.add("(min-width : 769px)", () => {
+			const tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: ".containe",
+					start: "1% top",
+					end: "2% 10%",
+					scrub: 1,
+				},
+			});
+			tl.to("#nav", { opacity: 1, display: "block" })
+			.to(".burgerMenu ", { color: "black" }, "<");
+		});
+		// const tl = gsap.timeline({
+		// 	scrollTrigger: {
+		// 		trigger: ".containe",
+		// 		start: "1% top",
+		// 		end: "5% 10%",
+		// 		scrub: 1,
+		// 	},
+		// });
+		// tl.to("#nav", { opacity: 1, display: "block" })
+		// 	.to(".menuText ", { color: "black" }, "<")
+		// 	.to(".burgerMenu ", { color: "black" }, "<");
+
 		gsap.from(".aboutcard1", {
 			x: -400,
 			opacity: 0,
@@ -66,7 +79,7 @@ const AboutUS = () => {
 	});
 	return (
 		<div className="containe w-full">
-            <NavigationBar/>
+			<NavigationBar layout={"About"} />
 			<Header layout={"Service"} />
 			<div className="md:pt-12 ">
 				<AboutOne />
