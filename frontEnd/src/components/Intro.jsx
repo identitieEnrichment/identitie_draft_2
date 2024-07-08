@@ -237,18 +237,14 @@ const Intro = () => {
 
 					<div className="lg:absolute lg:left-12 lg:w-6/12 space-y-5 px-4 lg:pl-24 mt-12 md:mt-0 lg:top-[40%] lg:z-50  lg:mt-0 ">
 						<h1 className="text-white lg:text-6xl text-3xl font-poppins font-bold ">
-							Define Your Identity , With Identitie
+						Crafting Brands , Creating Legacies 
 						</h1>
 						<p className="text-gray-400 font-poppins w-full text-sm md:text-base des">
-							Identitie is your one-stop destination for building your unique
-							identity. From real estate solutions to event management,
-							furniture, IT services, and more, we offer a comprehensive range
-							of products and services tailored to your needs. Discover how
-							Identitie can help you define and elevate your identity today.
+							Define your identity with Identitie. With a global footprint and adept experience in a comprehensive range of products & services, including branding, marketing, sales, management, fulfilment, design & development; we deliver projects that inspire, empower and engage.
 						</p>
-						<button onClick={() => navigate('/contactus')} id="getInTouchBtn" class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+						<button onClick={() => navigate('/contactus')} id="getInTouchBtn" class="rounded-full w-fit mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
-								Get In Touch
+							Partner with us 
 							</span>
 							<span class="relative z-10 ml-2">&rarr; </span>
 						</button>
@@ -296,16 +292,12 @@ const Intro = () => {
 					ref={cont}
 					className="lg:absolute lg:pt-16 lg:left-96 w-full lg:w-5/12 space-y-5 lg:z-50 px-4 mt-12 md:mt-0 md:translate-y-0 2xl:mt-16">
 					<h1 id="craft-identitie" className="text-white lg:text-6xl text-3xl font-poppins font-bold title">
-						Craft Your Identity
+					Your Perception , Our Prowess 
 					</h1>
 					<p className="text-gray-400 font-poppins w-full text-sm md:text-base descr ">
-						Welcome to Identitie – where every service and product is
-						meticulously crafted to empower your unique identity. Dive into our
-						comprehensive array of offerings, from real estate and event
-						management to IT solutions and beyond. Let us help you shape and
-						refine your identity with precision and care
+					Identitie is a purpose-driven firm. Transform your vision into a standout success story with unmatched precision and pre-eminence. We work to make every experience people have with your business, substantial. Looking to make a lasting impact?
 					</p>
-					<button onClick={() => navigate('/aboutus')} ref={knowMoreButton} class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+					<button onClick={() => navigate('/aboutus')} ref={knowMoreButton} class="rounded-full mt-8 w-fit hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 								Know More
 							</span>
@@ -329,7 +321,7 @@ const Intro = () => {
 						d="M0,288L120,277.3C240,267,480,245,720,245.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
 				</svg>
 			</div>
-			<div className="hidden md:flex pt-4 items-center absolute bottom-20 left-[50%]">
+			<div className="hidden md:flex pt-4 items-center absolute bottom-2 left-[50%]">
 						<LogoSlider />
 					</div>
 			
