@@ -9,7 +9,9 @@ import { Link, ScrollLink } from "react-scroll";
 import "../css/Services.css";
 import NavigationBar from "../components/Navigation/NavigationBar";
 gsap.registerPlugin(useGSAP)
-const Services = () => {
+const Sectors = () => {
+  allServicesData.sort((a, b) => a.title.localeCompare(b.title))
+  console.log('allservicedata',allServicesData);
   const container = useRef(null);
   useGSAP(() => {
     gsap.to('#nav', {
@@ -113,7 +115,6 @@ const Services = () => {
         });
       });
 
-      // Cleanup ScrollTrigger instances on component unmount
       return () => {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       };
@@ -126,7 +127,7 @@ const Services = () => {
       <NavigationBar layout={""} />
       <div className=" lg:flex lg:gap-32">
         {/* Left ServiceList  */}
-        <div className="lg:flex hidden flex-col   gap-5 shadow-r-lg w-max p-12 py-32 fixed bg-secondary">
+        <div className="lg:flex hidden flex-col   gap-3 shadow-r-lg w-max p-12 py-28 fixed bg-secondary">
           {allServicesData.map((item, index) => (
             <button className="flex gap-4 items-center first-line:">
               <div
@@ -154,7 +155,7 @@ const Services = () => {
 
         {/* Right ServiceDescriptions  */}
         <div
-          className="lg:ml-80 px-3 bg- w-full lg:py-32 py-20"
+          className="lg:ml-[22rem] px-3 bg- w-full space-y-10 lg:py-28 py-20"
           ref={container}
         >
           <h1 className="text-3xl text-white font-bold px-2  mb-12 mt-4 lg:hidden">
@@ -194,7 +195,7 @@ const Services = () => {
               <picture className="w-5/12">
                     <source type="image/webp" srcSet={item.webp} />
                     <img
-                    className=" lg:w-full hidden lg:block w-full h-96 object-cover rounded-2xl"
+                    className=" lg:w-full hidden lg:block w-full h-72 object-cover rounded-2xl"
                     src={item.img}
                     alt="thumb"
                   />
@@ -207,4 +208,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Sectors;
