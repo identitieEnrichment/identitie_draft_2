@@ -5,6 +5,7 @@ import {
 	FaWhatsapp,
 	FaLinkedin,
 } from "react-icons/fa";
+import { IoIosSend } from "react-icons/io";
 import FooterList from "./FooterList";
 import {
 	FooterDataCompanyLinks,
@@ -14,7 +15,7 @@ import {
 
 const Footer = () => {
 	return (
-		<div className="bg-black lg:p-16 px-6">
+		<div className="bg-[#1D1D1D] lg:p-16 p-6">
 			<div className="lg:flex lg:gap-20 space-y-7">
 				<div className="flex flex-col space-y-4 lg:w-4/12">
 					<span className="text-white text-3xl font-bold tracking-wider">
@@ -28,41 +29,89 @@ const Footer = () => {
 						unparalleled results.
 					</p>
 				</div>
-				<div className="flex gap-4 mt-5 lg:hidden">
-					<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-						<FaInstagram />
-					</button>
-					<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-						<FaFacebook />
-					</button>
-					<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-						<FaWhatsapp />
-					</button>
-					<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-						<FaLinkedin />
+				<div className="lg:hidden">
+					<span className="text-white text-lg font-semibold lg:text-xl font-poppins">
+						Stay in touch
+					</span>
+					<div className="flex gap-4 mt-5 ">
+						<a
+							href="https://www.instagram.com/identitie.ie/"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaInstagram />
+						</a>
+						<a
+							href="https://www.instagram.com/identitie.ie/"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaFacebook />
+						</a>
+
+						<a
+							href="https://www.linkedin.com/company/identitie-enrichment/"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaLinkedin />
+						</a>
+					</div>
+				</div>
+				<div className=" gap-4 mt-5 hidden lg:block">
+					<span className="text-white text-lg font-semibold lg:text-xl font-poppins">
+						Stay in touch
+					</span>
+					<div className="flex gap-4 mt-5 ">
+						<a
+							href="https://www.instagram.com/identitie.ie/"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaInstagram />
+						</a>
+						<a
+							href="https://www.instagram.com/identitie.ie/"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaFacebook />
+						</a>
+
+						<a
+							href="https://www.linkedin.com/company/identitie-enrichment/"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaLinkedin />
+						</a>
+					</div>
+				</div>
+
+				<div className=" gap-4 mt-5 lg:w-3/12 space-y-3">
+					<span className="text-white text-lg font-semibold lg:text-xl font-poppins">
+						Subscribe Asap
+					</span>
+					<div className=" border-white border-[1px] p-2">
+						<input
+							className="h-full bg-transparent"
+							type="text"
+							name=""
+							id=""
+							placeholder="Enter Email"
+						/>
+					</div>
+					<button className="bg-white font-poppins p-2 flex justify-center items-center w-full">
+						Subscribe
 					</button>
 				</div>
-				<FooterList title={"What We Do"} data={FooterDataWhatWeDo} />
-				<FooterList title={"Company"} data={FooterDataCompanyLinks} />
-				<FooterList title={"Quick Links"} data={FooterDataQuickLinks} />
+
+				<FooterList title={"Smart Links"} data={FooterDataQuickLinks} />
 			</div>
-			<div className=" gap-4 mt-5 hidden lg:flex">
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-					<FaInstagram />
-				</button>
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-					<FaFacebook />
-				</button>
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-					<FaWhatsapp />
-				</button>
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-					<FaLinkedin />
-				</button>
-			</div>
+
 			<div className="w-full flex items-center justify-center mt-8">
-				<span className="text-white font-poppins">
-					© Copyright IDENTITIE pvt ltd.. All Rights Reserved
+				<span className="text-white font-poppins text-center">
+					© 2024 Identitie Enrichment Pte Ltd. All Rights Reserved.
 				</span>
 			</div>
 		</div>
