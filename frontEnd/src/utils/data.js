@@ -33,8 +33,9 @@ export const projects = [
     points: [
       "Ecommerce platforms",
       "CRM/CMS Integration",
-      "Third-Party Integration",
       "Product Listing",
+      "Third-Party Integration",
+     
       "SKU maintenance",
       "Order Tracking",
       "Email Marketing",
