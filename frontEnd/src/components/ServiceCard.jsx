@@ -31,7 +31,6 @@ const ServicesCard = ({
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
 
-  console.log("point is", points);
   return (
     <motion.div
       ref={container}
@@ -153,7 +152,7 @@ const ServicesCard = ({
                 })}
               </div>
             </div>
-            <button class="rounded-full mt-8   hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-black md:border-white bg-transparent px-3 md:text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+            <button onClick={() => navigate("/services")} class="rounded-full mt-8   hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-black md:border-white bg-transparent px-3 md:text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
               <span class="relative z-50 whitespace-nowrap px-2">
                 {isLastCard ? "View All Services" : "See more"}
               </span>
