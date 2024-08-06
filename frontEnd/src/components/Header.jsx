@@ -120,7 +120,7 @@ const Header = ({ layout}) => {
 								layout === "Services" ? "bg-white hover:bg-black hover:text-white transition-colors duration-500" : "bg-black hover:bg-white hover:text-black transition-colors duration-500"
 							} ${
 								layout === "Services" ? "text-black" : "text-white"
-							} hover:bg-white hover:text-black  cursor-pointer rounded-full px-6 font-poppins`}>
+							} hover:text-black  cursor-pointer rounded-full px-6 font-poppins`}>
 							Get in touch
 						</button>
 					</li>
