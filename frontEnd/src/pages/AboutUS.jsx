@@ -24,18 +24,6 @@ const AboutUS = () => {
 			tl.to("#nav", { opacity: 1, display: "block" })
 			.to(".burgerMenu ", { color: "black" }, "<");
 		});
-		// const tl = gsap.timeline({
-		// 	scrollTrigger: {
-		// 		trigger: ".containe",
-		// 		start: "1% top",
-		// 		end: "5% 10%",
-		// 		scrub: 1,
-		// 	},
-		// });
-		// tl.to("#nav", { opacity: 1, display: "block" })
-		// 	.to(".menuText ", { color: "black" }, "<")
-		// 	.to(".burgerMenu ", { color: "black" }, "<");
-
 		gsap.from(".aboutcard1", {
 			x: -400,
 			opacity: 0,
@@ -90,7 +78,7 @@ const AboutUS = () => {
 							Data={{
 								title: "what",
 								description:
-									"Swing a cut above the rest by having us dedicated to your business for extended periods of time. This is why we are looking for ongoing collaboration where our customised crew are like your team members who just happen to be remote. Ready to move forward?.",
+									"At Identitie, we provide a full suite of services designed to meet the unique needs of businesses and individuals alike. Whether you're looking for business strategy, creative design, or technology integration, we proffer customized approaches delivering solutions tailored to your requirements.",
 							}}
 						/>
 						<AboutCard
@@ -98,7 +86,7 @@ const AboutUS = () => {
 							Data={{
 								title: "Why",
 								description:
-									"Identitie is a purpose-driven branding firm. Along with our bunch of aspiring professionals who have tremendous potential in various sectors; we make every experience people have with your business, substantial.",
+									"Travel, leisure, and a touch of workshops, photoshoots, and event management—our opportunities span a diverse range of experiences. With deep sector knowledge and an extensive network, we explore art, philosophy, nature, and relationships; connecting with people, transforming brands, and enhancing lives.",
 							}}
 						/>
 						<AboutCard
@@ -106,7 +94,7 @@ const AboutUS = () => {
 							Data={{
 								title: "Who",
 								description:
-									"From aspiring architects to effervescent entrepreneurs, our journey throughout a decade made us come to a realization that the only way to truly connect with people is through spaces. ",
+									"From aspiring architects to visionary entrepreneurs, our decade-long journey has taught us that true connection is built through thoughtfully designed spaces. At Identitie, we blend creativity and originality to create environments and brand experiences that truly resonate with people. Our mission is to inspire and engage through every project we undertake.",
 							}}
 						/>
 						<AboutCard
