@@ -30,6 +30,24 @@ const ServicesCard = ({
 
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const items = container.querySelectorAll(".bullet-point");
+
+    // Calculate the maximum number of items that can fit in the container
+    const itemHeight = items[0]?.offsetHeight || 0;
+    const maxItems = Math.floor(container.offsetHeight / itemHeight) - 1;
+
+    items.forEach((item, index) => {
+      if (index >= maxItems) {
+        item.style.display = "none";
+      } else {
+        item.style.display = "block"; // Ensure visible items are displayed
+      }
+    });
+  }, [points]);
 
   return (
     <motion.div
@@ -47,7 +65,7 @@ const ServicesCard = ({
         }}
         className={` ${
           isLastCard ? "lg:p-0" : "lg:p-8"
-        }  rounded-lg overflow-hidden drop-shadow-lg shadow-lg lg:shadow-none lg:drop-shadow-none  lg:flex lg:flex-col relative top-[-25%] h-[500px] lg:w-[1000px] origin-top lg:border-[0.1px] lg:border-gray-600 `}
+        }  rounded-lg  overflow-hidden drop-shadow-lg shadow-lg lg:shadow-none lg:drop-shadow-none  lg:flex lg:flex-col relative top-[-25%] h-[500px] lg:w-[1000px] origin-top lg:border-[0.1px] lg:border-gray-600 `}
       >
         <h2
           className={` lg:block  hidden text-center uppercase text-4xl font-poppins m-0 font-semibold ${
@@ -144,15 +162,24 @@ const ServicesCard = ({
               <p className="text-[#818890] font-poppins text-sm max-h-40 lg:max-h-64 whitespace-normal overflow-hidden text-ellipsis ">
                 {description}
               </p>
-              <div className=" max-h-32 mt-2 overflow-hidden hidden lg:block">
+              <div
+                ref={containerRef}
+                className=" max-h-32 mt-2 overflow-hidden hidden  lg:block"
+              >
                 {points?.map((item) => {
                   return (
-                    <p className="text-slate-300 text-sm lin "> - {item}</p>
+                    <p className="bullet-point text-slate-300 text-sm w-full ">
+                      {" "}
+                      - {item}
+                    </p>
                   );
                 })}
               </div>
             </div>
-            <button onClick={() => navigate("/services")} class="rounded-full mt-8   hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-black md:border-white bg-transparent px-3 md:text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+            <button
+              onClick={() => navigate("/services")}
+              class="rounded-full mt-8   hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-black md:border-white bg-transparent px-3 md:text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full "
+            >
               <span class="relative z-50 whitespace-nowrap px-2">
                 {isLastCard ? "View All Services" : "See more"}
               </span>

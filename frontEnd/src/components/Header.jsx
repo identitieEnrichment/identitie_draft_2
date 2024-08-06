@@ -78,11 +78,11 @@ const Header = ({ layout}) => {
 							layout === "Services" ? "text-white relative nv" : "text-black relative nvw"
 						} hover:text-primary `}>
 						<button
-							onClick={() => navigate("/services")}
+							onClick={() => navigate("/sectors")}
 							className={`${
 								layout === "Services" ? "text-white" : "text-black"
 							} `}>
-							Services
+							Sectors
 						</button>
 					</li>
 					<li
