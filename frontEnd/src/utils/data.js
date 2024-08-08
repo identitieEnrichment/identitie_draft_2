@@ -4,7 +4,7 @@ export const projects = [
     description:
       "Involves the art of defining and communicating the essence with the deliberate construction of visual and conceptual framework to build a recognizable and influential image of your brand. ",
     src: "../assets/optimized/sales-optimized.webp",
-    color: "#161b22",
+    color: "#1C1E20",
     colorMob: "#FFFFFF",
     points: [
       "Stakeholder Interviews",
@@ -24,12 +24,12 @@ export const projects = [
     ],
   },
   {
-    title: "E-COMMERCE",
+    title: "E-Commerce",
     description:
       "Brings together multiple operations including the establishment, surveillance and optimization of multiple online retail platforms, to enable seamless, secure and efficient shopping journey for modern consumers and maximizing commercial potential in the digital landscape.",
     src: "../assets/optimized/fullfillment-optimized.jpeg",
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/ecommerceService-optimized.webp?alt=media&token=3b0c952b-bc2e-4605-bffb-7079be02a287",
-    color: "#161b22",
+    color: "#1C1E20",
     points: [
       "Ecommerce platforms",
       "CRM/CMS Integration",
@@ -54,12 +54,12 @@ export const projects = [
     colorMob: "#FFFFFF",
   },
   {
-    title: "SOCIAL MEDIA MANAGEMENT ",
+    title: "Social Media Management ",
     description:
       "Expert orchestration of digital interactions, employing innovative tools and competent strategies to create creative, engaging and influential content that quivers with and expands your brand’s audience.",
     src: "../assets/optimized/marketing3-optimized.jpeg",
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/marketing3-optimized.webp?alt=media&token=766a994b-7dbb-4768-b12e-91c0dfff91dd",
-    color: "#161b22",
+    color: "#1C1E20",
     colorMob: "#FFFFFF",
     points: [
       "Style Guide",
@@ -75,12 +75,12 @@ export const projects = [
     ],
   },
   {
-    title: "SALES EMPOWERMENT ",
+    title: "Sales Empowerment ",
     description:
       "Deployment of strategic planning, advanced methodologies and tools to bolster your brand’s sales effectiveness, enhance performance, streamline processes, drive significant revenue growth and  larger customer acquisition.",
     src: "../assets/optimized/b2cService-optimized.jpeg",
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/b2cService-optimized.webp?alt=media&token=4e3fffbe-8cb2-4f7a-b750-37bba0cf84f6",
-    color: "#161b22",
+    color: "#1C1E20",
     colorMob: "#FFFFFF",
     points: [
       "Product Fact Sheets",

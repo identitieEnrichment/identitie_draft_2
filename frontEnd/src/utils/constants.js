@@ -9,7 +9,7 @@ export const allServicesData = [
         title:"Architecture & Interiors",
         Description:"At Identitie, we transform Architecture & Interiors into a canvas for sophisticated design, where every detail merges form and function. From serene retreats to dynamic workspaces, our projects blend artistry with practicality, setting new standards in personalized design. We craft iconic landmarks and intimate spaces that offer enduring comfort and inspire admiration for generations.",
         img:'../assets/optimized/archi-optimized.jpeg',
-        webp:'../assets/optimized/archi-optimized.jpeg',
+        webp:'../assets/non-optimized/archi.jpg',
     },
     {
         title:"Art & Entertainment",
