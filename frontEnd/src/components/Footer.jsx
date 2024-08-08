@@ -92,16 +92,16 @@ const Footer = () => {
 					<span className="text-white text-lg font-semibold lg:text-xl font-poppins">
 						Subscribe Asap
 					</span>
-					<div className=" border-white border-[1px] p-2">
+					<div className=" border-white border-[1px] ">
 						<input
-							className="h-full bg-transparent"
+							className="h-full bg-transparent w-full p-2 text-white"
 							type="text"
 							name=""
 							id=""
 							placeholder="Enter Email"
 						/>
 					</div>
-					<button className="bg-white font-poppins p-2 flex justify-center items-center w-full">
+					<button className="bg-white font-poppins p-2 flex justify-center items-center w-full hover:bg-gray-300">
 						Subscribe
 					</button>
 				</div>
