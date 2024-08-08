@@ -87,6 +87,18 @@ const Header = ({ layout}) => {
 					</li>
 					<li
 						className={`${
+							layout === "Services" ? "text-white relative nv" : "text-black relative nvw"
+						} hover:text-primary `}>
+						<button
+							onClick={() => navigate("/services")}
+							className={`${
+								layout === "Services" ? "text-white" : "text-black"
+							} `}>
+							Services
+						</button>
+					</li>
+					<li
+						className={`${
 							layout === "Services" ? "text-white" : "text-black"
 						} hover:text-primary w-fit `}>
 						<Dropdown className="bg-black border-none" label="Products" inline dismissOnClick={true}>
