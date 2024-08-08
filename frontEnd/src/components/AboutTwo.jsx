@@ -17,10 +17,10 @@ const AboutWWW = () => {
 	const whoSpan = useRef(null);
 	const whoDescription = useRef(null);
 	useGSAP(() => {
-		gsap.to(what.current, { width: 224, fill: "#e5e5e5" });
-		gsap.to(whatContainer.current, { width: "100%", padding: "10 10 10 10" });
-		gsap.to(whatSpan.current, { opacity: 0 });
-		gsap.to(whatDescription.current, { opacity: 0 });
+		// gsap.to(what.current, { width: 500, fill: "#e5e5e5" });
+		// gsap.to(whatContainer.current, { width: "100%", padding: "10 10 10 10" });
+		// gsap.to(whatSpan.current, { opacity: 0 });
+		// gsap.to(whatDescription.current, { opacity: 0 });
 		gsap.to(why.current, { width: 224, fill: "#e5e5e5" });
 		gsap.to(whyContainer.current, { width: "100%", padding: "10 10 10 10" });
 		gsap.to(whySpan.current, { opacity: 0 });
@@ -49,7 +49,7 @@ const AboutWWW = () => {
 		const tl3 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
-				start: "28% top",
+				start: "18% top",
 				end: "48% center",
 				scrub: 1,
 			},
@@ -78,21 +78,6 @@ const AboutWWW = () => {
 				scrub: 1,
 			},
 		});
-
-		//svg what in
-		tl1
-			.to(what.current, { width: 500, fill: "black" })
-			//container what in
-			.to(
-				whatContainer.current,
-				{ width: "100%", padding: "30 30 30 30" },
-				"<"
-			);
-		// title what in
-		tl2
-			.from(whatSpan.current, { opacity: 0 })
-			// description what in
-			.from(whatDescription.current, { opacity: 0 }, "<");
 
 		// container what out
 		tl3
