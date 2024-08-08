@@ -5,34 +5,42 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Link, ScrollLink, scroller , } from "react-scroll";
+import { Link, ScrollLink, scroller } from "react-scroll";
 import "../css/Services.css";
 import NavigationBar from "../components/Navigation/NavigationBar";
 import { useLocation, useNavigate } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css'
-AOS.init()
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 gsap.registerPlugin(useGSAP);
 const Services = () => {
-  const navigate = useNavigate()
-  allServicesDataActual.sort((a, b) => a.title.localeCompare(b.title));
-
-  console.log("allservicedataActual", allServicesDataActual);
-  const container = useRef(null);
-  const location = useLocation()
-  let title = null;
-  if(location)  title = location?.state?.title;
-  
-  useEffect(()=>{
-    if(title !==null){
-    scroller.scrollTo(title,{
-      duration:600,
-      offest:-100,
-      smooth:true,
-      isDynamic:true,
-    })
+  const navigate = useNavigate();
+  function sortServices(services) {
+    return services
+      .map((service) => ({ ...service, title: service.title.trim() }))
+      .sort((a, b) => a.title.localeCompare(b.title));
   }
-  },[])
+
+  allServicesDataActual.splice(
+    0,
+    allServicesDataActual.length,
+    ...sortServices(allServicesDataActual)
+  );
+  const container = useRef(null);
+  const location = useLocation();
+  let title = null;
+  if (location) title = location?.state?.title;
+
+  useEffect(() => {
+    if (title !== null) {
+      scroller.scrollTo(title, {
+        duration: 600,
+        offest: -100,
+        smooth: true,
+        isDynamic: true,
+      });
+    }
+  }, []);
   useGSAP(() => {
     gsap.to("#nav", {
       opacity: 1,
@@ -212,14 +220,17 @@ const Services = () => {
                 </p>
                 <div className=" text-white font-bold grid grid-cols-2  gap-y-1 gap-x-3">
                   {item.bulletPoints.map((item, index) => (
-                    <div  data-aos="fade-right"
-                    data-aos-offset="200"
-                    data-aos-delay="50"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false"
-                    data-aos-anchor-placement="top-bottom" className="subServices flex items-center mt-2 space-x-2   transition-all  duration-500  bg-[#2A2A2A]   px-3 py-2 rounded-full">
+                    <div
+                      data-aos="fade-right"
+                      data-aos-offset="200"
+                      data-aos-delay="50"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-bottom"
+                      className="subServices flex items-center mt-2 space-x-2   transition-all  duration-500  bg-[#2A2A2A]   px-3 py-2 rounded-full"
+                    >
                       <p className="text-xs lg:text-base text-[#9DFF50]">
                         {index < 9 ? "0" + (index + 1) : index + 1}
                       </p>
@@ -228,24 +239,26 @@ const Services = () => {
                   ))}
                 </div>
                 <button
-                 data-aos="zoom-in"
-                 data-aos-offset="200"
-                 data-aos-delay="50"
-                 data-aos-duration="1000"
-                 data-aos-easing="ease-in-out"
-                 data-aos-mirror="true"
-                 data-aos-once="false"
-                 data-aos-anchor-placement="top-bottom" 
-									onClick={() => navigate("/contactus")}
-									class=" rounded-full lg:hidden w-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#9DFF50] p-3 font-poppins md:absolute right-0 bottom-0">
-									<span class=" whitespace-nowrap px-2 ">
-                      Avail Now
-									</span>
-									<span class="relative z-10 ml-2">&rarr; </span>
-								</button>
+                  data-aos="zoom-in"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-bottom"
+                  onClick={() => navigate("/contactus")}
+                  class=" rounded-full lg:hidden w-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#9DFF50] p-3 font-poppins md:absolute right-0 bottom-0"
+                >
+                  <span class=" whitespace-nowrap px-2 ">Avail Now</span>
+                  <span class="relative z-10 ml-2">&rarr; </span>
+                </button>
               </div>
               <div className="lg:grid grid-cols-2 gap-2 relative hidden ">
-                <div onClick={()=>navigate('/contactus')} className="absolute z-40 group hover:rotate-180 grop  cursor-pointer top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black size-28 flex justify-center items-center  rounded-full">
+                <div
+                  onClick={() => navigate("/contactus")}
+                  className="absolute z-40 group hover:rotate-180 grop  cursor-pointer top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black size-28 flex justify-center items-center  rounded-full"
+                >
                   <div className=" bg-gradient-to-tl from-[#101113] to-[#2B2F33]  size-24 rounded-full flex justify-center items-center">
                     <div className=" bg-[#2E353E] inner-shadow-multiple size-[4.5rem] rounded-full flex items-center justify-center">
                       <div className="text-xs group-hover:rotate-180  text-white flex flex-col justify-center items-center">
@@ -265,7 +278,7 @@ const Services = () => {
                         alt="thumb"
                       />
                       <div className="absolute group-hover:block hidden inset-0 bg-gradient-to-t from-black h-full w-full"></div>
-                      <div className="absolute  bottom-4 group-hover:bottom-8 opacity-0 left-[20%] font-bold uppercase text-white transform translate-y-full transition-transform duration-700  group-hover:translate-y-0 group-hover:opacity-100">
+                      <div className="absolute  bottom-4 group-hover:bottom-8 opacity-0 left-[10%] font-bold uppercase text-white transform translate-y-full transition-transform duration-700  group-hover:translate-y-0 group-hover:opacity-100">
                         <h1>{image.title}</h1>
                       </div>
                     </div>

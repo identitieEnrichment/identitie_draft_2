@@ -140,7 +140,7 @@ export const allServicesDataActual = [
     colorMob: "#FFFFFF",
     images: [
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
+        src: "../assets/optimized/archi-optimized.jpeg",
         title: "Market Research",
       },
       {
@@ -228,9 +228,9 @@ export const allServicesDataActual = [
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
   },
   {
+    title: "Social Media Management ",
     color: "#1C1E20",
     colorMob: "#FFFFFF",
-    title: "Social Media Management ",
     Description:
       "Expert orchestration of digital interactions, employing innovative tools and competent strategies to create creative, engaging and influential content that quivers with and expands your brand’s audience.",
     bulletPoints: [
@@ -327,20 +327,21 @@ export const allServicesDataActual = [
     ],
     images: [
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/trade-optimized.webp?alt=media&token=13784ef1-b073-4bde-8deb-be3ff28297ff",
+        title: "Sourcing Investors",
       },
       {
         src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+        title: "Market Insights & Analysis",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
+   
+        src:'../assets/non-optimized/Distribution & Logistics.jpg',
+        title: "Distribution & Logistics",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src:'../assets/non-optimized/marketingOfflineandOnline.jpg',
+        title: "Customized Online & Offline Marketing",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
