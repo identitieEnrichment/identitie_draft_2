@@ -321,7 +321,7 @@ const Intro = () => {
 					<LogoSlider />
 				</div>
 
-				<svg
+				{/* <svg
 					className="hidden md:block md:-bottom-56 -bottom-[60.5%] absolute lg:hidden wave"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 1440 320">
@@ -329,9 +329,9 @@ const Intro = () => {
 						fill="#ffffff"
 						fill-opacity="1"
 						d="M0,288L120,277.3C240,267,480,245,720,245.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-				</svg>
+				</svg> */}
 			</div>
-			<div className="hidden md:flex pt-4 items-center absolute bottom-2 left-[50%]">
+			<div className="hidden md:fle pt-4 items-center absolute bottom-2 left-[50%]">
 				<LogoSlider />
 			</div>
 		</div>
