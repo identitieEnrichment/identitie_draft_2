@@ -136,6 +136,8 @@ export const allServicesDataActual = [
       "Asset Libraries",
       "Brand & Identity Collaborations",
     ],
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     images: [
       {
         src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -173,6 +175,8 @@ export const allServicesDataActual = [
         "Production & Manufacturing",
         "Warehouse & Fulfilment"
     ],
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     images: [
       {
         src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -195,6 +199,8 @@ export const allServicesDataActual = [
   },
   {
     title: "E-Commerce ",
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     Description:
       "Brings together multiple operations including the establishment, surveillance and optimization of multiple online retail platforms, to enable seamless, secure and efficient shopping journey for modern consumers and maximizing commercial potential in the digital landscape.",
     bulletPoints: [
@@ -222,6 +228,8 @@ export const allServicesDataActual = [
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
   },
   {
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     title: "Social Media Management ",
     Description:
       "Expert orchestration of digital interactions, employing innovative tools and competent strategies to create creative, engaging and influential content that quivers with and expands your brand’s audience.",
@@ -250,6 +258,8 @@ export const allServicesDataActual = [
   },
   {
     title: " Sales Empowerment ",
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     Description:
       "Deployment of strategic planning, advanced methodologies and tools to bolster your brand’s sales effectiveness, enhance performance, streamline processes, drive significant revenue growth and  larger customer acquisition.",
     bulletPoints: [
@@ -276,6 +286,8 @@ export const allServicesDataActual = [
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
   },
   {
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     title: "Market Expansion ",
     Description:
       "Focuses on your brand’s growth journey, from insightful sourcing to strategic market positioning to ensuring flawless execution and delivery; driving sustained reach and impact.",
@@ -305,6 +317,8 @@ export const allServicesDataActual = [
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
   },
   {
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     title: "Advertisements ",
     Description:
       "Execution of dynamic campaigns connecting with your brand’s target audiences through meticulously crafted ads that relate, rouse action and reinforce brand loyalty across multiple platforms.",
@@ -333,6 +347,8 @@ export const allServicesDataActual = [
   },
   {
     title: " Customer Experience ",
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     Description:
       "Ensures tactical refinement of every touchpoint in your customer’s expedition to create immersive, intuitive, and emotionally reverberating brand image that drives long-term sustenance and engagement.",
     bulletPoints: [
@@ -360,6 +376,8 @@ export const allServicesDataActual = [
   },
   {
     title: " Research & Development ",
+    color: "#1C1E20",
+    colorMob: "#FFFFFF",
     Description:
       "Leverages keen insights, trending technologies, scientific principles and creative thinking to develop breakthrough solutions that propel your brand forward meeting the constantly evolving customers’ needs and wants.",
     bulletPoints: [

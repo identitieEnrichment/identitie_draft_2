@@ -5,10 +5,10 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { Link, ScrollLink } from "react-scroll";
+import { Link, ScrollLink, scroller , } from "react-scroll";
 import "../css/Services.css";
 import NavigationBar from "../components/Navigation/NavigationBar";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 AOS.init()
@@ -19,6 +19,20 @@ const Services = () => {
 
   console.log("allservicedataActual", allServicesDataActual);
   const container = useRef(null);
+  const location = useLocation()
+  let title = null;
+  if(location)  title = location?.state?.title;
+  
+  useEffect(()=>{
+    if(title !==null){
+    scroller.scrollTo(title,{
+      duration:600,
+      offest:-100,
+      smooth:true,
+      isDynamic:true,
+    })
+  }
+  },[])
   useGSAP(() => {
     gsap.to("#nav", {
       opacity: 1,

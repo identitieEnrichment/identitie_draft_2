@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 const ServicesCardUpdated = ({
 	i,
 	title,
-	description,
-	points,
-	src,
+	Description,
+	bulletPoints,
+	images,
 	webp,
 	url,
 	color,
@@ -20,6 +20,7 @@ const ServicesCardUpdated = ({
 	isLastCard,
 	isFirstCard,
 }) => {
+	console.log('images are ',images);
 	const navigate = useNavigate();
 	const isMobile = useIsMobile();
 	const container = useRef(null);
@@ -62,12 +63,12 @@ const ServicesCardUpdated = ({
 							}`}
 							style={!isMobile ? { scale: imageScale } : {}}>
 							<picture className="w-4/12 ">
-								<source type="image/webp" srcSet={webp} />
+								{/* <source type="image/webp" srcSet={webp} /> */}
 								<img
 									className={`object-cover lg:rounded-xl w-full ${
 										isFirstCard ? "h-full " : "h-80"
 									} ${isLastCard ? "lg:h-full h-full " : "h-full"}`}
-									src={`/images/${src}`}
+									src={images[2].src}
 									alt="im"
 								/>
 							</picture>
@@ -136,10 +137,10 @@ const ServicesCardUpdated = ({
 								</h2>
 								<div className=" overflow-hidden">
 									<p className="text-[#818890] truncate font-poppins text-sm line-clamp-4 lg:max-h-64 whitespace-normal overflow-hidden text-ellipsis ">
-										{description}
+										{Description}
 									</p>
 									<div className="text-white text-xs md:text-sm  font-bold grid grid-cols-2 gap-y-1 md:gap-y-0 gap-x-3 mt-3 h-max font-poppins">
-										{points?.slice(0, limit)?.map((item, index) => (
+										{bulletPoints?.slice(0, limit)?.map((item, index) => (
 											<div className="subServices flex items-center mt-2 space-x-2 transition-all  duration-500 bg-white md:bg-[#2A2A2A]   px-3 py-2 rounded-full border-[0.5px] border-[#9DFF50] md:border-none">
 												<p className="text-sm md:text-base text-black md:text-[#9DFF50]">
 													{index < 9 ? "0" + (index + 1) : index + 1}
@@ -150,8 +151,8 @@ const ServicesCardUpdated = ({
 									</div>
 								</div>
 								<button
-									onClick={() => navigate("/services")}
-									class=" rounded-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#9DFF50] p-3 font-poppins md:absolute right-0 bottom-0">
+									onClick={() => navigate("/services" ,{state:{title:title}})}
+									class=" rounded-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#9DFF50] hover:bg-[#7BCC3C] p-3 font-poppins md:absolute right-0 bottom-0">
 									<span class=" whitespace-nowrap px-2">
 										{isLastCard ? "View All Services" : "See more"}
 									</span>
