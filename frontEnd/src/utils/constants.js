@@ -139,21 +139,22 @@ export const allServicesDataActual = [
     color: "#1C1E20",
     colorMob: "#FFFFFF",
     images: [
+        {
+            src: "../assets/non-optimized/logoDesign.jpg",
+            title: "Logo Design",
+          },
       {
-        src: "../assets/optimized/archi-optimized.jpeg",
-        title: "Market Research",
+        src: "../assets/non-optimized/businessInterview.jpg",
+        title: "Stakeholder Interviews",
+      },
+    
+      {
+        src: "../assets/non-optimized/employerBranding.jpg",
+        title: "employerBranding",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
-      },
-      {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
-      },
-      {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src: "../assets/non-optimized/packageDesigning.jpg",
+        title:"Packaging Design & Guidelines",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -179,20 +180,20 @@ export const allServicesDataActual = [
     colorMob: "#FFFFFF",
     images: [
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src: "../assets/non-optimized/productDesign.webp",    
+        title: "Product Design",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+        src: "../assets/non-optimized/cocomoProduct.webp",    
+        title: "Production & Manufacturing",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
+        src: "../assets/non-optimized/Retail & Merchandising.jpg",    
+        title: "Retail & Merchandising",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src: "../assets/non-optimized/promotionalEvents.jpg",    
+        title: "Promotional Events",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -208,21 +209,21 @@ export const allServicesDataActual = [
 
     ],
     images: [
+        {
+            src: "../assets/non-optimized/crm.jpg",    
+            title: "CRM/CMS Integration",
+          },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src: "../assets/non-optimized/e-commercePlatform.jpg",    
+        title: "Ecommerce Platforms",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+        src: "../assets/non-optimized/orderTracking.jpg",    
+        title: "Order Tracking",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
-      },
-      {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src: "../assets/non-optimized/emailMarket.jpg",    
+        title: "Email Marketing",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -238,20 +239,20 @@ export const allServicesDataActual = [
     ],
     images: [
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src: "../assets/non-optimized/socialMediaLike.jpg",    
+        title: "Style Guide",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+        src: "../assets/non-optimized/videoedit.jpg",    
+        title: " Visual Motion Ads ",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
+        src: "../assets/non-optimized/socialMeidaCampnie.jpg",    
+        title: "Campaign Strategies",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src: "../assets/non-optimized/socialmedia.jpg",    
+        title: " Post Engagement",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -267,20 +268,20 @@ export const allServicesDataActual = [
     ],
     images: [
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src: "../assets/non-optimized/messagePlaybook.jpg",    
+        title: "Messaging Playbook",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+        src: "../assets/non-optimized/caseStudy.jpg",    
+        title: "Case Studies and Testimonials",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
+        src: "../assets/non-optimized/productReport.jpg",    
+        title: "Product Fact Sheets",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src: "../assets/non-optimized/presentation.jpg",    
+        title: "Presentations and Pitchbooks",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -297,21 +298,22 @@ export const allServicesDataActual = [
 
     ],
     images: [
+        {
+            src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
+            title: "Market Insights & Analysis",
+          },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src: "../assets/non-optimized/sourcingBrand.jpg", 
+        title: "Sourcing Brands",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+   
+        src:'../assets/non-optimized/Distribution & Logistics.jpg',
+        title: "Distribution & Logistics",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
-      },
-      {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src: "../assets/non-optimized/salesReport.jpg", 
+        title: " Sales Conversion Strategies & Reports",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -356,21 +358,22 @@ export const allServicesDataActual = [
         "Market Insights & Analysis", "Sourcing Brands", "Sourcing Customized Professional Teams", "Sourcing Investors", "Customized Online & Offline Marketing", "Infrastructure Establishment (Retail Outlets, Offices)", "Distribution & Logistics", "Sales Conversion Strategies & Reports", "After Sales Services", "Integrated & Comprehensive Solutions"
     ],
     images: [
+        {
+            src:'../assets/non-optimized/customerSupport.jpg',
+            title: "After Sales Services",
+          },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src:'../assets/non-optimized/marketInsight.jpg',
+        title: "Market Insight & Analysis",
+      },
+     
+      {
+        src:'../assets/non-optimized/infra.jpg',
+        title: "Infrastructure Establishment",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
-      },
-      {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
-      },
-      {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src:'../assets/non-optimized/marketingOfflineandOnline.jpg',
+        title: "Customized Online & Offline Marketing",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
@@ -382,24 +385,24 @@ export const allServicesDataActual = [
     Description:
       "Leverages keen insights, trending technologies, scientific principles and creative thinking to develop breakthrough solutions that propel your brand forward meeting the constantly evolving customers’ needs and wants.",
     bulletPoints: [
-        "Market Insights & Analysis", "Sourcing Brands", "Sourcing Customized Professional Teams", "Sourcing Investors", "Customized Online & Offline Marketing", "Infrastructure Establishment (Retail Outlets, Offices)", "Distribution & Logistics", "Sales Conversion Strategies & Reports", "After Sales Services", "Integrated & Comprehensive Solutions"
+        "Market Insights & Analysis", "Sourcing Brands", "Sourcing Customized Professional Teams", "Sourcing Investors", "Web developing", "Infrastructure Establishment (Retail Outlets, Offices)", "Distribution & Logistics", "Sales Conversion Strategies & Reports", "After Sales Services", "Integrated & Comprehensive Solutions"
     ],
     images: [
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
-        title: "Market Research",
+        src:'../assets/non-optimized/techno.jpg',
+        title: " Trending Technologies",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
-        title: "Employer Branding",
+        src:'../assets/non-optimized/developers.jpg',
+        title: "Sourcing Customized Professional Teams",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/informationTechnology-optimized.webp?alt=media&token=132c1a26-ab73-41de-ab17-e1cf0b685aac",
-        title: "Logo Design",
+        src:'../assets/non-optimized/problemsolve.jpg',
+        title: "Breakthrough Solutions",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/sales-optimized.webp?alt=media&token=76448e3c-d4ee-440c-9add-d7c1f17e2edd",
-        title: "Brand Architecture",
+        src:'../assets/non-optimized/webdevlop.jpg',
+        title: "Web development",
       },
     ],
     webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
