@@ -138,7 +138,7 @@ const Home = () => {
 			<ZoomParalax />
 			<ServicesSection />
 
-			<ProductsSection />
+			{/* <ProductsSection /> */}
 			<Sectors />
 			<div className=" bg-black ">
 				<UserTestimonials />

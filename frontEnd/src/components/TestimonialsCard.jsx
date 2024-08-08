@@ -14,7 +14,7 @@ const StarIcon = ()=> (
   </svg>
 )
 
-const TestimonialsCard = () => {
+const TestimonialsCard = ({data}) => {
     const renderStarts = (count)=>{
         const stars = [];
         for(let i=0; i<count ; i++){
@@ -28,12 +28,12 @@ const TestimonialsCard = () => {
             <div className='flex items-center   space-x-4'>
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-24 rounded-md  object-cover"
+                  src="./assets/review.png"
+                  class="size-16 rounded-md  object-cover"
                 />
                 <div className='space-y-1'>
-                    <h1 className='lg:text-xl font-bold capitalize font-poppins text-white text-sm'>Jenny Wilson</h1>
-                    <p className='text-[#666666] lg:text-sm text-xs font-poppins'>CEO ,Software Comapny</p>
+                    <h1 className='lg:text-xl font-bold capitalize font-poppins text-white text-sm'>{data?.name}</h1>
+                    <p className='text-[#666666] lg:text-sm text-xs font-poppins'>{data?.title}</p>
                     <div className='flex'>
                          {renderStarts(5)}
                     </div>
@@ -41,7 +41,7 @@ const TestimonialsCard = () => {
                 </div>
             </div>
             <div className='p-2   text-xs  text-[#666666] font-poppins'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt voluptatem laborum aperiam velit reiciendis earum pariatur eveniet praesentium id sint. Porro inventore suscipit, tenetur libero dolorem velit fugit nulla veniam!
+               {data?.review}
             </div>
         </blockquote>
     </div>

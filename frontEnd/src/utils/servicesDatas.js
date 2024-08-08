@@ -40,15 +40,15 @@ export const FooterDataCompanyLinks = [
 ]
 export const FooterDataQuickLinks = [
     {
+        title : "Careers",
+        link : '#'
+    },
+    {
         title : "Disclaimer",
         link : '#'
     },
     {
         title : "Privacy & Policy",
-        link : '#'
-    },
-    {
-        title : "Refund Policy",
         link : '#'
     },
     {

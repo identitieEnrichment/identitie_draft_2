@@ -7,6 +7,7 @@ import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import ServicesCardUpdated from "./ServiceCardUpdated";
 
 const ServicesSection = () => {
 	const container = useRef(null);
@@ -51,7 +52,7 @@ const ServicesSection = () => {
             const targetScale = 1 - ( (projects.length - i) * 0.05);
 			const isLastCard = i === projects.length - 1;
 			 const isFirstCard = i === 0;
-            return <ServicesCard key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}  isLastCard={isLastCard} isFirstCard={isFirstCard}/>
+            return <ServicesCardUpdated key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}  isLastCard={isLastCard} isFirstCard={isFirstCard}/>
           })
         }
       </div>

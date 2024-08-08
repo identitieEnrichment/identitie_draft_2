@@ -5,20 +5,20 @@ const ContactUs = () => {
 	return (
 		<div className="p-6 lg:px-32 bg-black text-gray-400 ">
 			<div className="space-y-3">
-				<h1 className="font-koulen text-4xl">LET'S CONNECT</h1>
+				<h1 className="font-koulen text-4xl">What’s On Your Mind?</h1>
 				<p className="font-poppins">
 					{" "}
-					Reach out to us and lets dive into insights togeter
+					Share your thoughts or questions, and let’s start a conversation…
 				</p>
 			</div>
 			<div className="flex mt-2 md:gap-10 w-full md:flex-row flex-col-reverse">
 				<div className="w-full">
 					<img
-						className="h-96 object-cover w-full rounded-3xl hidden md:block"
+						className="h-[60vh] object-cover w-full rounded-3xl hidden md:block"
 						src="../assets/optimized/contactus-optimized.png"
 						alt="contact"
 					/>
-					<div className="mt-12 grid md:grid-cols-2 gap-5">
+					{/* <div className="mt-12 grid md:grid-cols-2 gap-5">
 						<div className="flex gap-4">
 							<div className="rounded-lg p-3 h-12 w-12 bg-black flex justify-center items-center">
 								<FaPhoneAlt className="text-white text-3xl" />
@@ -49,7 +49,7 @@ const ContactUs = () => {
 								Chennai, Adyar 600020
 							</span>
 						</div>
-					</div>
+					</div> */}
 				</div>
 				<div className="w-full">
 					<form
@@ -91,13 +91,15 @@ const ContactUs = () => {
 							required
 							name="message"
 						/>
-						<button
-							type="submit"
-							class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
-							<span class="relative z-50 whitespace-nowrap px-2">
-								Send Message
-							</span>
-						</button>
+						<div>
+							<button
+								type="submit"
+								class="rounded-full p-2 md:hover:before:bg-[#773ec7] md:relative md:h-[40px] md:w-40 md:overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all md:before:absolute md:before:bottom-0 md:before:left-0 md:before:top-0 md:before:z-0 before:h-full md:before:w-0 md:before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+								<span class="md:relative md:z-50 md:whitespace-nowrap px-2">
+								Send Now
+								</span>
+							</button>
+						</div>
 					</form>
 				</div>
 			</div>

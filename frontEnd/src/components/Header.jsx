@@ -97,16 +97,14 @@ const Header = ({ layout}) => {
 							Services
 						</button>
 					</li>
-					<li
-						className={`${
-							layout === "Services" ? "text-white" : "text-black"
-						} hover:text-primary w-fit `}>
-						<Dropdown className="bg-black border-none" label="Products" inline dismissOnClick={true}>
-							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300">Authentic Foods</Dropdown.Item>
-							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300" >Country Vegitables</Dropdown.Item>
-							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300">Skincare</Dropdown.Item>
-							<Dropdown.Item onClick={() => navigate("/products")} className="text-[#6b7280] hover:text-white transition-colors duration-300">Table & Chair</Dropdown.Item>
-						</Dropdown>
+					<li>
+						<button
+							onClick={() => navigate("/productshome")}
+							className={`${ 
+								layout === "Services" ? "text-white relative nv" : "text-black relative nvw"
+							} `}>
+							Products
+						</button>
 					</li>
 					<li>
 						<button
