@@ -12,6 +12,7 @@ import AboutUS from './pages/AboutUS';
 import ContactUs from './pages/ContactUs';
 import Contact from './pages/Contact';
 import ProductsLanding from './pages/ProductsLanding';
+import Services from './pages/Services';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         path: "/contactus",
         element: <Contact />,
       },
+      {
+        path:"/services",
+        element: <Services />
+      }
       
     ],
     errorElement: <NotFound />,
