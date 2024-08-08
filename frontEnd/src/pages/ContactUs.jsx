@@ -52,14 +52,20 @@ const ContactUs = () => {
 					</div>
 				</div>
 				<div className="w-full">
-					<form action="https://api.web3forms.com/submit" method="POST" className="space-y-5 pt-6">
-					<input hidden name="redirect" value="/" />
-								<input
-									type="hidden"
-									name="access_key"
-									value="71e40aaf-1327-4dbd-89ce-a3894eb838e5"
-								/>
-					<input hidden name="access_key" value={"5df84430-8f84-4448-92ae-2362d5a20571"}></input>
+					<form
+						action="https://api.web3forms.com/submit"
+						method="POST"
+						className="space-y-5 pt-6 md:pt-0">
+						<input hidden name="redirect" value="/" />
+						<input
+							type="hidden"
+							name="access_key"
+							value="71e40aaf-1327-4dbd-89ce-a3894eb838e5"
+						/>
+						<input
+							hidden
+							name="access_key"
+							value={"5df84430-8f84-4448-92ae-2362d5a20571"}></input>
 						<input
 							name="name"
 							className="rounded-md p-3 bg-black  border  border-[#57606a]  md:w-9/12 w-full"
@@ -85,11 +91,12 @@ const ContactUs = () => {
 							required
 							name="message"
 						/>
-						<button type="submit" class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+						<button
+							type="submit"
+							class="rounded-full mt-8 hover:before:bg-[#773ec7] relative h-[40px] w-40 overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2">
 								Send Message
 							</span>
-						
 						</button>
 					</form>
 				</div>

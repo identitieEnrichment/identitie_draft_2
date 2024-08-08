@@ -17,20 +17,18 @@ const AboutWWW = () => {
 	const whoSpan = useRef(null);
 	const whoDescription = useRef(null);
 	useGSAP(() => {
-		gsap.to(what.current, {width: 224,fill: "#e5e5e5"})
-		gsap.to(whatContainer.current, {width: '100%',padding: "10 10 10 10"})
-		gsap.to(whatSpan.current,{opacity:0})
-		gsap.to(whatDescription.current,{opacity:0})
-		gsap.to(why.current, {width: 224,fill: "#e5e5e5"})
-		gsap.to(whyContainer.current, {width: '100%',padding: "10 10 10 10"})
-		gsap.to(whySpan.current,{opacity:0})
-		gsap.to(whyDescription.current,{opacity:0})
-		gsap.to(who.current, {width: 224,fill: "#e5e5e5"})
-		gsap.to(whoContainer.current, {width: '100%',padding: "10 10 10 10"});
-		gsap.to(whoSpan.current,{opacity:0})
-		gsap.to(whoDescription.current,{opacity:0})
-
-
+		gsap.to(what.current, { width: 224, fill: "#e5e5e5" });
+		gsap.to(whatContainer.current, { width: "100%", padding: "10 10 10 10" });
+		gsap.to(whatSpan.current, { opacity: 0 });
+		gsap.to(whatDescription.current, { opacity: 0 });
+		gsap.to(why.current, { width: 224, fill: "#e5e5e5" });
+		gsap.to(whyContainer.current, { width: "100%", padding: "10 10 10 10" });
+		gsap.to(whySpan.current, { opacity: 0 });
+		gsap.to(whyDescription.current, { opacity: 0 });
+		gsap.to(who.current, { width: 224, fill: "#e5e5e5" });
+		gsap.to(whoContainer.current, { width: "100%", padding: "10 10 10 10" });
+		gsap.to(whoSpan.current, { opacity: 0 });
+		gsap.to(whoDescription.current, { opacity: 0 });
 
 		const tl1 = gsap.timeline({
 			scrollTrigger: {
@@ -38,9 +36,8 @@ const AboutWWW = () => {
 				start: "2% top",
 				end: "28% center",
 				scrub: 1,
-				
 			},
-		})
+		});
 		const tl2 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
@@ -48,7 +45,7 @@ const AboutWWW = () => {
 				end: "28% center",
 				scrub: 1,
 			},
-		})
+		});
 		const tl3 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
@@ -56,7 +53,7 @@ const AboutWWW = () => {
 				end: "48% center",
 				scrub: 1,
 			},
-		})
+		});
 		const tl4 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
@@ -64,7 +61,7 @@ const AboutWWW = () => {
 				end: "48% center",
 				scrub: 1,
 			},
-		})
+		});
 		const tl5 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
@@ -72,7 +69,7 @@ const AboutWWW = () => {
 				end: "78% center",
 				scrub: 1,
 			},
-		})
+		});
 		const tl6 = gsap.timeline({
 			scrollTrigger: {
 				trigger: container.current,
@@ -80,60 +77,73 @@ const AboutWWW = () => {
 				end: "78% center",
 				scrub: 1,
 			},
-		})
+		});
 
 		//svg what in
-		tl1.to(what.current, {width: 500,fill: "black"})
-		//container what in
-		.to(whatContainer.current, {width: '100%',padding: "30 30 30 30"},"<")
+		tl1
+			.to(what.current, { width: 500, fill: "black" })
+			//container what in
+			.to(
+				whatContainer.current,
+				{ width: "100%", padding: "30 30 30 30" },
+				"<"
+			);
 		// title what in
-		tl2.from(whatSpan.current, {opacity: 0,})
-		// description what in
-		.from(whatDescription.current, {opacity: 0},"<")
+		tl2
+			.from(whatSpan.current, { opacity: 0 })
+			// description what in
+			.from(whatDescription.current, { opacity: 0 }, "<");
 
 		// container what out
-		tl3.fromTo(whatContainer.current,{width : '100%'}, {width: 'fit'})
-		// svg what out
-		.fromTo(what.current,{width : 500 , fill : "black"}, {width: 224,fill: "#e5e5e5"},"<")
-		// title what out
-		.fromTo(whatSpan.current,{opacity : 1}, {opacity: 0},"<")
-		// description what out
-		.fromTo(whatDescription.current,{opacity : 1}, {opacity: 0},"<")
+		tl3
+			.fromTo(whatContainer.current, { width: "100%" }, { width: "fit" })
+			// svg what out
+			.fromTo(
+				what.current,
+				{ width: 500, fill: "black" },
+				{ width: 224, fill: "#e5e5e5" },
+				"<"
+			)
+			// title what out
+			.fromTo(whatSpan.current, { opacity: 1 }, { opacity: 0 }, "<")
+			// description what out
+			.fromTo(whatDescription.current, { opacity: 1 }, { opacity: 0 }, "<")
 
-		// container why in
-		.to(whyContainer.current, {width: '100%',padding: "30 30 30 30"},"<")
-		// svg why in
-		.to(why.current, {width: 500,fill: "black"},"<")
+			// container why in
+			.to(whyContainer.current, { width: "100%", padding: "30 30 30 30" }, "<")
+			// svg why in
+			.to(why.current, { width: 500, fill: "black" }, "<");
 		// title why in
-		tl4.from(whySpan.current, {opacity: 0})
-		// description why in
-		.from(whyDescription.current, {opacity: 0},"<")
+		tl4
+			.from(whySpan.current, { opacity: 0 })
+			// description why in
+			.from(whyDescription.current, { opacity: 0 }, "<");
 
 		//container why out
-		tl5.fromTo(whyContainer.current,{width : '100%'}, {width: 'fit'})
-		// svg why out
-		.fromTo(why.current,{width : 500 , fill : "black"}, {width: 224,fill: "#e5e5e5"},"<")
-		// title why out
-		.fromTo(whySpan.current,{opacity : 1}, {opacity: 0},"<")
-		// description why out
-		.fromTo(whyDescription.current,{opacity : 1}, {opacity: 0},"<")
+		tl5
+			.fromTo(whyContainer.current, { width: "100%" }, { width: "fit" })
+			// svg why out
+			.fromTo(
+				why.current,
+				{ width: 500, fill: "black" },
+				{ width: 224, fill: "#e5e5e5" },
+				"<"
+			)
+			// title why out
+			.fromTo(whySpan.current, { opacity: 1 }, { opacity: 0 }, "<")
+			// description why out
+			.fromTo(whyDescription.current, { opacity: 1 }, { opacity: 0 }, "<")
 
-		// container who in
-		.to(whoContainer.current, {width: '100%',padding: "30 30 30 30"},"<")
-		// svg who in
-		.to(who.current, {width: 480,fill: "black"},"<")
-        // title who in
-		tl6.from(whoSpan.current, {opacity: 0})
-		// description who in
-		.from(whoDescription.current, {opacity: 0});
-
-
-
+			// container who in
+			.to(whoContainer.current, { width: "100%", padding: "30 30 30 30" }, "<")
+			// svg who in
+			.to(who.current, { width: 480, fill: "black" }, "<");
+		// title who in
+		tl6
+			.from(whoSpan.current, { opacity: 0 })
+			// description who in
+			.from(whoDescription.current, { opacity: 0 });
 	});
-
-
-
-
 
 	return (
 		<div ref={container} className=" h-[350vh] w-full relative mt-8">
@@ -142,16 +152,20 @@ const AboutWWW = () => {
 					<div className="border-r-[1px] w-1/4 h-full p-8 flex flex-col justify-between flex-shrink-0">
 						<div className="space-y-5">
 							<h1 className="text-3xl font-poppins font-bold">
-								WHAT'S THE PURPOSE OF IDENTITE
+								HOW WE TRANSFORM BRANDS?
 							</h1>
-							<div className="flex items-center gap-3">
+							{/* <div className="flex items-center gap-3">
 								<div className="h-2 w-2 bg-black"></div>
 								<span className="text-xs font-poppins">Our Values & Marks</span>
-							</div>
+							</div> */}
 						</div>
 						<span className="font-poppins text-sm">
-							When our aims and values are clear, they translate into tangible
-							change.
+							A thorough whisk of ingenuity with strategy transforms brands into
+							impactful forces. We begin by deeply understanding your brand’s
+							core values and target audience, then craft personalized plans
+							that resonate and engage. From innovative design to impactful
+							messaging, Identitie ensures that every touchpoint enhances your
+							brand’s identity and drives meaningful connections.
 						</span>
 					</div>
 					<div
@@ -183,11 +197,11 @@ const AboutWWW = () => {
 								<p
 									ref={whatDescription}
 									className="text-sm font-poppins w-11/12">
-									Swing a cut above the rest by having us dedicated to your
-									business for extended periods of time. This is why we are
-									looking for ongoing collaboration where our customised crew
-									are like your team members who just happen to be remote. Ready
-									to move forward?.
+									At Identitie, we provide a full suite of services designed to
+									meet the unique needs of businesses and individuals alike.
+									Whether you're looking for business strategy, creative design,
+									or technology integration, we proffer customized approaches
+									delivering solutions tailored to your requirements.
 								</p>
 							</div>
 						</div>
@@ -227,18 +241,19 @@ const AboutWWW = () => {
 								<p
 									ref={whyDescription}
 									className="text-sm font-poppins w-11/12">
-									Swing a cut above the rest by having us dedicated to your
-									business for extended periods of time. This is why we are
-									looking for ongoing collaboration where our customised crew
-									are like your team members who just happen to be remote. Ready
-									to move forward?.
+									Travel, leisure, and a touch of workshops, photoshoots, and
+									event management—our opportunities span a diverse range of
+									experiences. With deep sector knowledge and an extensive
+									network, we explore art, philosophy, nature, and
+									relationships; connecting with people, transforming brands,
+									and enhancing lives.
 								</p>
 							</div>
 						</div>
 						<div className="page flex items-center gap-3 absolute bottom-4 left-4">
 							<div className="h-2 w-2 bg-gray-400"></div>
 							<span className="text-xs font-poppins text-gray-400 tracking-widest">
-								01_W
+								02_W
 							</span>
 						</div>
 					</div>
@@ -271,18 +286,19 @@ const AboutWWW = () => {
 								<p
 									ref={whoDescription}
 									className="text-sm font-poppins w-11/12">
-									Swing a cut above the rest by having us dedicated to your
-									business for extended periods of time. This is why we are
-									looking for ongoing collaboration where our customised crew
-									are like your team members who just happen to be remote. Ready
-									to move forward?.
+									From aspiring architects to visionary entrepreneurs, our
+									decade-long journey has taught us that true connection is
+									built through thoughtfully designed spaces. At Identitie, we
+									blend creativity and originality to create environments and
+									brand experiences that truly resonate with people. Our mission
+									is to inspire and engage through every project we undertake.
 								</p>
 							</div>
 						</div>
 						<div className="page flex items-center gap-3 absolute bottom-4 left-4">
 							<div className="h-2 w-2 bg-gray-400"></div>
 							<span className="text-xs font-poppins text-gray-400 tracking-widest">
-								01_W
+								03_W
 							</span>
 						</div>
 					</div>
