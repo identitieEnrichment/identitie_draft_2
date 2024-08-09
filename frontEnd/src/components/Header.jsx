@@ -70,12 +70,7 @@ const Header = ({ layout,page}) => {
 			<div className="p-4 mx-4 md:p-7 flex items-center justify-between">
 				<div onClick={() => navigate("/")} className="cursor-pointer">
 					{/* Logo */}
-					<span
-						className={`${
-							layout === "Services" ? "text-white" : "text-black"
-						} text-3xl font-bold tracking-wider`}>
-						IDENTITIE
-					</span>
+					<img className="h-6" src={`${page === 'ABOUT' || page === 'PRODUCT' ? '../assets/logo-black.png' : '../assets/logo-white.png'}`} alt="logo" />
 				</div>
 				{/* Navigation Links */}
 				<ul className="hidden md:flex text-black font-poppins space-x-8 items-center">
