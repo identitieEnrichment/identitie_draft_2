@@ -38,7 +38,7 @@ export default function NavigationBar({layout}) {
 						variants={opacity}
 						animate={isActive ? "open" : "closed"}
 						ref={logo}
-						src="../assets/logoIE.png"
+						src="../IE.png"
 						alt="logo"
 						className="h-8 md:h-12 absolute left-0 md:top-3 hidden top-2 "
 					/>

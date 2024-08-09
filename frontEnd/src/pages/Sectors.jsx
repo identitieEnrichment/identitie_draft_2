@@ -159,7 +159,7 @@ const Sectors = () => {
           ref={container}
         >
           <h1 className="text-3xl text-white font-bold px-2  mb-12 mt-4 lg:hidden">
-            Our Services
+            Our Sectors
           </h1>
           {allServicesData.map((item, index) => (
             <div
@@ -181,7 +181,7 @@ const Sectors = () => {
                   />
                   </picture>
                 
-                  <h1 className="font-poppins absolute  lg:block text-white bottom-3 z-20 left-2 brightness-100 text-4xl font-semibold ">
+                  <h1 className="font-poppins absolute  text-2xl lg:block text-white bottom-3 z-20 left-2 brightness-100 lg:text-4xl font-semibold ">
                     {item.title}
                   </h1>
                   <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black opacity-80 "></div>

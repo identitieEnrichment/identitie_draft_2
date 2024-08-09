@@ -24,6 +24,11 @@ const links = [
     src: "../assets/architects.jpeg"
   },
   {
+    title: "Sectors",
+    href: "/sectors",
+    src: "../assets/architects.jpeg"
+  },
+  {
     title: "Products",
     href: "/products",
     src: "../assets/architects.jpeg"
@@ -53,18 +58,17 @@ export default function Nav() {
         <Image src={links[selectedLink.index].src} isActive={selectedLink.isActive}/>
       </div>
       <div className="flex gap-4 mt-5 md:translate-x-[40%]">
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+				<a href="https://www.instagram.com/identitie.ie/"
+							target="_blank"
+							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 					<FaInstagram className='text-2xl md:text-3xl' />
-				</button>
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-					<FaFacebook className='text-2xl md:text-3xl' />
-				</button>
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
-					<FaWhatsapp className='text-2xl md:text-3xl' />
-				</button>
-				<button className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+				</a>
+				
+				<a href="https://www.linkedin.com/company/identitie-enrichment/"
+							target="_blank"
+							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 					<FaLinkedin className='text-2xl md:text-3xl' />
-				</button>
+				</a>
 			</div>
     </motion.div>
   )
