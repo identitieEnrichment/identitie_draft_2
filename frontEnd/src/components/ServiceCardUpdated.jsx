@@ -65,9 +65,9 @@ const ServicesCardUpdated = ({
 							<picture className="w-6/12 ">
 								{/* <source type="image/webp" srcSet={webp} /> */}
 								<img
-									className={`object-cover lg:rounded-xl w-[30vw] ${
+									className={`object-cover lg:rounded-xl  ${
 										isFirstCard ? "h-full " : "h-80"
-									} ${isLastCard ? "lg:h-full h-full " : "h-full"}`}
+									} ${isLastCard ? "lg:h-full h-full" : "h-full w-full md:w-[35vw]"}`}
 									src={images[0].src}
 									alt="im"
 								/>

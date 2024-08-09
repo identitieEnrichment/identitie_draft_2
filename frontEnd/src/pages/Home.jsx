@@ -99,7 +99,7 @@ const Home = () => {
 			<div className="hidden md:block">
 				<AboutTwo />
 			</div>
-			<div ref={cards} className="md:hidden w-full mb-12">
+			<div ref={cards} className="md:hidden w-full mb-12 -mt-16 lg:mt-0 lg:mb-0">
 				<div className="grid grid-cols-1 w-full px-4 gap-4 ">
 					<AboutCard
 						index={1}
