@@ -222,7 +222,7 @@ const Services = () => {
                     />
                   </picture>
 
-                  <h1 className="font-poppins absolute font-bold  lg:block text-white bottom-3 z-20 left-2 brightness-100 text-4xl  ">
+                  <h1 className="font-poppins absolute font-bold  lg:block text-white bottom-3 z-20 left-2 brightness-100 text-2xl lg:text-4xl  ">
                     {item.title}
                   </h1>
                   <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black opacity-80 "></div>
