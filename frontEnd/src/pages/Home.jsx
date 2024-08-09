@@ -93,7 +93,7 @@ const Home = () => {
 	// })
 	return (
 		<div className="">
-			<Header layout={"Services"} />
+			<Header page={'Home'} layout={"Services"} />
 			<NavigationBar />
 			<Intro />
 			<div className="hidden md:block">

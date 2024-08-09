@@ -68,7 +68,7 @@ const AboutUS = () => {
 	return (
 		<div className="containe w-full">
 			<NavigationBar layout={"About"} />
-			<Header layout={"Service"} />
+			<Header page={"ABOUT"} layout={"Service"} />
 			<div className="md:pt-12 ">
 				<AboutOne />
 				<div ref={cards} className="md:hidden w-full mb-12">

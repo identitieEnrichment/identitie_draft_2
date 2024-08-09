@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import '../css/Header.css'
 import NavigationBar from "./Navigation/NavigationBar";
 
-const Header = ({ layout}) => {
+const Header = ({ layout,page}) => {
 	const [navCollapse, setNavCollapse] = useState(true);
 	const headerSection = useRef(null);
 	const navigate = useNavigate();
@@ -17,39 +17,54 @@ const Header = ({ layout}) => {
 		setNavCollapse(!navCollapse);
 	};
 	useGSAP(() => {
-		const mm = gsap.matchMedia()
-		mm.add('(min-width: 769px)',() => {
-			gsap.to(headerSection.current, {
-				opacity: 0,
-				y: -80,
-				scrollTrigger: {
-					trigger: headerSection.current,
-					start: "bottom 10%",
-					end: "bottom 20%",
-					scrub: 1,
-				},
-			});
-		})
-		mm.add('(max-width: 769px)',() => {
-			gsap.to(headerSection.current, {
-				opacity: 0,
-				y: -80,
-				scrollTrigger: {
-					trigger: headerSection.current,
-					start: "bottom top",
-					end: "bottom 80%",
-					scrub: 1,
-				},
-			});
-		})
+		if(page === 'Home' || page === 'ABOUT'){
+			const mm = gsap.matchMedia()
+			mm.add('(min-width: 769px)',() => {
+				gsap.to(headerSection.current, {
+					opacity: 0,
+					y: -80,
+					scrollTrigger: {
+						trigger: headerSection.current,
+						start: "bottom 10%",
+						end: "bottom 20%",
+						scrub: 1,
+					},
+				});
+			})
+			mm.add('(max-width: 769px)',() => {
+				gsap.to(headerSection.current, {
+					opacity: 0,
+					y: -80,
+					scrollTrigger: {
+						trigger: headerSection.current,
+						start: "bottom top",
+						end: "bottom 80%",
+						scrub: 1,
+					},
+				});
+			})
+		}
+		
 		
 	});
+	// useGSAP(() => {
+	// 	const mm = gsap.matchMedia()
+	// 	mm.add('(min-width: 769px)',() => {
+	// 		gsap.to(headerSection.current, {
+	// 			opacity: 0,
+	// 			y: -80,
+				
+	// 		});
+			
+	// 	})
+
+	// },[hide])
 	return (
 		<header
 		
 			ref={headerSection}
-			className={`fixed top-0 w-full z-[999]   ${
-				layout === "Services" ? "bg-transparent" : "bg-transparent"
+			className={`mainHeader fixed top-0 w-full z-[9999]   ${
+				layout === "Services" ? page !== 'Home' ? "bg-black/90" : "bg-transparent":"b"
 			}`}>
 
 			<div className="p-4 mx-4 md:p-7 flex items-center justify-between">
