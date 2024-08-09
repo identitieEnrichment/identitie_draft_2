@@ -67,7 +67,7 @@ const ServicesCardUpdated = ({
 								<img
 									className={`object-cover lg:rounded-xl  ${
 										isFirstCard ? "h-full " : "h-80"
-									} ${isLastCard ? "lg:h-full h-full" : "h-full w-full md:w-[35vw]"}`}
+									} ${isLastCard ? "lg:h-full h-full w-full" : "h-full w-full md:w-[35vw]"}`}
 									src={images[0].src}
 									alt="im"
 								/>
