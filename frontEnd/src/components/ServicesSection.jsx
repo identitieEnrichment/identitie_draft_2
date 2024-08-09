@@ -46,6 +46,17 @@ const ServicesSection = () => {
 		
 	  
 	});
+	function sortServices(services) {
+		return services
+		  .map((service) => ({ ...service, title: service.title.trim() }))
+		  .sort((a, b) => a.title.localeCompare(b.title));
+	  }
+	
+	  allServicesDataActual.splice(
+		0,
+		allServicesDataActual.length,
+		...sortServices(allServicesDataActual)
+	  );
 	const slicedData = allServicesDataActual.slice(0,5)
 	return (
         <div ref={container} className='relative bg-transparent lg:bg-[#0d1117] -mt-32  lg:-translate-y-20 '>
