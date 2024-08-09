@@ -128,7 +128,7 @@ const AboutWWW = () => {
 			.from(whoSpan.current, { opacity: 0 })
 			// description who in
 			.from(whoDescription.current, { opacity: 0 });
-	});
+	},[]);
 
 	return (
 		<div ref={container} className=" h-[350vh] w-full relative mt-8">
