@@ -11,7 +11,7 @@ export const allServicesData = [
     Description:
       "At Identitie, we transform Architecture & Interiors into a canvas for sophisticated design, where every detail merges form and function. From serene retreats to dynamic workspaces, our projects blend artistry with practicality, setting new standards in personalized design. We craft iconic landmarks and intimate spaces that offer enduring comfort and inspire admiration for generations.",
     img: "../assets/optimized/archi-optimized.jpeg",
-    webp: "../assets/non-optimized/archi.jpg",
+    webp: "../assets/optimized/archi.jpg",
   },
   {
     title: "Art & Entertainment",
@@ -140,20 +140,20 @@ export const allServicesDataActual = [
     colorMob: "#FFFFFF",
     images: [
         {
-            src: "../assets/non-optimized/logoDesign.jpg",
+            src: "../assets/optimized/logoDesign.jpg",
             title: "Logo Design",
           },
       {
-        src: "../assets/non-optimized/businessInterview.jpg",
+        src: "../assets/optimized/businessInterview.jpg",
         title: "Stakeholder Interviews",
       },
     
       {
-        src: "../assets/non-optimized/employerBranding.jpg",
+        src: "../assets/optimized/employerBranding.jpg",
         title: "employerBranding",
       },
       {
-        src: "../assets/non-optimized/packageDesigning.jpg",
+        src: "../assets/optimized/packageDesigning.jpg",
         title:"Packaging Design & Guidelines",
       },
     ],
@@ -180,19 +180,19 @@ export const allServicesDataActual = [
     colorMob: "#FFFFFF",
     images: [
       {
-        src: "../assets/non-optimized/productDesign.webp",    
+        src: "../assets/optimized/productDesign.webp",    
         title: "Product Design",
       },
       {
-        src: "../assets/non-optimized/cocomoProduct.webp",    
+        src: "../assets/optimized/cocomoProduct.webp",    
         title: "Production & Manufacturing",
       },
       {
-        src: "../assets/non-optimized/Retail & Merchandising.jpg",    
+        src: "../assets/optimized/Retail & Merchandising.jpg",    
         title: "Retail & Merchandising",
       },
       {
-        src: "../assets/non-optimized/promotionalEvents.jpg",    
+        src: "../assets/optimized/promotionalEvents.jpg",    
         title: "Promotional Events",
       },
     ],
@@ -210,19 +210,19 @@ export const allServicesDataActual = [
     ],
     images: [
         {
-            src: "../assets/non-optimized/crm.jpg",    
+            src: "../assets/optimized/crm.jpg",    
             title: "CRM/CMS Integration",
           },
       {
-        src: "../assets/non-optimized/e-commercePlatform.jpg",    
+        src: "../assets/optimized/e-commercePlatform.jpg",    
         title: "Ecommerce Platforms",
       },
       {
-        src: "../assets/non-optimized/orderTracking.jpg",    
+        src: "../assets/optimized/orderTracking.jpg",    
         title: "Order Tracking",
       },
       {
-        src: "../assets/non-optimized/emailMarket.jpg",    
+        src: "../assets/optimized/emailMarket.jpg",    
         title: "Email Marketing",
       },
     ],
@@ -239,19 +239,19 @@ export const allServicesDataActual = [
     ],
     images: [
       {
-        src: "../assets/non-optimized/socialMediaLike.jpg",    
+        src: "../assets/optimized/socialMediaLike.jpg",    
         title: "Style Guide",
       },
       {
-        src: "../assets/non-optimized/videoedit.jpg",    
+        src: "../assets/optimized/videoedit.jpg",    
         title: " Visual Motion Ads ",
       },
       {
-        src: "../assets/non-optimized/socialMeidaCampnie.jpg",    
+        src: "../assets/optimized/socialMeidaCampnie.jpg",    
         title: "Campaign Strategies",
       },
       {
-        src: "../assets/non-optimized/socialmedia.jpg",    
+        src: "../assets/optimized/socialmedia.jpg",    
         title: " Post Engagement",
       },
     ],
@@ -268,19 +268,19 @@ export const allServicesDataActual = [
     ],
     images: [
       {
-        src: "../assets/non-optimized/messagePlaybook.jpg",    
+        src: "../assets/optimized/messagePlaybook.jpg",    
         title: "Messaging Playbook",
       },
       {
-        src: "../assets/non-optimized/caseStudy.jpg",    
+        src: "../assets/optimized/caseStudy.jpg",    
         title: "Case Studies and Testimonials",
       },
       {
-        src: "../assets/non-optimized/productReport.jpg",    
+        src: "../assets/optimized/productReport.jpg",    
         title: "Product Fact Sheets",
       },
       {
-        src: "../assets/non-optimized/presentation.jpg",    
+        src: "../assets/optimized/presentation.jpg",    
         title: "Presentations and Pitchbooks",
       },
     ],
@@ -303,16 +303,16 @@ export const allServicesDataActual = [
             title: "Market Insights & Analysis",
           },
       {
-        src: "../assets/non-optimized/sourcingBrand.jpg", 
+        src: "../assets/optimized/sourcingBrand.jpg", 
         title: "Sourcing Brands",
       },
       {
    
-        src:'../assets/non-optimized/Distribution & Logistics.jpg',
+        src:'../assets/optimized/Distribution & Logistics.jpg',
         title: "Distribution & Logistics",
       },
       {
-        src: "../assets/non-optimized/salesReport.jpg", 
+        src: "../assets/optimized/salesReport.jpg", 
         title: " Sales Conversion Strategies & Reports",
       },
     ],
@@ -338,11 +338,11 @@ export const allServicesDataActual = [
       },
       {
    
-        src:'../assets/non-optimized/Distribution & Logistics.jpg',
+        src:'../assets/optimized/Distribution & Logistics.jpg',
         title: "Distribution & Logistics",
       },
       {
-        src:'../assets/non-optimized/marketingOfflineandOnline.jpg',
+        src:'../assets/optimized/marketingOfflineandOnline.jpg',
         title: "Customized Online & Offline Marketing",
       },
     ],
@@ -359,20 +359,20 @@ export const allServicesDataActual = [
     ],
     images: [
         {
-            src:'../assets/non-optimized/customerSupport.jpg',
+            src:'../assets/optimized/customerSupport.jpg',
             title: "After Sales Services",
           },
       {
-        src:'../assets/non-optimized/marketInsight.jpg',
+        src:'../assets/optimized/marketInsight.jpg',
         title: "Market Insight & Analysis",
       },
      
       {
-        src:'../assets/non-optimized/infra.jpg',
+        src:'../assets/optimized/infra.jpg',
         title: "Infrastructure Establishment",
       },
       {
-        src:'../assets/non-optimized/marketingOfflineandOnline.jpg',
+        src:'../assets/optimized/marketingOfflineandOnline.jpg',
         title: "Customized Online & Offline Marketing",
       },
     ],
@@ -389,19 +389,19 @@ export const allServicesDataActual = [
     ],
     images: [
       {
-        src:'../assets/non-optimized/techno.jpg',
+        src:'../assets/optimized/techno.jpg',
         title: " Trending Technologies",
       },
       {
-        src:'../assets/non-optimized/developers.jpg',
+        src:'../assets/optimized/developers.jpg',
         title: "Sourcing Customized Professional Teams",
       },
       {
-        src:'../assets/non-optimized/problemsolve.jpg',
+        src:'../assets/optimized/problemsolve.jpg',
         title: "Breakthrough Solutions",
       },
       {
-        src:'../assets/non-optimized/webdevlop.jpg',
+        src:'../assets/optimized/webdevlop.jpg',
         title: "Web development",
       },
     ],
