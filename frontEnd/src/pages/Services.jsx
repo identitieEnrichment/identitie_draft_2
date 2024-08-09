@@ -28,19 +28,31 @@ const Services = () => {
   );
   const container = useRef(null);
   const location = useLocation();
+  const [hide,setHide] = useState(true)
   let title = null;
   if (location) title = location?.state?.title;
 
   useEffect(() => {
+    let timer;
     if (title !== null) {
-      scroller.scrollTo(title, {
-        duration: 600,
-        offest: -100,
-        smooth: true,
-        isDynamic: true,
-      });
+      setHide(false)
+      timer = setTimeout(() => {
+        scroller.scrollTo(title, {
+          duration: 600,
+          offset: -100,
+          smooth: true,
+          isDynamic: true,
+        });
+      }, 100);
+      
     }
+    return () => {
+      clearTimeout(timer);
+    };
+    
   }, []);
+  
+
   useGSAP(() => {
     gsap.to("#nav", {
       opacity: 1,
@@ -149,13 +161,14 @@ const Services = () => {
     }
   }, [allServicesDataActual]);
 
+
   return (
     <div className="bg-secondary relative bg-black  ">
-      <Header layout={"Services"} />
+      {<Header hide={hide} layout={"Services"} />}
       <NavigationBar layout={""} />
       <div className=" lg:flex lg:gap-32">
         {/* Left ServiceList  */}
-        <div className="lg:flex hidden flex-col   gap-6 mt-10 shadow-r-lg w-max p-12 py-28 fixed bg-secondary">
+        <div className="lg:flex hidden flex-col  gap-6 mt-24 shadow-r-lg w-max p-12 py-28 fixed bg-secondary z-[999]">
           {allServicesDataActual.map((item, index) => (
             <button className="flex gap-4 items-center first-line:">
               <div
