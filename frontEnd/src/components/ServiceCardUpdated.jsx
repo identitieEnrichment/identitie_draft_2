@@ -62,10 +62,10 @@ const ServicesCardUpdated = ({
 								isLastCard ? "relative rounded-lg" : ""
 							}`}
 							style={!isMobile ? { scale: imageScale } : {}}>
-							<picture className="w-4/12 ">
+							<picture className="w-6/12 ">
 								{/* <source type="image/webp" srcSet={webp} /> */}
 								<img
-									className={`object-cover lg:rounded-xl w-full ${
+									className={`object-cover lg:rounded-xl w-[30vw] ${
 										isFirstCard ? "h-full " : "h-80"
 									} ${isLastCard ? "lg:h-full h-full " : "h-full"}`}
 									src={images[0].src}
@@ -89,7 +89,7 @@ const ServicesCardUpdated = ({
 
 											<button
 												onClick={() => navigate("/services")}
-												class="z-50  mt-10 hover:before:bg-[#773ec7] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+												class="z-50  mt-10 hover:before:bg-[#9DFF50] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#9DFF50] before:transition-all before:duration-500 hover:text-black hover:shadow-[#9DFF50] hover:before:left-0 hover:before:w-full ">
 												<span class="relative z-50 whitespace-nowrap px-2">
 													{isLastCard ? "View All Services" : "See more"}
 												</span>
