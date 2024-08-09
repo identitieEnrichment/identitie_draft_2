@@ -63,7 +63,7 @@ const Header = ({ layout,page}) => {
 		<header
 		
 			ref={headerSection}
-			className={`mainHeader fixed top-0 w-full z-[9999]   ${
+			className={`mainHeader fixed top-0 w-full z-[999999]   ${
 				layout === "Services" ? page !== 'Home' ? "bg-black/90" : "bg-transparent":"b"
 			}`}>
 
