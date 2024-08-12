@@ -17,6 +17,7 @@ import Header from "../components/Header";
 import AboutCard from "../components/AboutCard";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import WCard from "../components/WCard";
 // ..
 AOS.init();
 gsap.registerPlugin(useGSAP);
@@ -99,9 +100,9 @@ const Home = () => {
 			<div className="hidden md:block">
 				<AboutTwo />
 			</div>
-			<div ref={cards} className="md:hidden w-full mb-12 -mt-16 lg:mt-0 lg:mb-0">
+			<div ref={cards} className="md:hidden w-full mb-12 lg:mt-0 lg:mb-0">
 				<div className="grid grid-cols-1 w-full px-4 gap-4 ">
-					<AboutCard
+					<WCard
 						index={1}
 						Data={{
 							title: "what",
@@ -109,7 +110,7 @@ const Home = () => {
 								"At Identitie, we provide a full suite of services designed to meet the unique needs of businesses and individuals alike. Whether you're looking for business strategy, creative design, or technology integration, we proffer customized approaches delivering solutions tailored to your requirements.",
 						}}
 					/>
-					<AboutCard
+					<WCard
 						index={2}
 						Data={{
 							title: "Why",
@@ -117,7 +118,7 @@ const Home = () => {
 								"Travel, leisure, and a touch of workshops, photoshoots, and event management—our opportunities span a diverse range of experiences. With deep sector knowledge and an extensive network, we explore art, philosophy, nature, and relationships; connecting with people, transforming brands, and enhancing lives.",
 						}}
 					/>
-					<AboutCard
+					<WCard
 						index={3}
 						Data={{
 							title: "Who",
@@ -125,7 +126,7 @@ const Home = () => {
 								"From aspiring architects to visionary entrepreneurs, our decade-long journey has taught us that true connection is built through thoughtfully designed spaces. At Identitie, we blend creativity and originality to create environments and brand experiences that truly resonate with people. Our mission is to inspire and engage through every project we undertake.",
 						}}
 					/>
-					<AboutCard
+					<WCard
 						index={4}
 						Data={{
 							title: "Where",
