@@ -46,7 +46,7 @@ const ServicesCardUpdated = ({
 						? { backgroundColor: colorMob }
 						: { backgroundColor: color, scale }),
 				}}
-				className={`rounded-xl p-0 overflow-hidden drop-shadow-lg shadow-lg lg:shadow-none lg:drop-shadow-none  lg:flex lg:flex-col relative top-[-25%] h-[500px] lg:w-[900px] origin-top border-[0.5px] border-opacity-25 border-[#9DFF50]`}>
+				className={`rounded-xl p-0 overflow-hidden drop-shadow-lg shadow-lg lg:shadow-none lg:drop-shadow-none  lg:flex lg:flex-col relative top-[-25%] h-[510px] lg:w-[900px] origin-top border-[0.5px] border-opacity-25 border-[#ed1e24]`}>
 				<div
 					className={`  w-full lg:h-full  ${
 						isFirstCard ? " h-full rounded-xl" : " h-[40%]"
@@ -89,7 +89,7 @@ const ServicesCardUpdated = ({
 
 											<button
 												onClick={() => navigate("/services")}
-												class="z-50  mt-10 hover:before:bg-[#9DFF50] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#9DFF50] before:transition-all before:duration-500 hover:text-black hover:shadow-[#9DFF50] hover:before:left-0 hover:before:w-full ">
+												class="z-50  mt-10 hover:before:bg-[#ed1e24] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
 												<span class="relative z-50 whitespace-nowrap px-2">
 													{isLastCard ? "View All Services" : "See more"}
 												</span>
@@ -141,8 +141,8 @@ const ServicesCardUpdated = ({
 									</p>
 									<div className="text-white text-xs md:text-sm  font-bold grid grid-cols-2 gap-y-1 md:gap-y-0 gap-x-3 mt-3 h-max font-poppins">
 										{bulletPoints?.slice(0, limit)?.map((item, index) => (
-											<div className="subServices flex items-center mt-2 space-x-2 transition-all  duration-500 bg-white md:bg-[#2A2A2A]   px-3 py-2 rounded-full border-[0.5px] border-[#9DFF50] md:border-none">
-												<p className="text-sm md:text-base text-black md:text-[#9DFF50]">
+											<div className="subServices flex items-center mt-2 space-x-2 transition-all  duration-500 bg-white md:bg-[#2A2A2A]   px-3 py-2 rounded-full border-[0.5px] border-[#ed1e24] md:border-none">
+												<p className="text-sm md:text-base text-black md:text-[#ed1e24]">
 													{index < 9 ? "0" + (index + 1) : index + 1}
 												</p>
 												<p className="truncate text-black md:text-white"> {item}</p>
@@ -152,7 +152,7 @@ const ServicesCardUpdated = ({
 								</div>
 								<button
 									onClick={() => navigate("/services" ,{state:{title:title}})}
-									class=" rounded-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#9DFF50] hover:bg-[#7BCC3C] p-3 font-poppins md:absolute right-0 bottom-0">
+									class=" rounded-full md:rounded-none text-white md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#ed1e24] hover:bg-[#c8102e] p-3 font-poppins md:absolute right-0 bottom-0">
 									<span class=" whitespace-nowrap px-2">
 										{isLastCard ? "View All Services" : "See more"}
 									</span>

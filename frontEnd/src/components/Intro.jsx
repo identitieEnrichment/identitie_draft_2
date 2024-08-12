@@ -84,6 +84,21 @@ const Intro = () => {
 			});
 
 		})
+		mm.add("(min-width: 1500px)",() => {
+			gsap.to(leftimg.current, {
+				y: 700,
+				x: -700,
+				rotate: 0,
+				rotateZ: 90,
+				scrollTrigger: {
+					trigger: first.current,
+
+					start: "top top",
+					scrub: 2,
+				},
+			});
+
+		})
 		mm.add("(max-width: 769px)", () => {
 			gsap.to(rightimg.current, {
 				y: -700,
@@ -255,7 +270,7 @@ const Intro = () => {
 						<button
 							onClick={() => navigate("/contactus")}
 							id="getInTouchBtn"
-							class="rounded-full w-fit mt-8 hover:before:bg-[#9DFF50] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#9DFF50] before:transition-all before:duration-500 hover:text-black hover:shadow-[#9DFF50] hover:before:left-0 hover:before:w-full ">
+							class="rounded-full w-fit mt-8 hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
 							<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 								Know More
 							</span>
@@ -312,7 +327,7 @@ const Intro = () => {
 					<button
 						onClick={() => navigate("/aboutus")}
 						ref={knowMoreButton}
-						class="rounded-full mt-8 w-fit hover:before:bg-[#9DFF50] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#9DFF50] before:transition-all before:duration-500 hover:text-black hover:shadow-[#9DFF50] hover:before:left-0 hover:before:w-full ">
+						class="rounded-full mt-8 w-fit hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
 						<span class="relative z-50 whitespace-nowrap px-2 font-poppins">
 							Partner with us
 						</span>

@@ -244,7 +244,7 @@ const Services = () => {
                       data-aos-anchor-placement="top-bottom"
                       className="subServices flex items-center mt-2 space-x-2   transition-all  duration-500  bg-[#2A2A2A]   px-3 py-2 rounded-full"
                     >
-                      <p className="text-xs lg:text-base text-[#9DFF50]">
+                      <p className="text-xs lg:text-base text-[#ed1e24]">
                         {index < 9 ? "0" + (index + 1) : index + 1}
                       </p>
                       <p className="truncate text-xs lg:text-sm"> {item}</p>
@@ -261,7 +261,7 @@ const Services = () => {
                   data-aos-once="false"
                   data-aos-anchor-placement="top-bottom"
                   onClick={() => navigate("/contactus")}
-                  class=" rounded-full lg:hidden w-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#9DFF50] p-3 font-poppins md:absolute right-0 bottom-0"
+                  class=" rounded-full lg:hidden text-white w-full md:rounded-none md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#ed1e24] p-3 font-poppins md:absolute right-0 bottom-0"
                 >
                   <span class=" whitespace-nowrap px-2 ">Avail Now</span>
                   <span class="relative z-10 ml-2">&rarr; </span>
