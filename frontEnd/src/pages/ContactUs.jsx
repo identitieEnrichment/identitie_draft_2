@@ -94,7 +94,7 @@ const ContactUs = () => {
 						<div>
 							<button
 								type="submit"
-								class="rounded-full p-2 md:hover:before:bg-[#773ec7] md:relative md:h-[40px] md:w-40 md:overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all md:before:absolute md:before:bottom-0 md:before:left-0 md:before:top-0 md:before:z-0 before:h-full md:before:w-0 md:before:bg-[#773ec7] before:transition-all before:duration-500 hover:text-white hover:shadow-[#773ec7] hover:before:left-0 hover:before:w-full ">
+								class="rounded-full p-2 md:hover:before:bg-[#ed1e24] md:relative md:h-[40px] md:w-40 md:overflow-hidden border border-[#57606a] bg-transparent px-3 text-white shadow-2xl transition-all md:before:absolute md:before:bottom-0 md:before:left-0 md:before:top-0 md:before:z-0 before:h-full md:before:w-0 md:before:bg-[#ed1e24] before:transition-all before:duration-500 hover:text-white hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
 								<span class="md:relative md:z-50 md:whitespace-nowrap px-2">
 								Send Now
 								</span>

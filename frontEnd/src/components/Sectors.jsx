@@ -126,8 +126,8 @@ useGSAP(() => {
                                         loop: true,
                                         deleteSpeed: 50,
                                         delay: 50,
-                                        wrapperClassName: "text-[#FFD700]  text-xl md:text-4xl font-medium",
-                                        cursorClassName: "text-[#FFD700]   text-xl md:text-4xl"
+                                        wrapperClassName: "text-[#ed1e24]  text-xl md:text-4xl font-medium",
+                                        cursorClassName: "text-[#ed1e24]   text-xl md:text-4xl"
                                     }}
                                 />
                             </div>

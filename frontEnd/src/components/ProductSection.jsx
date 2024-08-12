@@ -166,7 +166,7 @@ const ProductsSection = () => {
 	return (
 		<div
 			ref={mainDiv}
-			className="lg:min-h-[160vh] 2xl:min-h-[180vh]  relative ">
+			className="lg:min-h-[160vh] xl:min-h-[190vh] 2xl:min-h-[180vh]  relative ">
 			<div ref={imgDiv} className="md:hidden flex mb-5 pl-2">
 				<picture>
 					<source
