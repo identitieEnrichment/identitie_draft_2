@@ -16,6 +16,8 @@ const AboutWWW = () => {
 	const whoContainer = useRef(null);
 	const whoSpan = useRef(null);
 	const whoDescription = useRef(null);
+	const smallWidth = window.innerWidth < 1400 ? 180 : 224
+	const bigWidth = window.innerWidth < 1400 ? 350 : 500
 	useGSAP(() => {
 		// gsap.to(what.current, { width: 500, fill: "#e5e5e5" });
 		// gsap.to(whatContainer.current, { width: "100%", padding: "10 10 10 10" });
@@ -85,8 +87,8 @@ const AboutWWW = () => {
 			// svg what out
 			.fromTo(
 				what.current,
-				{ width: 500, fill: "black" },
-				{ width: 224, fill: "#e5e5e5" },
+				{ width: bigWidth, fill: "black" },
+				{ width: smallWidth, fill: "#e5e5e5" },
 				"<"
 			)
 			// title what out
@@ -97,7 +99,7 @@ const AboutWWW = () => {
 			// container why in
 			.to(whyContainer.current, { width: "100%", padding: "30 30 30 30" }, "<")
 			// svg why in
-			.to(why.current, { width: 500, fill: "black" }, "<");
+			.to(why.current, { width: bigWidth, fill: "black" }, "<");
 		// title why in
 		tl4
 			.from(whySpan.current, { opacity: 0 })
@@ -110,8 +112,8 @@ const AboutWWW = () => {
 			// svg why out
 			.fromTo(
 				why.current,
-				{ width: 500, fill: "black" },
-				{ width: 224, fill: "#e5e5e5" },
+				{ width: bigWidth, fill: "black" },
+				{ width: smallWidth, fill: "#e5e5e5" },
 				"<"
 			)
 			// title why out
@@ -120,9 +122,9 @@ const AboutWWW = () => {
 			.fromTo(whyDescription.current, { opacity: 1 }, { opacity: 0 }, "<")
 
 			// container who in
-			.to(whoContainer.current, { width: "100%", padding: "30 30 30 30" }, "<")
+			.to(whoContainer.current, { width: bigWidth, padding: "30 30 30 30" }, "<")
 			// svg who in
-			.to(who.current, { width: 480, fill: "black" }, "<");
+			.to(who.current, { width: bigWidth, fill: "black" }, "<");
 		// title who in
 		tl6
 			.from(whoSpan.current, { opacity: 0 })
@@ -144,7 +146,7 @@ const AboutWWW = () => {
 								<span className="text-xs font-poppins">Our Values & Marks</span>
 							</div> */}
 						</div>
-						<span className="font-poppins text-sm">
+						<span className="font-poppins xl:text-xs 2xl:text-sm ">
 							A thorough whisk of ingenuity with strategy transforms brands into
 							impactful forces. We begin by deeply understanding your brand’s
 							core values and target audience, then craft personalized plans
@@ -175,13 +177,13 @@ const AboutWWW = () => {
 									<path d="M127.29 16.43a2.42 2.42 0 0 0-1.87-.91h-24.79c-1.14 0-2.12.8-2.33 1.92l-9.58 48.68l-13.47-48.86c-.08-.29-.22-.54-.39-.77c-.01-.01-.01-.04-.03-.05c-.03-.04-.08-.05-.11-.09c-.17-.2-.37-.36-.6-.49c-.08-.04-.15-.09-.23-.12c-.29-.13-.6-.22-.94-.22H55.04c-.33 0-.65.09-.94.22c-.08.04-.15.08-.23.12c-.23.13-.43.29-.6.49c-.04.04-.08.05-.11.09c-.01.02-.01.04-.03.05c-.17.23-.31.49-.39.77L39.29 66.12L29.7 17.44a2.386 2.386 0 0 0-2.33-1.92H2.59c-.73 0-1.43.34-1.87.91c-.46.57-.62 1.33-.45 2.03l24.79 100.45c.01.03.04.06.04.1c.06.19.13.36.23.53c.03.05.05.1.09.15c.02.03.03.06.06.09c.12.16.25.29.41.42c.02.02.05.03.08.05c.16.12.34.22.53.29c.05.02.11.04.17.06c.22.07.46.12.7.12h19.78c.33 0 .63-.08.92-.21c.08-.04.15-.08.23-.12c.2-.12.39-.26.55-.44c.04-.04.1-.06.14-.1c.02-.03.02-.06.04-.09c.19-.25.34-.52.42-.83L64 62.33l14.55 56.61c.08.31.23.58.42.83c.02.03.02.06.05.09c.03.04.09.06.13.1c.16.18.34.32.55.44c.08.04.15.09.23.12c.29.12.59.21.92.21h19.78c.24 0 .47-.05.7-.12c.06-.02.11-.04.18-.06c.18-.07.36-.17.53-.29c.03-.02.05-.03.08-.05c.15-.12.29-.26.41-.42c.02-.03.03-.06.06-.09c.03-.05.05-.1.09-.15c.09-.17.17-.34.23-.53c.01-.03.04-.06.04-.1l24.79-100.45c.16-.71 0-1.47-.45-2.04z"></path>
 								</g>
 							</svg>
-							<div className="-translate-y-14 flex flex-col items-center space-y-4">
-								<span ref={whatSpan} className=" text-3xl font-poppins">
+							<div className="2xl:-translate-y-14 xl:translate-y-0 flex flex-col items-center space-y-4 xl:space-y-0">
+								<span ref={whatSpan} className=" text-3xl font-poppins ">
 									WHAT
 								</span>
 								<p
 									ref={whatDescription}
-									className="text-sm font-poppins w-11/12">
+									className="2xl:text-sm font-poppins w-11/12 xl:text-xs">
 									At Identitie, we provide a full suite of services designed to
 									meet the unique needs of businesses and individuals alike.
 									Whether you're looking for business strategy, creative design,
@@ -190,12 +192,7 @@ const AboutWWW = () => {
 								</p>
 							</div>
 						</div>
-						<div className="page flex items-center gap-3 absolute bottom-4 left-4">
-							<div className="h-2 w-2 bg-gray-400"></div>
-							<span className="text-xs font-poppins text-gray-400 tracking-widest">
-								01_W
-							</span>
-						</div>
+						
 					</div>
 					<div
 						ref={whyContainer}
@@ -219,13 +216,13 @@ const AboutWWW = () => {
 									<path d="M127.29 16.43a2.42 2.42 0 0 0-1.87-.91h-24.79c-1.14 0-2.12.8-2.33 1.92l-9.58 48.68l-13.47-48.86c-.08-.29-.22-.54-.39-.77c-.01-.01-.01-.04-.03-.05c-.03-.04-.08-.05-.11-.09c-.17-.2-.37-.36-.6-.49c-.08-.04-.15-.09-.23-.12c-.29-.13-.6-.22-.94-.22H55.04c-.33 0-.65.09-.94.22c-.08.04-.15.08-.23.12c-.23.13-.43.29-.6.49c-.04.04-.08.05-.11.09c-.01.02-.01.04-.03.05c-.17.23-.31.49-.39.77L39.29 66.12L29.7 17.44a2.386 2.386 0 0 0-2.33-1.92H2.59c-.73 0-1.43.34-1.87.91c-.46.57-.62 1.33-.45 2.03l24.79 100.45c.01.03.04.06.04.1c.06.19.13.36.23.53c.03.05.05.1.09.15c.02.03.03.06.06.09c.12.16.25.29.41.42c.02.02.05.03.08.05c.16.12.34.22.53.29c.05.02.11.04.17.06c.22.07.46.12.7.12h19.78c.33 0 .63-.08.92-.21c.08-.04.15-.08.23-.12c.2-.12.39-.26.55-.44c.04-.04.1-.06.14-.1c.02-.03.02-.06.04-.09c.19-.25.34-.52.42-.83L64 62.33l14.55 56.61c.08.31.23.58.42.83c.02.03.02.06.05.09c.03.04.09.06.13.1c.16.18.34.32.55.44c.08.04.15.09.23.12c.29.12.59.21.92.21h19.78c.24 0 .47-.05.7-.12c.06-.02.11-.04.18-.06c.18-.07.36-.17.53-.29c.03-.02.05-.03.08-.05c.15-.12.29-.26.41-.42c.02-.03.03-.06.06-.09c.03-.05.05-.1.09-.15c.09-.17.17-.34.23-.53c.01-.03.04-.06.04-.1l24.79-100.45c.16-.71 0-1.47-.45-2.04z"></path>
 								</g>
 							</svg>
-							<div className="-translate-y-14 flex flex-col items-center space-y-4">
-								<span ref={whySpan} className=" text-3xl font-poppins">
+							<div className="2xl:-translate-y-14 xl:translate-y-0 flex flex-col items-center space-y-4 xl:space-y-0">
+								<span ref={whySpan} className="text-3xl font-poppins">
 									WHY
 								</span>
 								<p
 									ref={whyDescription}
-									className="text-sm font-poppins w-11/12">
+									className="2xl:text-sm font-poppins w-11/12 xl:text-xs">
 									Travel, leisure, and a touch of workshops, photoshoots, and
 									event management—our opportunities span a diverse range of
 									experiences. With deep sector knowledge and an extensive
@@ -235,12 +232,7 @@ const AboutWWW = () => {
 								</p>
 							</div>
 						</div>
-						<div className="page flex items-center gap-3 absolute bottom-4 left-4">
-							<div className="h-2 w-2 bg-gray-400"></div>
-							<span className="text-xs font-poppins text-gray-400 tracking-widest">
-								02_W
-							</span>
-						</div>
+						
 					</div>
 					<div
 						ref={whoContainer}
@@ -264,13 +256,13 @@ const AboutWWW = () => {
 									<path d="M127.29 16.43a2.42 2.42 0 0 0-1.87-.91h-24.79c-1.14 0-2.12.8-2.33 1.92l-9.58 48.68l-13.47-48.86c-.08-.29-.22-.54-.39-.77c-.01-.01-.01-.04-.03-.05c-.03-.04-.08-.05-.11-.09c-.17-.2-.37-.36-.6-.49c-.08-.04-.15-.09-.23-.12c-.29-.13-.6-.22-.94-.22H55.04c-.33 0-.65.09-.94.22c-.08.04-.15.08-.23.12c-.23.13-.43.29-.6.49c-.04.04-.08.05-.11.09c-.01.02-.01.04-.03.05c-.17.23-.31.49-.39.77L39.29 66.12L29.7 17.44a2.386 2.386 0 0 0-2.33-1.92H2.59c-.73 0-1.43.34-1.87.91c-.46.57-.62 1.33-.45 2.03l24.79 100.45c.01.03.04.06.04.1c.06.19.13.36.23.53c.03.05.05.1.09.15c.02.03.03.06.06.09c.12.16.25.29.41.42c.02.02.05.03.08.05c.16.12.34.22.53.29c.05.02.11.04.17.06c.22.07.46.12.7.12h19.78c.33 0 .63-.08.92-.21c.08-.04.15-.08.23-.12c.2-.12.39-.26.55-.44c.04-.04.1-.06.14-.1c.02-.03.02-.06.04-.09c.19-.25.34-.52.42-.83L64 62.33l14.55 56.61c.08.31.23.58.42.83c.02.03.02.06.05.09c.03.04.09.06.13.1c.16.18.34.32.55.44c.08.04.15.09.23.12c.29.12.59.21.92.21h19.78c.24 0 .47-.05.7-.12c.06-.02.11-.04.18-.06c.18-.07.36-.17.53-.29c.03-.02.05-.03.08-.05c.15-.12.29-.26.41-.42c.02-.03.03-.06.06-.09c.03-.05.05-.1.09-.15c.09-.17.17-.34.23-.53c.01-.03.04-.06.04-.1l24.79-100.45c.16-.71 0-1.47-.45-2.04z"></path>
 								</g>
 							</svg>
-							<div className="-translate-y-14 flex flex-col items-center space-y-4">
+							<div className="2xl:-translate-y-14 xl:translate-y-0 flex flex-col items-center space-y-4 xl:space-y-0">
 								<span ref={whoSpan} className=" text-3xl font-poppins">
 									WHO
 								</span>
 								<p
 									ref={whoDescription}
-									className="text-sm font-poppins w-11/12">
+									className="2xl:text-sm font-poppins w-11/12 xl:text-xs">
 									From aspiring architects to visionary entrepreneurs, our
 									decade-long journey has taught us that true connection is
 									built through thoughtfully designed spaces. At Identitie, we
@@ -280,12 +272,7 @@ const AboutWWW = () => {
 								</p>
 							</div>
 						</div>
-						<div className="page flex items-center gap-3 absolute bottom-4 left-4">
-							<div className="h-2 w-2 bg-gray-400"></div>
-							<span className="text-xs font-poppins text-gray-400 tracking-widest">
-								03_W
-							</span>
-						</div>
+						
 					</div>
 				</div>
 			</div>

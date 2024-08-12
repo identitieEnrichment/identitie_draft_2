@@ -127,7 +127,7 @@ const AboutThree = () => {
 						your company
 					</p>
                     <div ref={author} className="flex flex-col md:mt-14 mt-7">
-                        <span className="font-poppins font-bold text-base md:text-lg">Joshlin</span>
+                        <span className="font-poppins font-bold text-base md:text-lg">Sarini</span>
                         <span className="font-poppins text-sm">Chief Executive Officer</span>
                     </div>
 				</div>

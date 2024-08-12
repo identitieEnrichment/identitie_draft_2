@@ -63,10 +63,10 @@ const AboutOne = () => {
 	return (
 		<div ref={container} className="one md:h-[100vh] w-full flex flex-col justify-center items-center md:pt-16 md:gap-5 pt-32 ">
 			<div className="md:w-6/12 space-y-6">
-				<h1 className="font-poppins text-2xl md:text-6xl text-center font-bold px-4">
+				<h1 className="font-poppins text-2xl xl:text-4xl 2xl:text-6xl text-center font-bold px-4">
 					Our Creative World of Making Innovative Ideas
 				</h1>
-				<p className="p-4 md:p-0 text-center font-poppins text-gray-600 md:text-base text-sm">
+				<p className="p-4 md:p-0 text-center font-poppins text-gray-600 md:text-base xl:text-sm text-sm">
 					Swing a cut above the rest by having us dedicated to your business for
 					extended periods of time. This is why we are looking for ongoing
 					collaboration where our customised crew are like your team members who
