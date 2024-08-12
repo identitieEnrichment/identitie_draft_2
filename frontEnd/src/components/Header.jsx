@@ -67,7 +67,7 @@ const Header = ({ layout,page}) => {
 				layout === "Services" ? page !== 'Home' ? "bg-black/90" : "bg-transparent":"b"
 			}`}>
 
-			<div className="p-4 mx-4 md:p-7 flex items-center justify-between">
+			<div className="p-4 mx-4 md:p-7 xl:p-3 flex items-center justify-between">
 				<div onClick={() => navigate("/")} className="cursor-pointer">
 					{/* Logo */}
 					<img className="h-6" src={`${page === 'ABOUT' || page === 'PRODUCT' ? '../assets/logo-black.png' : '../assets/logo-white.png'}`} alt="logo" />

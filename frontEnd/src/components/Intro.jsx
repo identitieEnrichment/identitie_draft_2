@@ -57,18 +57,7 @@ const Intro = () => {
 			yoyo: true,
 		});
 		mm.add("(min-width: 769px)", () => {
-			gsap.to(leftimg.current, {
-				y: 700,
-				x: -700,
-				rotate: 0,
-				rotateZ: 90,
-				scrollTrigger: {
-					trigger: first.current,
-
-					start: "top top",
-					scrub: 2,
-				},
-			});
+			
 
 			gsap.to(rightimg.current, {
 				y: -700,
@@ -80,6 +69,21 @@ const Intro = () => {
 				},
 			});
 		});
+		mm.add("(min-width: 1280px)",() => {
+			gsap.to(leftimg.current, {
+				y: 500,
+				x: -600,
+				rotate: 0,
+				rotateZ: 90,
+				scrollTrigger: {
+					trigger: first.current,
+
+					start: "top top",
+					scrub: 2,
+				},
+			});
+
+		})
 		mm.add("(max-width: 769px)", () => {
 			gsap.to(rightimg.current, {
 				y: -700,
@@ -189,7 +193,7 @@ const Intro = () => {
 	return (
 		<div
 			ref={container}
-			className="bg-[#0d1117] 2xl:h-[180vh] lg:h-[170vh] z-0 w-full relative ">
+			className="bg-[#0d1117] 2xl:h-[180vh] lg:h-[170vh] xl:h-[180vh] z-0 w-full relative ">
 			<div className="">
 				<div className="flex w-full ">
 					<div className="flex pt-12 md:pt-0">
@@ -331,7 +335,7 @@ const Intro = () => {
 						d="M0,288L120,277.3C240,267,480,245,720,245.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
 				</svg> */}
 			</div>
-			<div className="hidden md:flex pt-4 items-center ">
+			<div className="hidden md:flex pt-4 items-center xl:mt-12">
 				<LogoSlider />
 			</div>
 		</div>
