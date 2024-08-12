@@ -43,8 +43,10 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        londrina : ['Londrina Shadow', 'sans-serif'],
         roboto :['Roboto' ,'sans-serif'],
-        koulen:['Koulen', 'sans-serif']
+        koulen:['Koulen', 'sans-serif'],
+        impact:['Impact', 'sans-serif'],
       },
     },
   },
