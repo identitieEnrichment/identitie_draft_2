@@ -19,7 +19,7 @@ const Footer = () => {
 			<div className="lg:flex lg:gap-20 space-y-7">
 				<div className="flex flex-col space-y-4 lg:w-4/12">
 					<img className="h-7 w-max" src="../assets/logo-red.png" alt="logo" />
-					<p className="text-white font-poppins">
+					<p className="text-white font-poppins text-sm">
 						Identitie is your go-to partner for web development, digital
 						marketing, and a diverse range of solutions across various sectors.
 						We are committed to enhancing your presence, driving growth, and
