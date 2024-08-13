@@ -7,8 +7,6 @@ import Body from '../Body/Body';
 import Image from '../Image/Image';
 import {
 	FaInstagram,
-	FaFacebook,
-	FaWhatsapp,
 	FaLinkedin,
 } from "react-icons/fa";
 
@@ -16,32 +14,32 @@ const links = [
   {
     title: "Home",
     href: "/",
-    src: "../assets/optimized/furniture-optimized.jpeg"
+    src: "../assets/optimized/archi-optimized.jpeg"
   },
   {
     title: "Services",
     href: "/services",
-    src: "../assets/architects.jpeg"
+    src: "../assets/optimized/ecommerceService-optimized.jpeg"
   },
   {
     title: "Sectors",
     href: "/sectors",
-    src: "../assets/architects.jpeg"
+    src: "../assets/optimized/archi.jpg"
   },
   {
     title: "Products",
     href: "/products",
-    src: "../assets/architects.jpeg"
+    src: "../assets/optimized/Skincare-optimized.jpeg"
   },
   {
     title: "About",
     href: "/aboutus",
-    src: "../assets/architects.jpeg"
+    src: "../assets/optimized/archi-optimized.jpeg"
   },
   {
     title: "Contact ",
     href: "/contactus",
-    src: "../assets/architects.jpeg"
+    src: "../assets/optimized/contactus-optimized.png"
   }
 ]
 
