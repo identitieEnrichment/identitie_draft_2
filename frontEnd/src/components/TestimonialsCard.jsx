@@ -25,22 +25,17 @@ const TestimonialsCard = ({data}) => {
   return (
     <div>
         <blockquote className='shadow-lg rounded-md w-full lg:w-96 bg-transparent'>
-            <div className='flex items-center   space-x-4'>
+            <div className='flex items-center  justify-center'>
                 <img
                   alt=""
                   src="./assets/review.png"
                   class="size-16 rounded-md  object-cover"
                 />
-                <div className='space-y-1'>
-                    <h1 className='lg:text-xl font-bold capitalize font-poppins text-white text-sm'>{data?.name}</h1>
-                    <p className='text-[#666666] lg:text-sm text-xs font-poppins'>{data?.title}</p>
-                    <div className='flex'>
+            </div>
+              <div className='flex justify-center mt-2'>
                          {renderStarts(5)}
                     </div>
-                    
-                </div>
-            </div>
-            <div className='p-2   text-xs  text-[#666666] font-poppins'>
+            <div className='p-2   text-sm text-center  text-[#666666] font-poppins'>
                {data?.review}
             </div>
         </blockquote>

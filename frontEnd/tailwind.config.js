@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       animation:{
-        "loop-scroll":"loop-scroll 50s linear infinite",
+        "loop-scroll":"loop-scroll 160s linear infinite",
         fade: "fade 1s ease 200ms",
         slidein :"slidein 1s ease 200ms",
-        "loop-scroll-reverse":"loop-scroll-reverse 50s linear infinite",
+        "loop-scroll-reverse":"loop-scroll-reverse 160s linear infinite",
       },
       keyframes:{
         "loop-scroll":{

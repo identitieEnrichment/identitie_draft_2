@@ -136,36 +136,126 @@ export const testimonials = [
 		name: "Sarah Johnson",
 		title: "CEO of Johnson Enterprises",
 		review:
-			"I couldn't be more satisfied with the branding services provided by Identitie. Their team helped us redefine our brand identity, resulting in a significant increase in customer engagement and loyalty. Their professionalism and creativity are unmatched!",
+			"IDENTITIE transformed our brand's digital presence. Exceptional branding expertise!",
 	},
   {
 		name: "David Martinez",
 		title: "Marketing Director at Tech Solutions Inc",
 		review:
-			"Thanks to the marketing strategies implemented by Identitie, our online presence has grown exponentially. We've seen a 40% increase in website traffic and a substantial boost in our social media following. Their insights and execution are top-notch!",
+			"Their marketing strategies skyrocketed our online engagement. Highly recommend!",
 	},
   {
 		name: "Emily Roberts",
 		title: "Sales Manager at Bright Future Corp.",
 		review:
-			"Identitie has been instrumental in transforming our sales approach. Their tailored solutions and expert guidance have helped us exceed our sales targets consistently. Their team is always available to support and innovate, making them an invaluable partner.",
+		"They have a creative approach that boosted our brand visibility. A game-changer!",
 	},
   {
 		name: "Michael Brown",
 		title: "Founder of Brown & Co",
 		review:
-			"Our collaboration with Identitie for our marketing campaign was a game-changer. Their strategic planning and creative execution resulted in a highly successful campaign that exceeded all our expectations. We look forward to working with them on future projects.",
+			"From branding to fulfillment, IDENTITIE delivers unmatched quality and results."
 	},
   {
 		name: "Laura Wilson",
 		title: "Creative Director at Innovate Designs",
 		review:
-			"The branding services from Identitie have given our company a fresh and modern look. Their ability to understand our vision and translate it into a compelling brand identity was truly impressive. We're thrilled with the results!",
+			"Personalized branding solutions boosted our sales by 10x times!"
 	},
   {
 		name: "Mark Taylor",
 		title: "Head of Sales at Growth Dynamics",
 		review:
-			"Partnering with Identitie for our sales strategy was one of the best decisions we've made. Their data-driven approach and expert insights have led to a significant increase in our conversion rates. Highly recommend their services!",
+			"Their innovative marketing campaigns increased our leads significantly"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+		"We witnessed incredible growth with IDENTITIE as our fulfillment partner"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+			"Their innovative marketing campaigns increased our leads significantly"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+			"Their innovative marketing campaigns increased our leads significantly"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+			"IDENTITIE redefined our brand image. Professional, efficient, and effective."
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+			"Impressed how they turned our website into a lead magnet!"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+			"Their innovative marketing campaigns increased our leads significantly"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Highly effective and customized strategies."
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Best part is they are flexible and are on-board 24/7"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Highly effective and customized strategies."
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Seamless, reliable, and efficient.."
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "We elevated our brand's storytelling, thanks to IDENTITIE!"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Their attention to detail and creativity brought our brand to life"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "IDENTITIE's marketing efforts tripled our website traffic. Excellent ROI!"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Unparalleled brand growth with branding insights that gave us a competitive edge. Impressive!"
+	},
+  {
+		name: "Mark Taylor",
+		title: "Head of Sales at Growth Dynamics",
+		review:
+    "Professional and innovative – IDENTITIE’s services exceeded all expectations."
 	},
 ];

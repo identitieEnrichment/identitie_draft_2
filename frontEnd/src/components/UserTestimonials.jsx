@@ -32,16 +32,16 @@ const UserTestimonials = () => {
 					</Slider>
 				) : (
 					<>
-						<div className="mt-10 flex space-x-4 animate-loop-scroll  ">
+						<div className="mt-10 flex space-x-4 animate-loop-scroll   ">
 							{testimonials.map((item) => (
 								<TestimonialsCard data={item} />
 							))}
 						</div>
-						<div className="mt-10 flex space-x-4 animate-loop-scroll  ">
+						{/* <div className="mt-10 flex space-x-4 animate-loop-scroll  ">
 							{testimonials.map((item) => (
 								<TestimonialsCard data={item} />
 							))}
-						</div>
+						</div> */}
 					</>
 				)}
 			</div>
