@@ -124,6 +124,7 @@ export const allServicesDataActual = [
     ],
     color: "#1C1E20",
     colorMob: "#FFFFFF",
+    mobImg:'../assets/toOptimize/brandingServ.jpg',
     images: [
         {
             src: "../assets/optimized/logoDesign.jpg",
@@ -163,6 +164,7 @@ export const allServicesDataActual = [
         "Warehouse & Fulfilment"
     ],
     color: "#1C1E20",
+    mobImg:'../assets/toOptimize/customMerService.jpg',
     colorMob: "#FFFFFF",
     images: [
       {
@@ -194,6 +196,7 @@ export const allServicesDataActual = [
         "Ecommerce platforms", "CRM/CMS Integration", "Third-Party Integration", "Product Listing", "SKU maintenance", "Order Tracking", "Email Marketing", "Influencer Marketing", "Abandoned Cart Verification", "Hosting and Maintenance", "Landing Pages", "On-Page SEO", "Blogs", "Mobile & Responsive", "Website Design & Development", "App Design & Development", "YouTube Design & Development", "YouTube Advertising (PPC)"
 
     ],
+    mobImg:'../assets/toOptimize/EcommerceServ.jpg',
     images: [
         {
             src: "../assets/optimized/crm.jpg",    
@@ -223,6 +226,7 @@ export const allServicesDataActual = [
     bulletPoints: [
         "Style Guide", "Campaign Strategies", "Promotion Strategies", "Profile Makeover", "Visual Motion Ads", "Dynamic Graphics Posters", "Insightful Content", "Daily Posting", "Post Engagement", "Customer Support/Care"
     ],
+    mobImg:'../assets/toOptimize/socialMediaServ.jpg',
     images: [
       {
         src: "../assets/optimized/socialMediaLike.jpg",    
@@ -247,6 +251,7 @@ export const allServicesDataActual = [
     title: " Sales Empowerment ",
     color: "#1C1E20",
     colorMob: "#FFFFFF",
+    mobImg:'../assets/toOptimize/salesEmpovServ.jpg',
     Description:
       "Deployment of strategic planning, advanced methodologies and tools to bolster your brand’s sales effectiveness, enhance performance, streamline processes, drive significant revenue growth and  larger customer acquisition.",
     bulletPoints: [
@@ -275,6 +280,7 @@ export const allServicesDataActual = [
   {
     color: "#1C1E20",
     colorMob: "#FFFFFF",
+    mobImg:'../assets/toOptimize/marketExpansionServ.jpg',
     title: "Market Expansion ",
     Description:
       "Focuses on your brand’s growth journey, from insightful sourcing to strategic market positioning to ensuring flawless execution and delivery; driving sustained reach and impact.",
@@ -307,6 +313,7 @@ export const allServicesDataActual = [
   {
     color: "#1C1E20",
     colorMob: "#FFFFFF",
+    mobImg:'../assets/toOptimize/advertismentServ.jpg',
     title: "Advertisements ",
     Description:
       "Execution of dynamic campaigns connecting with your brand’s target audiences through meticulously crafted ads that relate, rouse action and reinforce brand loyalty across multiple platforms.",
@@ -338,6 +345,7 @@ export const allServicesDataActual = [
     title: " Customer Experience ",
     color: "#1C1E20",
     colorMob: "#FFFFFF",
+    mobImg:'../assets/toOptimize/customerExperienceServ.jpg',
     Description:
       "Ensures tactical refinement of every touchpoint in your customer’s expedition to create immersive, intuitive, and emotionally reverberating brand image that drives long-term sustenance and engagement.",
     bulletPoints: [
@@ -368,6 +376,7 @@ export const allServicesDataActual = [
     title: " Research & Development ",
     color: "#1C1E20",
     colorMob: "#FFFFFF",
+    mobImg:'../assets/toOptimize/researchAndDevServ.jpg',
     Description:
       "Leverages keen insights, trending technologies, scientific principles and creative thinking to develop breakthrough solutions that propel your brand forward meeting the constantly evolving customers’ needs and wants.",
     bulletPoints: [

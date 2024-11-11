@@ -214,10 +214,10 @@ const Services = () => {
                 </h1>
                 <div className="lg:hidden relative w-full h-48 rounded-2xl overflow-hidden">
                   <picture>
-                    <source type="image/webp" srcSet={item.webp} />
+
                     <img
                       className="w-full h-full object-cover brightness-75"
-                      src={item.img}
+                      src={item.mobImg}
                       alt="thumb"
                     />
                   </picture>
