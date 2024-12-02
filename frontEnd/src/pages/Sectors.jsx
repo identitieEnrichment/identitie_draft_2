@@ -195,7 +195,7 @@ const Sectors = () => {
 
               <div className="w-5/12">
                 <video
-                muted loop autoPlay
+                muted loop autoPlay playsInline
                   className="videoDesktop lg:w-full hidden lg:block w-full h-72 object-cover rounded-2xl"
                   src={item.video}
                   alt="thumb"
