@@ -213,14 +213,15 @@ const Services = () => {
                   {item.title}
                 </h1>
                 <div className="lg:hidden relative w-full h-48 rounded-2xl overflow-hidden">
-                  <picture>
+                  <div>
 
-                    <img
+                    <video
+                    autoPlay loop muted
                       className="w-full h-full object-cover brightness-75"
-                      src={item.mobImg}
+                      src={item.video}
                       alt="thumb"
                     />
-                  </picture>
+                  </div>
 
                   <h1 className="font-poppins absolute font-bold  lg:block text-white bottom-3 z-20 left-2 brightness-100 text-2xl lg:text-4xl  ">
                     {item.title}

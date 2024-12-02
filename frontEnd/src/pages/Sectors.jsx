@@ -8,21 +8,21 @@ import { useGSAP } from "@gsap/react";
 import { Link, ScrollLink } from "react-scroll";
 import "../css/Services.css";
 import NavigationBar from "../components/Navigation/NavigationBar";
-gsap.registerPlugin(useGSAP)
+gsap.registerPlugin(useGSAP);
 const Sectors = () => {
-  allServicesData.sort((a, b) => a.title.localeCompare(b.title))
-  console.log('allservicedata',allServicesData);
+  allServicesData.sort((a, b) => a.title.localeCompare(b.title));
   const container = useRef(null);
+ 
   useGSAP(() => {
-    gsap.to('#nav', {
-      opacity : 1,
-      display : 'block',
-      scrollTrigger : {
-        trigger : container.current,
-        start : "1% top",
-        end : "2% 10%",
-        scrub : 1,
-      }
+    gsap.to("#nav", {
+      opacity: 1,
+      display: "block",
+      scrollTrigger: {
+        trigger: container.current,
+        start: "1% top",
+        end: "2% 10%",
+        scrub: 1,
+      },
     });
     if (container.current) {
       const triggers = container.current.querySelectorAll('[class*="trigger"]');
@@ -172,15 +172,15 @@ const Sectors = () => {
                   {item.title}
                 </h1>
                 <div className="lg:hidden relative w-full h-48 rounded-2xl overflow-hidden">
-                  <picture>
-                    <source type="image/webp" srcSet={item.webp} />
-                    <img
-                    className="w-full h-full object-cover brightness-75"
-                    src={item.img}
-                    alt="thumb"
-                  />
-                  </picture>
-                
+                  <div>
+                    <video
+                    autoPlay loop muted
+                      className="w-full h-full object-cover brightness-75"
+                      src={item.video}
+                      alt="thumb"
+                    />
+                  </div>
+
                   <h1 className="font-poppins absolute  text-2xl lg:block text-white bottom-3 z-20 left-2 brightness-100 lg:text-4xl font-semibold ">
                     {item.title}
                   </h1>
@@ -191,15 +191,15 @@ const Sectors = () => {
                   {item.Description}
                 </p>
               </div>
-             
-              <picture className="w-5/12">
-                    <source type="image/webp" srcSet={item.webp} />
-                    <img
-                    className=" lg:w-full hidden lg:block w-full h-72 object-cover rounded-2xl"
-                    src={item.img}
-                    alt="thumb"
-                  />
-                  </picture>
+
+              <div className="w-5/12">
+                <video
+                muted loop autoPlay
+                  className="videoDesktop lg:w-full hidden lg:block w-full h-72 object-cover rounded-2xl"
+                  src={item.video}
+                  alt="thumb"
+                />
+              </div>
             </div>
           ))}
         </div>

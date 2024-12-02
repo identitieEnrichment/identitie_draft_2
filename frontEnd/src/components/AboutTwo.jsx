@@ -87,7 +87,7 @@ const AboutWWW = () => {
 			// svg what out
 			.fromTo(
 				what.current,
-				{ width: bigWidth, fill: "black" },
+				{ width: bigWidth, fill: "#ed1e23" },
 				{ width: smallWidth, fill: "#e5e5e5" },
 				"<"
 			)
@@ -99,7 +99,7 @@ const AboutWWW = () => {
 			// container why in
 			.to(whyContainer.current, { width: "100%", padding: "30 30 30 30" }, "<")
 			// svg why in
-			.to(why.current, { width: bigWidth, fill: "black" }, "<");
+			.to(why.current, { width: bigWidth, fill: "#ed1e23" }, "<");
 		// title why in
 		tl4
 			.from(whySpan.current, { opacity: 0 })
