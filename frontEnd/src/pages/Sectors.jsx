@@ -174,9 +174,10 @@ const Sectors = () => {
                 <div className="lg:hidden relative w-full h-48 rounded-2xl overflow-hidden">
                   <div>
                     <video
-                    autoPlay loop muted
+                    autoPlay loop muted playsInline
                       className="w-full h-full object-cover brightness-75"
                       src={item.video}
+                      
                       alt="thumb"
                     />
                   </div>

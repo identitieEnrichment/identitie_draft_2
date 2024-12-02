@@ -216,7 +216,7 @@ const Services = () => {
                   <div>
 
                     <video
-                    autoPlay loop muted
+                    autoPlay loop muted playsInline
                       className="w-full h-full object-cover brightness-75"
                       src={item.video}
                       alt="thumb"
