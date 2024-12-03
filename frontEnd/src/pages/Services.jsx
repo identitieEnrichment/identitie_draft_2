@@ -11,6 +11,7 @@ import NavigationBar from "../components/Navigation/NavigationBar";
 import { useLocation, useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LazyLoadVideo from "../components/LazyLoadVideo";
 AOS.init();
 gsap.registerPlugin(useGSAP);
 const Services = () => {
@@ -215,12 +216,7 @@ const Services = () => {
                 <div className="lg:hidden relative w-full h-48 rounded-2xl overflow-hidden">
                   <div>
 
-                    <video
-                    autoPlay loop muted playsInline
-                      className="w-full h-full object-cover brightness-75"
-                      src={item.video}
-                      alt="thumb"
-                    />
+                  <LazyLoadVideo videoSrc={item.video} desktop />
                   </div>
 
                   <h1 className="font-poppins absolute font-bold  lg:block text-white bottom-3 z-20 left-2 brightness-100 text-2xl lg:text-4xl  ">

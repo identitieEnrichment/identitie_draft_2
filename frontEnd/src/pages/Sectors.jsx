@@ -96,7 +96,7 @@ const Sectors = () => {
                 </p>
               </div>
 
-              <div className="w-5/12">
+              <div className="w-5/12 h-72 hidden lg:block">
                 <LazyLoadVideo videoSrc={item.video} desktop />
               </div>
             </div>

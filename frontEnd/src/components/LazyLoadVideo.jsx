@@ -35,8 +35,8 @@
         muted
         playsInline
         className={`${
-          desktop ? "videoDesktop lg:w-full hidden lg:block" : ""
-        } w-full h-72 object-cover rounded-2xl`}
+          desktop ? "videoDesktop " : ""
+        } w-full h-full object-cover brightness-75 rounded-2xl`}
         src={isVisible ? videoSrc : ""}
         alt="thumb"
       />
