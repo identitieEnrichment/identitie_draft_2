@@ -334,11 +334,11 @@ const Intro = () => {
 						<span class="relative z-10 ml-2">&rarr; </span>
 					</button>
 				</div>
-				<div
+				{/* <div
 					id="logoSlider"
 					className="w-[98vw] pt-4 flex items-center md:hidden text-white">
 					<LogoSlider />
-				</div>
+				</div> */}
 
 				{/* <svg
 					className="hidden md:block md:-bottom-56 -bottom-[60.5%] absolute lg:hidden wave"
@@ -350,9 +350,9 @@ const Intro = () => {
 						d="M0,288L120,277.3C240,267,480,245,720,245.3C960,245,1200,267,1320,277.3L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
 				</svg> */}
 			</div>
-			<div className="hidden md:flex pt-4 items-center xl:mt-12">
+			{/* <div className="hidden md:flex pt-4 items-center xl:mt-12">
 				<LogoSlider />
-			</div>
+			</div> */}
 		</div>
 	);
 };
