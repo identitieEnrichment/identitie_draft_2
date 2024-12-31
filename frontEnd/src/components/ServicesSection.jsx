@@ -58,6 +58,7 @@ const ServicesSection = () => {
 		...sortServices(allServicesDataActual)
 	  );
 	const slicedData = allServicesDataActual.slice(0,5)
+	console.log('sliced Data = '+slicedData[0]);
 	return (
         <div ref={container} className='relative bg-transparent lg:bg-[#0d1117] -mt-32  lg:-translate-y-20 '>
         {

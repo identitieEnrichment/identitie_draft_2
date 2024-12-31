@@ -34,6 +34,7 @@ const Services = () => {
   if (location) title = location?.state?.title;
 
   useEffect(() => {
+    
     let timer;
     if (title !== null) {
       setHide(false)
@@ -54,118 +55,118 @@ const Services = () => {
   }, []);
   
 
-  useGSAP(() => {
-    gsap.to("#nav", {
-      opacity: 1,
-      display: "block",
-      scrollTrigger: {
-        trigger: container.current,
-        start: "1% top",
-        end: "2% 10%",
-        scrub: 1,
-      },
-    });
-    if (container.current) {
-      const triggers = container.current.querySelectorAll('[class*="trigger"]');
-      const titles = document.querySelectorAll('[class*="title"]');
-      const icons = document.querySelectorAll('[class*="icon"]');
-      const defaultColor = "#555555";
-
-      triggers.forEach((card, index) => {
-        gsap.from(card, {
-          opacity: 0,
-          x: -50,
-          scrollTrigger: {
-            trigger: card,
-
-            start: "top 80%",
-            end: "bottom bottom",
-            scrub: 1,
-          },
-        });
+    useGSAP(() => {
+    
+      gsap.to("#nav", {
+        opacity: 1,
+        display: "block",
+        scrollTrigger: {
+          trigger: container.current,
+          start: "1% top",
+          end: "2% 10%",
+          scrub: 1,
+        },
       });
-      titles.forEach((title, index) => {
-        const icon = icons[index];
-        gsap.to(title, {
-          color: "#FFFFFF",
-          scrollTrigger: {
-            trigger: triggers[index],
-            start: "top 20%",
-            end: "bottom 20%",
-            onEnter: () => {
-              titles.forEach((t, i) => {
-                if (i !== index) {
-                  gsap.to(t, { color: defaultColor, scale: 1 });
-                }
-                if (icons[i]) {
-                  gsap.to(icons[i], {
-                    color: defaultColor,
-                    borderColor: defaultColor,
-                    scale: 1,
+      if (container.current) {
+        const triggers = container.current.querySelectorAll('[class*="trigger"]');
+        const titles = document.querySelectorAll('[class*="title"]');
+        const icons = document.querySelectorAll('[class*="icon"]');
+        const defaultColor = "#555555";
+
+        triggers.forEach((card, index) => {
+          gsap.from(card, {
+            opacity: 0,
+            x: -50,
+            scrollTrigger: {
+              trigger: card,
+              start: "top 80%",
+              end: "bottom bottom",
+              scrub: 1,
+            },
+          });
+        });
+        titles.forEach((title, index) => {
+          const icon = icons[index];
+          gsap.to(title, {
+            color: "#FFFFFF",
+            scrollTrigger: {
+              trigger: triggers[index],
+              start: "top 20%",
+              end: "bottom 20%",
+              onEnter: () => {
+                titles.forEach((t, i) => {
+                  if (i !== index) {
+                    gsap.to(t, { color: defaultColor, scale: 1 });
+                  }
+                  if (icons[i]) {
+                    gsap.to(icons[i], {
+                      color: defaultColor,
+                      borderColor: defaultColor,
+                      scale: 1,
+                    });
+                  }
+                });
+                gsap.to(title, { color: "#FFFFFF", scale: 1.1 });
+                if (icon) {
+                  gsap.to(icon, {
+                    color: "#FFFFFF",
+                    borderColor: "#FFFFFF",
+                    scale: 1.1,
                   });
                 }
-              });
-              gsap.to(title, { color: "#FFFFFF", scale: 1.1 });
-              if (icon) {
+              },
+              onLeave: () => {
+                gsap.to(title, { color: defaultColor, scale: 1 });
                 gsap.to(icon, {
-                  color: "#FFFFFF",
-                  borderColor: "#FFFFFF",
-                  scale: 1.1,
+                  color: defaultColor,
+                  borderColor: defaultColor,
+                  scale: 1,
                 });
-              }
-            },
-            onLeave: () => {
-              gsap.to(title, { color: defaultColor, scale: 1 });
-              gsap.to(icon, {
-                color: defaultColor,
-                borderColor: defaultColor,
-                scale: 1,
-              });
-            },
-            onEnterBack: () => {
-              titles.forEach((t, i) => {
-                if (i !== index) {
-                  gsap.to(t, { color: defaultColor, scale: 1 });
-                }
-                if (icons[i]) {
-                  gsap.to(icons[i], {
-                    color: defaultColor,
-                    borderColor: defaultColor,
-                    scale: 1,
+              },
+              onEnterBack: () => {
+                titles.forEach((t, i) => {
+                  if (i !== index) {
+                    gsap.to(t, { color: defaultColor, scale: 1 });
+                  }
+                  if (icons[i]) {
+                    gsap.to(icons[i], {
+                      color: defaultColor,
+                      borderColor: defaultColor,
+                      scale: 1,
+                    });
+                  }
+                });
+                gsap.to(title, { color: "#FFFFFF", scale: 1.1 });
+                if (icon) {
+                  gsap.to(icon, {
+                    color: "#FFFFFF",
+                    borderColor: "#FFFFFF",
+                    scale: 1.1,
                   });
                 }
-              });
-              gsap.to(title, { color: "#FFFFFF", scale: 1.1 });
-              if (icon) {
+              },
+              onLeaveBack: () => {
+                gsap.to(title, { color: defaultColor, scale: 1 });
                 gsap.to(icon, {
-                  color: "#FFFFFF",
-                  borderColor: "#FFFFFF",
-                  scale: 1.1,
+                  color: defaultColor,
+                  borderColor: defaultColor,
+                  scale: 1,
                 });
-              }
+              },
             },
-            onLeaveBack: () => {
-              gsap.to(title, { color: defaultColor, scale: 1 });
-              gsap.to(icon, {
-                color: defaultColor,
-                borderColor: defaultColor,
-                scale: 1,
-              });
-            },
-          },
+          });
         });
-      });
 
-      return () => {
-        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      };
-    }
-  }, [allServicesDataActual]);
+        return () => {
+          ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        };
+      }
+    }, [allServicesDataActual]);
 
 
   return (
     <div className="bg-secondary relative bg-black  ">
-      {<Header hide={hide} layout={"Services"} />}
+      {<Header hide={hide}  layout={"Services"} />}
       <NavigationBar layout={""} />
       <div className=" lg:flex lg:gap-32">
         {/* Left ServiceList  */}

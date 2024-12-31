@@ -39,7 +39,7 @@ const Sectors = () => {
 
   return (
     <div className="bg-secondary relative bg-black">
-      <Header layout={"Services"} />
+      <Header  layout={"Services"} />
       <NavigationBar layout={""} />
       <div className="lg:flex lg:gap-32">
         {/* Left ServiceList */}
