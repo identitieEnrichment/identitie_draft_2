@@ -124,7 +124,7 @@ const AboutWWW = () => {
 			// container who in
 			.to(whoContainer.current, { width: bigWidth, padding: "30 30 30 30" }, "<")
 			// svg who in
-			.to(who.current, { width: bigWidth, fill: "black" }, "<");
+			.to(who.current, { width: bigWidth, fill: "#ed1e23" }, "<");
 		// title who in
 		tl6
 			.from(whoSpan.current, { opacity: 0 })

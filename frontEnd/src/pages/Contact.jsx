@@ -9,7 +9,7 @@ const Contact = () => {
 			<div className="bg-black py-3 px-2 min-h-screen flex justify-center items-center">
             <Header layout={"Services"}/>
 			
-				<div class="border-[.1px] border-gray-600 grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-10 shadow-[0px_30px_120px_30px_rgba(119,62,199,0.3)] rounded-3xl max-w-6xl mt-24 mx-auto bg-[#0d1117] text-[#333] font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-gray-900 before:h-full max-md:before:hidden">
+				<div class="border-[.1px] border-gray-600 grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-10 shadow-[0px_30px_120px_30px_rgba(237,30,35,0.2)] rounded-3xl max-w-6xl mt-24 mx-auto bg-[#0d1117] text-[#333] font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-gray-900 before:h-full max-md:before:hidden">
 					<div>
 						<h2 class="text-3xl font-extrabold text-white">Get In Touch</h2>
 						<p class="text-sm text-gray-400 mt-3">
@@ -55,7 +55,7 @@ const Contact = () => {
 							</div>
 							<button
 								type="submit"
-								class="rounded-full px-4 py-3 bg-gray-900 w-full text-sm border-b-2 border-[#333] outline-none focus:border-white text-white flex justify-center items-center mt-4 hover:bg-gray-800 transition-colors duration-300">
+								class="rounded-full px-4 py-3 bg-gray-900 w-full text-sm border-b-2 border-[#333] outline-none focus:border-white text-white flex justify-center items-center mt-4 hover:bg-[#ed1e23] transition-colors duration-300">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="16px"
@@ -105,17 +105,20 @@ const Contact = () => {
 										data-original="#000000"></path>
 								</svg>
 								<a href="tel:8882192787" class=" text-sm ml-3">
-									<strong>+91 8086812602</strong>
+									<strong>+91 94445 43659</strong>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div class="z-10 relative h-full max-md:min-h-[350px]">
-						<iframe
+						<div>
+							<video autoPlay loop muted className="rounded-xl" src="../assets/toOptimize/GetInTouch_Animation_Video.mp4"></video>
+						</div>
+						{/* <iframe
 							src="https://maps.google.com/maps?q=adayar&t=&z=13&ie=UTF8&iwloc=&output=embed"
 							class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg"
 							frameborder="0"
-							allowfullscreen></iframe>
+							allowfullscreen></iframe> */}
 					</div>
 				</div>
 			</div>
