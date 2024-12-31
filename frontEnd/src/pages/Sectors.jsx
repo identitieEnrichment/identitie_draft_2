@@ -14,28 +14,28 @@ gsap.registerPlugin(ScrollTrigger);
 const Sectors = () => {
   const container = useRef(null);
 
-  useEffect(() => {
-    if (container.current) {
-      const triggers = container.current.querySelectorAll('[class*="trigger"]');
+  // useEffect(() => {
+  //   if (container.current) {
+  //     const triggers = container.current.querySelectorAll('[class*="trigger"]');
 
-      triggers.forEach((trigger) => {
-        gsap.from(trigger, {
-          opacity: 0,
-          x: -50,
-          scrollTrigger: {
-            trigger,
-            start: "top 80%",
-            end: "bottom bottom",
-            scrub: 1,
-          },
-        });
-      });
+  //     triggers.forEach((trigger) => {
+  //       gsap.from(trigger, {
+  //         opacity: 0,
+  //         x: -50,
+  //         scrollTrigger: {
+  //           trigger,
+  //           start: "top 80%",
+  //           end: "bottom bottom",
+  //           scrub: 1,
+  //         },
+  //       });
+  //     });
 
-      return () => {
-        ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      };
-    }
-  }, []);
+  //     return () => {
+  //       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //     };
+  //   }
+  // }, []);
 
   return (
     <div className="bg-secondary relative bg-black">
