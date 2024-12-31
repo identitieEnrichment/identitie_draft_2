@@ -40,7 +40,7 @@ export default function NavigationBar({layout}) {
 						ref={logo}
 						src="../assets/logo-black.png"
 						alt="logo"
-						className="h-6 md:h-12 absolute  md:top-3 hidden top-2 left-2 "
+						className="h-6 md:h-6 absolute  md:top-3 hidden top-2 left-2 "
 					/>
 
 					<div
