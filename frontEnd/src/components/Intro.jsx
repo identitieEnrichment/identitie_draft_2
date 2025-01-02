@@ -258,7 +258,7 @@ const Intro = () => {
 
 					<div className="lg:absolute lg:left-12 lg:w-6/12 space-y-5 px-4 lg:pl-24 mt-12 md:mt-0 lg:top-[40%] lg:z-50  lg:mt-0 ">
 						<h1 className="text-white lg:text-6xl text-3xl font-poppins font-bold ">
-							Crafting Brands , Creating Legacies
+							Crafting Brands, Creating Legacies
 						</h1>
 						<p className="text-gray-400 font-poppins w-full text-sm md:text-base des">
 							Define your identity with Identitie. With a global footprint and
@@ -316,7 +316,7 @@ const Intro = () => {
 					<h1
 						id="craft-identitie"
 						className="text-white lg:text-6xl text-3xl font-poppins font-bold title">
-						Your Perception , Our Prowess
+						Your Perception, Our Prowess
 					</h1>
 					<p className="text-gray-400 font-poppins w-full text-sm md:text-base descr ">
 						Identitie is a purpose-driven firm. Transform your vision into a

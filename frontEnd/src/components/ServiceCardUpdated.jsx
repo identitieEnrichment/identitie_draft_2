@@ -75,7 +75,7 @@ const ServicesCardUpdated = ({
 
 							{isLastCard && (
 								<>
-									<div className="bg-black w-full h-full absolute inset-0 opacity-75"></div>
+									<div className="bg-black w-full h-full absolute inset-0 opacity-30"></div>
 									<div className="	absolute inset-0 w-full h-full flex items-center flex-col space-y-2 justify-center">
 										<div className="flex flex-col items-center">
 											<div className="space-y-3 flex flex-col items-center">

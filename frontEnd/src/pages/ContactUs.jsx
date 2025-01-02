@@ -14,7 +14,7 @@ const ContactUs = () => {
 			<div className="flex mt-2 md:gap-10 w-full md:flex-row flex-col-reverse">
 				<div className="w-full">
 					<img
-						className="h-[60vh] object-cover  w-11/12 opacity-30 rounded-3xl hidden md:block"
+						className="h-[60vh] object-cover  w-11/12 opacity-80 rounded-3xl hidden md:block"
 						src="../assets/optimized/contactus-optimized.png"
 						alt="contact"
 					/>

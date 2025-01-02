@@ -6,8 +6,10 @@ import { height } from '../../../utils/anim';
 import Body from '../Body/Body';
 import Image from '../Image/Image';
 import {
+  FaFacebook,
 	FaInstagram,
 	FaLinkedin,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const links = [
@@ -60,6 +62,15 @@ export default function Nav() {
 							target="_blank"
 							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 					<FaInstagram className='text-2xl md:text-3xl' />
+				</a>
+        <a href="https://www.facebook.com/profile.php?id=61556107611993&mibextid=wwXIfr&rdid=vDrmqRlp2qOtg7Jx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DBJGfEWrj%2F%3Fmibextid%3DwwXIfr#"
+							target="_blank"
+							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+					<FaFacebook className='text-2xl md:text-3xl' />
+				</a>
+        <a  href="https://api.whatsapp.com/send?phone=+919952698022&text=I'm%20interested%20in%20your%20service" target="_blank"
+							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+					<FaWhatsapp  className='text-2xl md:text-3xl' />
 				</a>
 				
 				<a href="https://www.linkedin.com/company/identitie-enrichment/"

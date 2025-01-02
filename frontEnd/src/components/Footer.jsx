@@ -69,7 +69,7 @@ const Footer = () => {
 							<FaInstagram />
 						</a>
 						<a
-							href="https://www.instagram.com/identitie.ie/"
+							href="https://www.facebook.com/profile.php?id=61556107611993&mibextid=wwXIfr&rdid=vDrmqRlp2qOtg7Jx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DBJGfEWrj%2F%3Fmibextid%3DwwXIfr#"
 							target="_blank"
 							rel="noreferrer"
 							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
@@ -100,7 +100,7 @@ const Footer = () => {
 						/>
 					</div>
 					<button className="bg-white font-poppins p-2 flex justify-center items-center w-full hover:bg-gray-300">
-						Subscribe
+						Submit
 					</button>
 				</div>
 
