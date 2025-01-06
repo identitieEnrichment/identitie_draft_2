@@ -21,21 +21,32 @@ const TestimonialsCard = ({ data }) => {
   };
   return (
     <div>
-      <blockquote className="shadow-lg rounded-md w-full lg:w-96 bg-transparent border h-40 flex flex-col justify-center p-2  border-gray-900">
-        <div className="flex items-center ">
+    <blockquote className="shadow-lg rounded-md w-full lg:w-96 bg-transparent border h-40 flex flex-col justify-center p-2 border-gray-900">
+      <div className="flex items-center">
+        <div className="w-1/2  flex justify-center">
+          <img 
+            className="w-12 h-12 object-contain" 
+            src="./assets/optimized/quote1 gray.png" 
+            alt="quote" 
+          />
+        </div>
+        <div className="text-right">
           <div>
-            <img className="size-20 object-contain" src="./assets/optimized/quote1 white.png" alt="" />
+            <div className="flex justify-end mt-2">{renderStarts(5)}</div>
           </div>
-          <div className="text-right">
-            <div>
-              <div className="flex justify-end mt-2">{renderStarts(5)}</div>
-            </div>
-            <div className="p-2   text-sm     text-[#666666] font-poppins">
-              {data?.review}
-            </div>
+          <div className="p-2 text-sm text-white font-poppins">
+            {data?.review}
           </div>
         </div>
-        {/* <div className='flex items-center  justify-center'>
+      </div>
+    </blockquote>
+  </div>
+  
+  );
+};
+
+export default TestimonialsCard;
+{/* <div className='flex items-center  justify-center'>
                 <img
                   alt=""
                   src="./assets/review.png"
@@ -48,9 +59,3 @@ const TestimonialsCard = ({ data }) => {
             <div className='p-2   text-sm text-center  text-[#666666] font-poppins'>
                {data?.review}
             </div> */}
-      </blockquote>
-    </div>
-  );
-};
-
-export default TestimonialsCard;
