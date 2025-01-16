@@ -77,13 +77,13 @@ const ServicesCardUpdated = ({
 								<>
 									<div className="bg-black w-full h-full absolute inset-0 opacity-20"></div>
 									<div className="	absolute inset-0 w-full h-full flex items-center flex-col space-y-2 justify-center">
-										<div className="flex flex-col items-center">
-											<div className="space-y-3 flex flex-col items-center">
+										<div className="flex flex-col  items-center">
+											<div className="space-y-3 flex flex-col items-center text-center">
 												<h1 className="text-white  text-xl lg:text-4xl font-bold ">
-													Comprehensive Business Solutions
+												End-to-End Brand Architecture Fulfillment
 												</h1>
-												<h1 className="text-white  text-sm font-medium">
-													Explore Our Diverse Range of Services
+												<h1 className="text-white   text-sm font-medium">
+													From Vision to Execution, We Offer Offer a Diverse Range of Services Across Various Sectors
 												</h1>
 											</div>
 
@@ -91,7 +91,7 @@ const ServicesCardUpdated = ({
 												onClick={() => navigate("/services")}
 												class="z-50  mt-10 hover:before:bg-[#ed1e24] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
 												<span class="relative z-50 whitespace-nowrap px-2">
-													{isLastCard ? "View All Services" : "See more"}
+													{isLastCard ? "Start Building" : "Start Building"}
 												</span>
 												<span class="relative z-10 ml-2">&rarr; </span>
 											</button>
@@ -113,7 +113,7 @@ const ServicesCardUpdated = ({
 												Estate to IT, our expertise spans multiple industries,
 												ensuring top-notch solutions that drive success.
 												Discover the exceptional quality and dedication we bring
-												to every project."
+												to every project.
 											</h1>
 										</div>
 									</div>

@@ -37,7 +37,7 @@ const WCard = ({ Data, index }) => {
 			className={`${"aboutcard" + index
 				} border-black overflow-hidden border-2  w-full flex cursor-pointer h-[33vh] font-poppins`}
 		>
-			<div ref={wContainer}  className={`${"wContainer" + index} bg-black w-full pr-4 flex items-center justify-center`}>
+			<div ref={wContainer}  className={`${"wContainer" + index} bg-gray-200 w-full pr-4 flex items-center justify-center`}>
 				<span className="text-[156px] whitespace-nowrap font-bold text-[#ed1e23] drop-shadow-[3px_3px_0px_rgba(255,255,255,1)] ">W</span>
 			</div>
 			<div className=" flex flex-col justify-between space-y-2 w-full">

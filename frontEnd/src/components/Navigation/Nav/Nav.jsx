@@ -16,32 +16,32 @@ const links = [
   {
     title: "Home",
     href: "/",
-    src: "../assets/optimized/archi-optimized.jpeg"
+    src: "../assets/toOptimize/Website_Home_Black.jpg"
   },
   {
     title: "Services",
     href: "/services",
-    src: "../assets/optimized/ecommerceService-optimized.jpeg"
+    src: "../assets/toOptimize/Website_Services_Black.jpg"
   },
   {
     title: "Sectors",
     href: "/sectors",
-    src: "../assets/optimized/archi.jpg"
+    src: "../assets/toOptimize/Website_Sectors_Black.jpg"
   },
   {
     title: "Products",
     href: "/products",
-    src: "../assets/optimized/Skincare-optimized.jpeg"
+    src: "../assets/toOptimize/Website_Products_Black.jpg"
   },
   {
     title: "About",
     href: "/aboutus",
-    src: "../assets/optimized/archi-optimized.jpeg"
+    src: "../assets/toOptimize/Website_About_Black.jpg"
   },
   {
     title: "Contact ",
     href: "/contactus",
-    src: "../assets/optimized/contactus-optimized.png"
+    src: "../assets/toOptimize/Website_Contact_Black.jpg"
   }
 ]
 
@@ -68,8 +68,7 @@ export default function Nav() {
 							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 					<FaFacebook className='text-2xl md:text-3xl' />
 				</a>
-        <a  href="https://api.whatsapp.com/send?phone=+919952698022&text=I'm%20interested%20in%20your%20service" target="_blank"
-							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+        <a href="https://api.whatsapp.com/send?phone=919952698022&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110"> 
 					<FaWhatsapp  className='text-2xl md:text-3xl' />
 				</a>
 				
