@@ -15,7 +15,7 @@ const ContactUs = () => {
 				<div className="w-full">
 					<img
 						className="h-[60vh] object-cover  w-11/12 opacity-80 rounded-3xl hidden md:block"
-						src="../assets/optimized/contactus-optimized.png"
+						src="../assets/optimized/contactUs.png"
 						alt="contact"
 					/>
 					{/* <div className="mt-12 grid md:grid-cols-2 gap-5">

@@ -54,7 +54,7 @@ const ZoomParalax = () => {
 
   const pictures = [
     {
-      src: "../assets/toOptimize/service2Test.jpeg",
+      src: "../assets/toOptimize/Service Images_2_Center.jpg",
       // webp: 'https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/servicetest2-optimized.webp?alt=media&token=ea786202-f131-4213-9e86-33bcfad17610',
       scale: scale4,
       scaleMob: scale4Mob,

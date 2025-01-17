@@ -44,7 +44,6 @@ const Sectors = () => {
                                 if (self.direction === -1 && self.scroll() > self.start && self.scroll() < self.end) {
                                     const scale = gsap.utils.mapRange(0, 1, 6.5, 1, self.progress);
                                     if (scale > 1.5) {
-                                        // Convert collection to array and hide all children except the one being animated
                                         sectorsData.forEach((data, index) => {
                                                 const scaleImg = container.current.children[2];
                                                 if (scaleImg !== null && scaleImg !== undefined) {
@@ -90,12 +89,10 @@ useGSAP(() => {
     }, );
     
     function handlePrevious(){
-
         const newData = [...sectorsData];
         const firstElement = newData.shift();
         newData.push(firstElement)
         setSectorData(newData)
-
     }
    
     return (

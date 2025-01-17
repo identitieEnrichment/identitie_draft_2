@@ -146,7 +146,7 @@ export const allServicesDataActual = [
     mobImg: "../assets/toOptimize/brandingServ.jpg",
     images: [
       {
-        src: "../assets/toOptimize/brandingAndMarketing.jpg",
+        src: "../assets/non-optimized/Services_Resized_Branding.jpg",
         title: "Logo Design",
       },
       {
@@ -188,7 +188,7 @@ export const allServicesDataActual = [
     video: "../assets/videos/services/Animation_Services_CustomMerchandise.mp4",
     images: [
       {
-        src: "../assets/toOptimize/customMerService.jpg",
+        src: "../assets/non-optimized/Services_Resized_Custom Merchandise.jpg",
         title: "Product Design",
       },
       {
@@ -395,7 +395,7 @@ export const allServicesDataActual = [
     video: "../assets/videos/services/Animation_Services_Advertisements.mp4",
     images: [
       {
-        src: "../assets/toOptimize/advertismentServ.jpg",
+        src: "../assets/non-optimized/Services_Resized_ Advertisements.jpg",
         title: "Sourcing Investors",
       },
       {
@@ -436,7 +436,7 @@ export const allServicesDataActual = [
       "../assets/videos/services/Animation_Services_CustomerExperience.mp4",
     images: [
       {
-        src: "../assets/toOptimize/customerExperienceServ.jpg",
+        src: "../assets/non-optimized/Services_Resized_Customer Experience.jpg",
         title: "After Sales Services",  
       },
       {
