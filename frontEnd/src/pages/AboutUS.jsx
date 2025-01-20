@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Header from "../components/Header";
 import NavigationBar from "../components/Navigation/NavigationBar";
+import WCard from "../components/WCard";
 
 const AboutUS = () => {
 	const cards = useRef(null);
@@ -71,42 +72,43 @@ const AboutUS = () => {
 			<Header page={"ABOUT"} layout={"Service"} />
 			<div className="md:pt-12 ">
 				<AboutOne />
-				<div ref={cards} className="md:hidden w-full mb-12">
-					<div className="grid grid-cols-1 w-full px-4 gap-4 ">
-						<AboutCard
-							index={1}
-							Data={{
-								title: "what",
-								description:
-									"At Identitie, we provide a full suite of services designed to meet the unique needs of businesses and individuals alike. Whether you're looking for business strategy, creative design, or technology integration, we proffer customized approaches delivering solutions tailored to your requirements.",
-							}}
-						/>
-						<AboutCard
-							index={2}
-							Data={{
-								title: "Why",
-								description:
-									"Travel, leisure, and a touch of workshops, photoshoots, and event management—our opportunities span a diverse range of experiences. With deep sector knowledge and an extensive network, we explore art, philosophy, nature, and relationships; connecting with people, transforming brands, and enhancing lives.",
-							}}
-						/>
-						<AboutCard
-							index={3}
-							Data={{
-								title: "Who",
-								description:
-									"From aspiring architects to visionary entrepreneurs, our decade-long journey has taught us that true connection is built through thoughtfully designed spaces. At Identitie, we blend creativity and originality to create environments and brand experiences that truly resonate with people. Our mission is to inspire and engage through every project we undertake.",
-							}}
-						/>
-						<AboutCard
-							index={4}
-							Data={{
-								title: "Where",
-								description:
-									"Rooted in the booming city of Chennai, be it an extended all-nighter or an overhauling all-dayer; we speak, write, workshop, design, and reach-out GLOBALLY, with YOU in our minds!. ",
-							}}
-						/>
-					</div>
+				<div ref={cards} className="md:hidden w-full mb-12 lg:mt-0 lg:mb-0">
+				<div className="grid grid-cols-1 w-full px-4 gap-4 ">
+					<WCard
+						index={1}
+						Data={{
+							title: "what",
+							description:
+								"At Identitie, we provide a full suite of services designed to meet the unique needs of businesses and individuals alike. Whether you're looking for business strategy, creative design, or technology integration, we proffer customized approaches delivering solutions tailored to your requirements.",
+						}}
+					/>
+					<WCard
+						index={2}
+						Data={{
+							title: "Why",
+							description:
+								"Travel, leisure, and a touch of workshops, photoshoots, and event management—our opportunities span a diverse range of experiences. With deep sector knowledge and an extensive network, we explore art, philosophy, nature, and relationships; connecting with people, transforming brands, and enhancing lives.",
+						}}
+					/>
+					<WCard
+						index={3}
+						Data={{
+							title: "Who",
+							description:
+								"From aspiring architects to visionary entrepreneurs, our decade-long journey has taught us that true connection is built through thoughtfully designed spaces. At Identitie, we blend creativity and originality to create environments and brand experiences that truly resonate with people. Our mission is to inspire and engage through every project we undertake.",
+						}}
+					/>
+					<WCard
+						index={4}
+						Data={{
+							title: "Where",
+							description:
+								"Rooted in a spirit of innovation and dedication, we operate around the clock, speaking, writing, workshopping, designing, and reaching out GLOBALLY, always with YOU in mind!",
+						}}
+					/>
 				</div>
+			</div>
+				
 				<div className="hidden md:block">
 					<AboutTwo />
 				</div>

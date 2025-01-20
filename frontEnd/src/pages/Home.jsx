@@ -19,6 +19,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import WCard from "../components/WCard";
 // ..
+
+
 AOS.init();
 gsap.registerPlugin(useGSAP);
 const Home = () => {

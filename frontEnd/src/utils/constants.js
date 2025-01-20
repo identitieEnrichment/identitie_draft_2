@@ -150,7 +150,7 @@ export const allServicesDataActual = [
         title: "Logo Design",
       },
       {
-        src: "../assets/optimized/businessInterview.jpg",
+        src: "../assets/non-optimized/Services_Resized_Branding.jpg",
         title: "Stakeholder Interviews",
       },
 
@@ -192,7 +192,7 @@ export const allServicesDataActual = [
         title: "Product Design",
       },
       {
-        src: "../assets/optimized/cocomoProduct.webp",
+        src: "../assets/non-optimized/Services_Resized_Custom Merchandise.jpg",
         title: "Production & Manufacturing",
       },
       {
@@ -240,7 +240,7 @@ export const allServicesDataActual = [
         title: "CRM/CMS Integration",
       },
       {
-        src: "../assets/optimized/e-commercePlatform.jpg",
+        src: "../assets/toOptimize/BusinessSolutions_Background.jpg",
         title: "Ecommerce Platforms",
       },
       {
@@ -399,7 +399,7 @@ export const allServicesDataActual = [
         title: "Sourcing Investors",
       },
       {
-        src: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/Marketing-optimized.webp?alt=media&token=0ca947c1-d7b0-4b21-a5e0-9417e54c8670",
+        src: "../assets/non-optimized/Services_Resized_ Advertisements.jpg",
         title: "Market Insights & Analysis",
       },
       {

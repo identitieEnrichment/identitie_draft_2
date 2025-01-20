@@ -55,7 +55,7 @@
         .el{
             display: flex;
             align-items: center;
-            justify-content: center;
+            
             gap: 8px;
             cursor: pointer;
 
@@ -76,7 +76,7 @@
                 width: 22.5px;
                 position: relative;
                 pointer-events: none;
-    
+                background-color: aqua;
                 
     
                 &::after{

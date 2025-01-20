@@ -39,16 +39,16 @@ const ZoomParalax = () => {
   });
 
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 4]);
-  const scale5 = useTransform(scrollYProgress, [0, 1], [1, 5]);
-  const scale6 = useTransform(scrollYProgress, [0, 1], [1, 6]);
-  const scale8 = useTransform(scrollYProgress, [0, 1], [1, 8]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 9]);
+  const scale5 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+  const scale6 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+  const scale8 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 4]);
 
   const scale4Mob = useTransform(scrollYProgress, [0, 1], [4, 1]);
-  const scale5Mob = useTransform(scrollYProgress, [0, 1], [5, 1]);
-  const scale6Mob = useTransform(scrollYProgress, [0, 1], [6, 1]);
-  const scale8Mob = useTransform(scrollYProgress, [0, 1], [8, 1]);
-  const scale9Mob = useTransform(scrollYProgress, [0, 1], [9, 1]);
+  const scale5Mob = useTransform(scrollYProgress, [0, 1], [4, 1]);
+  const scale6Mob = useTransform(scrollYProgress, [0, 1], [4, 1]);
+  const scale8Mob = useTransform(scrollYProgress, [0, 1], [4, 1]);
+  const scale9Mob = useTransform(scrollYProgress, [0, 1], [4, 1]);
 
   const isMobile = useIsMobile();
 
