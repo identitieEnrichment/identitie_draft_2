@@ -294,21 +294,24 @@ const Intro = () => {
 				ref={second}
 				className="lg:h-[55vh] mt-0 bg-[#0d1117] lg:relative lg:flex lg:justify-center ">
 				<div className="md:hidden px-4 relative">
-					<picture>
-						<source srcSet="https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/landscapephone2-optimized.webp?alt=media&token=fee4db68-5d16-45a3-b23a-433e4305fa75" />
+					{/* <video autoPlay loop muted src="../assets/optimized/horizontal_Video2.mp4" ></video> */}
 						<img
 							className="w-full object-cover mobile"
-							src="../assets/optimized/landscapephone2-optimized.png"
+							src="../assets/optimized/horizontalphone_white.png"
 							alt="phone"
 						/>
-					</picture>
-					{/* <video
-						style={{ borderRadius: "25px" }}
-						className="absolute top-3 left-7 rounded-lg object-cover h-[165px] w-[345px] z-10"
-						src="../assets/video.mp4"
-						muted
-						loop
-						autoPlay></video> */}
+						<div className="absolute flex justify-center items-center inset-0">
+							<video
+							style={{ borderRadius: "25px" }}
+							className="absolute rounded-lg object-cover h-[138px]  w-[310px] z-0"
+							src="../assets/optimized/MainPage_Video_3_Compressed.mp4"
+							muted 
+							playsInline
+							loop
+							autoPlay></video>
+						</div>
+					
+						{/* <video  className="absolute h-full w-full" autoPlay loop muted src="../assets/optimized/MainPage_Video.mp4"></video> */}
 				</div>
 				<div
 					ref={cont}

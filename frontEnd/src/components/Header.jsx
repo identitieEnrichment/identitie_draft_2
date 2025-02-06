@@ -68,7 +68,7 @@ const Header = ({ layout,page}) => {
 			}`}>
 
 			<div className="p-4 mx-4 2xl:p-7 xl:p-3 flex items-center justify-between">
-				<div onClick={() => navigate("/")} className="cursor-pointer hidden lg:block  ">
+				<div onClick={() => navigate("/")} className="cursor-pointer  lg:block  ">
 					{/* Logo */}
 					<img className="h-6" src={`${page === 'ABOUT' || page === 'PRODUCT' ? '../assets/logo-black.png' : '../assets/logo-white.png'}`} alt="logo" />
 				</div>

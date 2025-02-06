@@ -197,7 +197,7 @@ const Sectors = () => {
                   <h1 className="font-poppins absolute text-2xl lg:block text-white bottom-3 z-20 left-2 brightness-100 lg:text-4xl font-semibold">
                     {item.title}
                   </h1>
-                  <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black opacity-80"></div>
+                  <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black"></div>
                 </div>
 
                 <p className="font-poppins lg:text-base text-gray-300">

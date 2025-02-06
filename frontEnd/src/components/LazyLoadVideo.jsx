@@ -36,7 +36,7 @@
         playsInline
         className={`${
           desktop ? "videoDesktop " : ""
-        } w-full h-full object-cover brightness-75 rounded-2xl`}
+        } w-full h-full object-cover brightness-100 rounded-2xl`}
         src={isVisible ? videoSrc : ""}
         alt="thumb"
       />

@@ -151,7 +151,7 @@ const Contact = () => {
 					</div>
 					<div class="z-10 relative h-full max-md:min-h-[350px]">
 						<div>
-							<video autoPlay loop muted className="rounded-xl" src="../assets/toOptimize/GetInTouch_Animation_Video.mp4"></video>
+							<video playsInline autoPlay loop muted className="rounded-xl" src="../assets/toOptimize/GetInTouch_Animation_Video.mp4"></video>
 						</div>
 						{/* <iframe
 							src="https://maps.google.com/maps?q=adayar&t=&z=13&ie=UTF8&iwloc=&output=embed"
