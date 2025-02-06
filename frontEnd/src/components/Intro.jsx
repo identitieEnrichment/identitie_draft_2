@@ -304,7 +304,7 @@ const Intro = () => {
 							<video
 							style={{ borderRadius: "25px" }}
 							className="absolute rounded-lg object-cover h-[138px]  w-[310px] z-0"
-							src="../assets/optimized/MainPage_Video_3_Compressed.mp4"
+							src="../assets/optimized/MainPage_Video_4_Compressed.mp4"
 							muted 
 							playsInline
 							loop
