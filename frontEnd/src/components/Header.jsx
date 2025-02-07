@@ -17,7 +17,7 @@ const Header = ({ layout,page}) => {
 		setNavCollapse(!navCollapse);
 	};
 	useGSAP(() => {
-		if(page === 'Home' || page === 'ABOUT'){
+
 			const mm = gsap.matchMedia()
 			mm.add('(min-width: 769px)',() => {
 				gsap.to(headerSection.current, {
@@ -43,7 +43,7 @@ const Header = ({ layout,page}) => {
 					},
 				});
 			})
-		}
+		
 		
 		
 	});
@@ -63,8 +63,8 @@ const Header = ({ layout,page}) => {
 		<header
 		
 			ref={headerSection}
-			className={`mainHeader fixed top-0 w-full z-[9999] lg:z-[999999]   ${
-				layout === "Services" ? page !== 'Home' ? "bg-black/90" : "bg-transparent":"b"
+			className={`mainHeader fixed top-0  lg:w-full z-[999999] lg:z-[999999]   ${
+				layout === "Services" ? page !== 'Home' ? "bg-transparent" : "bg-transparent":"b"
 			}`}>
 
 			<div className="p-4 mx-4 2xl:p-7 xl:p-3 flex items-center justify-between">

@@ -22,14 +22,16 @@ export default function NavigationBar({layout}) {
 						) {
 							header.current.style.backgroundColor = "white";
 							logo.current.style.display = "flex";
+							document.getElementsByClassName('mainHeader')[0].style.width = '0px';
 
 							header.current.style.height = "100%";
 						} else {
 							logo.current.style.display = "none";
-
+							
 							header.current.style.height = "auto";
 							setTimeout(() => {
 								header.current.style.backgroundColor = "transparent";
+								document.getElementsByClassName('mainHeader')[0].style.width = '50%';
 							}, 900);
 						}
 					}}
@@ -40,7 +42,7 @@ export default function NavigationBar({layout}) {
 						ref={logo}
 						src="../assets/logo-black.png"
 						alt="logo"
-						className="h-6 md:h-6 absolute  md:top-3 hidden top-2 left-2 "
+						className="h-6 md:h-6 absolute bg-white   md:top-3 hidden top-2 left-2 "
 					/>
 
 					<div
