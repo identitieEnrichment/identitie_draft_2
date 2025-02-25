@@ -156,3 +156,58 @@ section.character::before {
     content: '';
     color: #fff;
 }
+
+@layer utilities {
+
+    #timeLinevideo{
+        clip-path: inset(1px 1px);
+    }
+   
+    .scroll-down::before,
+    .scroll-down::after {
+      content: "";
+      @apply absolute top-[20%] left-[50%] border h-[10px] w-[10px] lg:h-[15px] lg:w-[15px] lg:border-[2px] border-[#e51e22] ;
+      transform: translate(-50%, -100%) rotate(225deg);
+      border-top-color: transparent;
+      border-left-color: transparent;
+      animation: scroll-down 1s ease-in-out infinite;
+    }
+  
+    .scroll-down::before {
+    /* For example, a slight delay or different starting position */
+    top: 70%; /* starting near the bottom */
+    animation-delay: 0.5s;
+  }
+  .scroll-down::before {
+    /* For example, a slight delay or different starting position */
+    top: 40%; /* starting near the bottom */
+    animation-delay: 0.3s;
+  }
+  
+  /* Set a default for both if needed */
+  .scroll-down::after {
+    top: 70%; /* adjust as necessary */
+  }
+    
+
+  }
+  
+  @keyframes scroll-down {
+    0% {
+        top: 90%; /* Start lower (near the bottom of the container) */
+        opacity: 0;
+      }
+      30% {
+        top: 60%; /* Move upward */
+        opacity: 1;
+      }
+      60% {
+        top: 60%; /* Hold position for a moment */
+        opacity: 1;
+      }
+      100% {
+        top: 30%; /* End near the top of the container */
+        opacity: 0;
+      }
+  }
+  

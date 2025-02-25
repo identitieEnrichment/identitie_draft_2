@@ -30,7 +30,7 @@ const links = [
   },
   {
     title: "Products",
-    href: "/products",
+    href: "/productshome",
     src: "../assets/toOptimize/Website_Products_Black.jpg"
   },
   {
@@ -68,14 +68,15 @@ export default function Nav() {
 							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 					<FaFacebook className='text-2xl md:text-3xl' />
 				</a>
-        <a href="https://api.whatsapp.com/send?phone=919952698022&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110"> 
-					<FaWhatsapp  className='text-2xl md:text-3xl' />
-				</a>
+       
 				
 				<a href="https://www.linkedin.com/company/identitie-enrichment/"
 							target="_blank"
 							rel="noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 					<FaLinkedin className='text-2xl md:text-3xl' />
+				</a>
+        <a href="https://api.whatsapp.com/send?phone=9444543659&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110"> 
+					<FaWhatsapp  className='text-2xl md:text-3xl' />
 				</a>
 			</div>
     </motion.div>

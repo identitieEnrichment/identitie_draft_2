@@ -40,7 +40,7 @@ export default function NavigationBar({layout}) {
 						variants={opacity}
 						animate={isActive ? "open" : "closed"}
 						ref={logo}
-						src="../assets/logo-black.png"
+						src="../assets/logo-red.png" 
 						alt="logo"
 						className="h-6 md:h-6 absolute bg-white   md:top-3 hidden top-2 left-2 "
 					/>

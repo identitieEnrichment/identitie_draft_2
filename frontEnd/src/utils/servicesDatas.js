@@ -41,19 +41,19 @@ export const FooterDataCompanyLinks = [
 export const FooterDataQuickLinks = [
     {
         title : "Careers",
-        link : '#'
+        link : '/contactus'
     },
     {
         title : "Disclaimer",
-        link : '#'
+        link : '/disclaimer#disclaimer'
     },
     {
-        title : "Privacy & Policy",
-        link : '#'
+        title : "Privacy Policy",
+        link : '/disclaimer#privacy'
     },
     {
         title : "Terms & Conditions",
-        link : '#'
+        link : '/disclaimer#terms'
     },
 
 ]

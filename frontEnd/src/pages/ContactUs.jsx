@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaMapMarkerAlt, FaRegClock } from "react-icons/fa";
 
 const ContactUs = () => {
 	return (
-		<div className="p-6 lg:px-32 bg-black text-gray-400 ">
+		<div id="contact-HomePage" className="p-6 lg:px-32 bg-black text-gray-400 ">
 			<div className="space-y-3">
 				<h1 className="font-koulen text-4xl">What’s On Your Mind?</h1>
 				<p className="font-poppins">
@@ -13,9 +13,12 @@ const ContactUs = () => {
 			</div>
 			<div className="flex mt-2 md:gap-10 w-full md:flex-row flex-col-reverse">
 				<div className="w-full">
-					<img
+		
+					<video
+					autoPlay
+					loop muted
 						className="h-[60vh] object-cover  w-11/12 opacity-80 rounded-3xl hidden md:block"
-						src="../assets/optimized/contactUs.png"
+						src="../assets/optimized/contact_test1.mp4"
 						alt="contact"
 					/>
 					{/* <div className="mt-12 grid md:grid-cols-2 gap-5">

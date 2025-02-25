@@ -12,13 +12,16 @@ import {
 	FooterDataQuickLinks,
 	FooterDataWhatWeDo,
 } from "../utils/servicesDatas";
+import { Link } from "react-router-dom";
+import useIsMobile from "../hooks/useIsMobile";
 
 const Footer = () => {
+	const isMobile = useIsMobile()
 	return (
 		<div className="bg-[#1D1D1D] lg:p-16 p-6">
 			<div className="lg:flex lg:gap-20 space-y-7">
 				<div className="flex flex-col space-y-4 lg:w-4/12">
-					<img className="h-7 object-contain w-fit " src="../assets/logo-red.png" alt="logo" />
+				 <Link to={'/'}> <img className="h-7 object-contain w-fit " src="../assets/logo-red.png" alt="logo" /></Link>	
 					<p className="text-white font-poppins text-sm">
 						Identitie is your go-to partner for web development, digital
 						marketing, and a diverse range of solutions across various sectors.
@@ -54,6 +57,13 @@ const Footer = () => {
 							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 							<FaLinkedin />
 						</a>
+						<a
+							href="https://api.whatsapp.com/send?phone=9444543659&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaWhatsapp />
+						</a>
 					</div>
 				</div>
 				<div className=" gap-4 mt-5 hidden lg:block">
@@ -83,6 +93,14 @@ const Footer = () => {
 							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 							<FaLinkedin />
 						</a>
+						<a
+							href="https://api.whatsapp.com/send?phone=9444543659&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?"
+							target="_blank"
+							rel="noreferrer"
+							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
+							<FaWhatsapp />
+						</a>
+						
 					</div>
 				</div>
 
@@ -109,7 +127,7 @@ const Footer = () => {
 
 			<div className="w-full flex items-center justify-center mt-8">
 				<span className="text-white font-poppins text-center">
-					© 2024 Identitie Enrichment Pte Ltd. All Rights Reserved.
+					© 2025 Identitie Enrichment Pte Ltd. {isMobile && <br></br>} All Rights Reserved.
 				</span>
 			</div>
 		</div>

@@ -147,12 +147,7 @@ const AboutWWW = () => {
 							</div> */}
 						</div>
 						<span className="font-poppins xl:text-xs 2xl:text-sm ">
-							A thorough whisk of ingenuity with strategy transforms brands into
-							impactful forces. We begin by deeply understanding your brand’s
-							core values and target audience, then craft personalized plans
-							that resonate and engage. From innovative design to impactful
-							messaging, Identitie ensures that every touchpoint enhances your
-							brand’s identity and drives meaningful connections.
+						A fusion of strategy and creativity turns brands into powerful forces. We decode your brand’s essence, align it with audience needs, and craft tailored solutions—ensuring every interaction strengthens identity and fosters engagement.
 						</span>
 					</div>
 					<div
@@ -184,11 +179,7 @@ const AboutWWW = () => {
 								<p
 									ref={whatDescription}
 									className="2xl:text-sm font-poppins w-11/12 xl:text-xs">
-									At Identitie, we provide a full suite of services designed to
-									meet the unique needs of businesses and individuals alike.
-									Whether you're looking for business strategy, creative design,
-									or technology integration, we proffer customized approaches
-									delivering solutions tailored to your requirements.
+									Identitie offers end-to-end solutions—from business strategy and creative design to technology integration. Every approach is customized to deliver impactful results.
 								</p>
 							</div>
 						</div>
@@ -223,12 +214,7 @@ const AboutWWW = () => {
 								<p
 									ref={whyDescription}
 									className="2xl:text-sm font-poppins w-11/12 xl:text-xs">
-									Travel, leisure, and a touch of workshops, photoshoots, and
-									event management—our opportunities span a diverse range of
-									experiences. With deep sector knowledge and an extensive
-									network, we explore art, philosophy, nature, and
-									relationships; connecting with people, transforming brands,
-									and enhancing lives.
+									We bridge industries through travel, leisure, workshops, photoshoots, and event management. Rooted in art, philosophy, and human connections, we create experiences that transform brands and enrich lives.
 								</p>
 							</div>
 						</div>
@@ -263,12 +249,7 @@ const AboutWWW = () => {
 								<p
 									ref={whoDescription}
 									className="2xl:text-sm font-poppins w-11/12 xl:text-xs">
-									From aspiring architects to visionary entrepreneurs, our
-									decade-long journey has taught us that true connection is
-									built through thoughtfully designed spaces. At Identitie, we
-									blend creativity and originality to create environments and
-									brand experiences that truly resonate with people. Our mission
-									is to inspire and engage through every project we undertake.
+									From architects to entrepreneurs, we’ve spent decades mastering the art of connection. Identitie blends innovation and originality to craft immersive brand experiences that inspire and engage.
 								</p>
 							</div>
 						</div>

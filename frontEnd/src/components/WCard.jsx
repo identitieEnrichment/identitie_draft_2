@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-const WCard = ({ Data, index }) => {
+const WCard = ({ Data, index ,IsAboutUsPage,imgSrc }) => {
 	const wContainer = useRef(null)
 	const mainContainer = useRef(null)
 	useGSAP(() => {
@@ -38,13 +38,18 @@ const WCard = ({ Data, index }) => {
 				} border-black overflow-hidden border-2  w-full flex cursor-pointer h-[33vh] font-poppins`}
 		>
 			<div ref={wContainer}  className={`${"wContainer" + index} bg-gray-200 w-full pr-4 flex items-center justify-center`}>
-				<span className="text-[156px] whitespace-nowrap font-bold text-[#ed1e23] drop-shadow-[3px_3px_0px_rgba(255,255,255,1)] ">W</span>
+				{IsAboutUsPage? 
+				<img className="h-32" src={imgSrc} alt="" />
+				:<span className="text-[156px] whitespace-nowrap font-bold text-[#ed1e23] drop-shadow-[3px_3px_0px_rgba(255,255,255,1)] ">W</span>
+				}
+				
+				
 			</div>
 			<div className=" flex flex-col justify-between space-y-2 w-full">
 				<div className="flex justify-center h-full w-full ">
 					<div className={`w-full ${"contentDiv" + index} h-full pt-24 pl-6`}>
-						<span className={`${"title" + index}  font-koulen text-5xl transition-colors duration-1000`}>
-							{Data?.title} ?
+						<span className={`${"title" + index}  font-poppins uppercase font-bold text-4xl transition-colors duration-1000`}>
+							{IsAboutUsPage?Data?.title:Data?.title + "?"} 
 						</span>
 						<p className={`opacity-1 ${"description" + index} text-black w-full text-sm`}>{Data.description}</p>
 
