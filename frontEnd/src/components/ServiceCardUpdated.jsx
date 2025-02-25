@@ -89,9 +89,9 @@ const ServicesCardUpdated = ({
 
 											<button
 												onClick={() => navigate("/services")}
-												class="z-50  mt-10 hover:before:bg-[#ed1e24] rounded-full relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
-												<span class="relative z-50 whitespace-nowrap px-2">
-													{isLastCard ? "Start Building" : "Start Building"}
+												class="z-50  mt-10 hover:before:bg-[#ed1e24] rounded-full relative h-[40px]  overflow-hidden border border-white bg-transparent px-3 text-white  shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full ">
+												<span class="relative z-50 whitespace-nowrap  px-2">
+													{isLastCard ? "Explore All Our Services" : "Explore all our services"}
 												</span>
 												<span class="relative z-10 ml-2">&rarr; </span>
 											</button>

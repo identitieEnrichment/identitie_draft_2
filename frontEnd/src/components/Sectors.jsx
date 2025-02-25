@@ -10,7 +10,7 @@ const Sectors = () => {
         const titles = ["business-to-business","business-to-consumer","Education","E-commerce","Startups","Real Estate"]
         const container = useRef(null)
         const typeWriter = useRef(null)
-        const [sectorsData,setSectorData] = useState(() =>[{name:"B2B",src:"../assets/optimized/b2bService-optimized.jpeg", },{name:"B2C",src:"../assets/optimized/b2cService-optimized.jpeg" },{name:"E-COMMERCE",src:"../assets/optimized/ecommerceService-optimized.jpeg" ,},{name:"EDUCATION",src:"../assets/optimized/educationService-optimized.jpeg", },{name:"STARTUPS",src:"../assets/optimized/startupsService-optimized.jpeg",},])
+        const [sectorsData,setSectorData] = useState(() =>[{name:"B2B",src:"../assets/optimized/b2bService-optimized.jpeg", },{name:"B2C",src:"../assets/optimized/b2cService-optimized.jpeg" },{name:"E-COMMERCE",src:"../assets/optimized/ServiceIcons_E Commerce.jpg" ,},{name:"EDUCATION",src:"../assets/optimized/educationService-optimized.jpeg", },{name:"STARTUPS",src:"../assets/optimized/startupsService-optimized.jpeg",},])
         useGSAP(() => {
             const mm = gsap.matchMedia();
             mm.add("(min-width:769px)",()=>{

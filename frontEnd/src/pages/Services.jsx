@@ -12,6 +12,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LazyLoadVideo from "../components/LazyLoadVideo";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 AOS.init();
 gsap.registerPlugin(useGSAP);
 const Services = () => {
@@ -250,6 +251,7 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <ScrollToTopButton/>
     </div>
   );
 };

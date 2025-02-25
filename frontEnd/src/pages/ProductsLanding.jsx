@@ -1,12 +1,21 @@
 import React from 'react'
 import ProductsSection from '../components/ProductSection'
 import Header from '../components/Header'
+import ProductOne from '../components/ProductOne'
+import FloatingProducts from '../components/FloatingProducts'
+import NavigationBar from '../components/Navigation/NavigationBar'
 
 const ProductsLanding = () => {
   return (
-    <div id='producLandingMain' className='h-max mt-24 lg:mt-0'>
+    <div id='producLandingMain' className='h-max lg:mt-24 mt-0'>
+      <div className='text-white '>
+      <NavigationBar />
+      </div>
+      
         <Header page={"PRODUCT"}/>
-        <ProductsSection />
+        <ProductOne />
+        <FloatingProducts/> 
+        {/* <ProductsSection /> */}
     </div>
   )
 }

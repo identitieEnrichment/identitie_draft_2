@@ -9,6 +9,7 @@ import "../css/Services.css";
 import NavigationBar from "../components/Navigation/NavigationBar";
 import LazyLoadVideo from "../components/LazyLoadVideo";
 import { useGSAP } from "@gsap/react";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -212,6 +213,7 @@ const Sectors = () => {
           ))}
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 };
