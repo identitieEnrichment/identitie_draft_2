@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
 import NavigationBar from "../components/Navigation/NavigationBar";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
     <div>
       <NavigationBar layout={"s"} />
-      <div className="bg-black py-3 px-2 min-h-screen flex justify- items-center">
+      <div className="bg-black py-3 px-2 min-h-screen flex justify- items-center pb-20">
         <Header layout={"Services"} />
 
         <div class="border-[.1px] border-gray-600 grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-10 shadow-[0px_30px_120px_30px_rgba(237,30,35,0.2)] rounded-3xl max-w-6xl mt-24 mx-auto bg-[#0d1117] text-[#333] font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-gray-900 before:h-full max-md:before:hidden">
@@ -149,6 +150,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

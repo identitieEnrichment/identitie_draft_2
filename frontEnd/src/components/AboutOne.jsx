@@ -81,8 +81,9 @@ const AboutOne = () => {
         className="w-full lg:h-full  object-contain lg:object-cover overflow-hidden box-decoration-slice bg-transparent outline-none  "
         autoPlay
         loop
+        playsInline
         muted
-        src={isMobile?"../assets/non-optimized/TimelineVideo_AboutUs_Mobile_Compressed.mp4":"../assets/non-optimized/abousustimeline2.mp4"}
+        src={isMobile?"../assets/non-optimized/TimelineVideo_AboutUs_Mobile_Compressed (1).mp4":"../assets/non-optimized/Identitie_Timeline_Video_AboutUs_Compressed.mp4"}
         alt=""
       />
       </div>

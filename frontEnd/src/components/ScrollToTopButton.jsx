@@ -72,9 +72,9 @@ const ScrollToTopButton = () => {
       href="https://api.whatsapp.com/send?phone=9444543659&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?"
       target="_blank"
       rel="noreferrer"
-      className=" justify-end opacity-0  lg:w-fit hidden mt-12    text-white fixed bottom-[13%] right-6 lg:right-[30px]"
+      className=" justify-end opacity-0  lg:w-fit hidden mt-12    text-white fixed bottom-[14%] lg:bottom-[12%] right-6 "
     >
-      <img className="lg:size-12 size-10 object-contain" src="../assets/non-optimized/whatsapp_red.png" alt="" />
+      <img className="lg:size-[60px] size-10 object-contain" src="../assets/non-optimized/whatsapp_red.png" alt="" />
     </a>
     </div>
   );
