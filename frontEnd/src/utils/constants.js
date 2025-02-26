@@ -124,22 +124,22 @@ export const allServicesDataActual = [
     title: "Branding",
     Description:
       "Involves the art of defining and communicating the essence with the deliberate construction of visual and conceptual framework to build a recognizable and influential image of your brand. ",
-    bulletPoints: [
-      "Stakeholder Interviews",
-      "Employer Branding",
-      "Market Research",
-      "Launch Strategy",
-      "Brand Architecture ",
-      "Brand Tone & Voice",
-      "Naming & Tagline",
-      "Logo Design",
-      "Signage & Enviro Design",
-      "Packaging & Guidelines",
-      "Brochure & Stationery",
-      "Mascot Design",
-      "Asset Libraries",
-      "Brand Identity Collab",
-    ],
+      bulletPoints: [
+        "Stakeholder Talks",
+        "Employer Brand",
+        "Market Study",
+        "Launch Plan",
+        "Brand Structure",
+        "Tone & Voice",
+        "Naming & Tagline",
+        "Logo Creation",
+        "Signage & Design",
+        "Packaging Guide",
+        "Brochure & Stationery",
+        "Mascot Art",
+        "Asset Library",
+        "Brand Collab",
+      ],
     color: "#1C1E20",
     colorMob: "#FFFFFF",
     video: "../assets/videos/services/Animation_Services_Branding.mp4",
@@ -169,18 +169,19 @@ export const allServicesDataActual = [
     title: "Custom Merchandise ",
     Description:
       "Encompasses the creation, design and the production of exclusive high-quality items tailored to convey the unique spirit of your brand, enhancing its visibility and resonance with consumers.",
-    bulletPoints: [
-      " Art Direction",
-      "Storytelling",
-      "Photo & Video",
-      "Customer Reviews",
-      "Retail & Merch",
-      "Tradeshows",
-      "Product Design",
-      "Promo Campaigns",
-      "Prod & Manufacturing",
-      "Warehouse & Fulfilment",
-    ],
+      bulletPoints: [
+        "Art Direct",
+        "Stories",
+        "Photo & Video",
+        "Reviews",
+        "Retail & Merch",
+        "Tradeshows",
+        "Product Dev",
+        "Promo Ads",
+        "Manufacture",
+        "Fulfillment",
+      ],
+      
     color: "#1C1E20",
     mobImg: "../assets/toOptimize/customMerService.jpg",
     colorMob: "#FFFFFF",
@@ -211,24 +212,24 @@ export const allServicesDataActual = [
     colorMob: "#FFFFFF",
     Description:
       "Brings together multiple operations including the establishment, surveillance and optimization of multiple online retail platforms, to enable seamless, secure and efficient shopping journey for modern consumers and maximizing commercial potential in the digital landscape.",
-    bulletPoints: [
-      "Ecommerce platforms",
-      "CRM/CMS Integration",
-      "Third-Party Integration",
-      "Product Listing",
-      "SKU maintenance",
-      "Order Tracking",
-      "Email Marketing",
-      "Influencer Marketing",
-      "Abandoned Cart Recovery",
-      "Hosting and Maintenance",
-      "Landing Pages & Blogs",
-      "On-Page SEO",
-      "Mobile & Responsive",
-      "Web/App Design & Dev",
-     "YouTube: Design & Ads",
-     "Google Ads"
-    ],
+      bulletPoints: [
+        "Ecom Platforms",
+        "CRM/CMS",
+        "Third-Party",
+        "Product List",
+        "SKU Manage",
+        "Order Track",
+        "Email Market",
+        "Influencers",
+        "Cart Recovery",
+        "Hosting",
+        "Landing Pages",
+        "On-Page SEO",
+        "Mobile UI/UX",
+        "Web/App Dev",
+        "YouTube Ads",
+        "Google Ads",
+      ],
     video: "../assets/videos/services/Animation_Services_ECommerce.mp4",
     mobImg: "../assets/toOptimize/EcommerceServ.jpg",
     images: [
@@ -257,18 +258,18 @@ export const allServicesDataActual = [
     colorMob: "#FFFFFF",
     Description:
       "Expert orchestration of digital interactions, employing innovative tools and competent strategies to create creative, engaging and influential content that quivers with and expands your brand’s audience.",
-    bulletPoints: [
-      "Style Guide",
-      "Campaign Strategies",
-      "Promotion Strategies",
-      "Profile Makeover",
-      "Visual Motion Ads",
-      "Dynamic Graphics",
-      "Insightful Content",
-      "Daily Posting",
-      "Post Engagement",
-      "Support & Care",
-    ],
+      bulletPoints: [
+        "Style Guide",
+        "Campaigns",
+        "Promotions",
+        "Profile Boost",
+        "Motion Ads",
+        "Dynamic GFX",
+        "Content Plan",
+        "Daily Posts",
+        "Engagement",
+        "Support",
+      ],
     video:
       "../assets/videos/services/Animation_Services_SocialMediaManagement.mp4",
 
@@ -300,14 +301,15 @@ export const allServicesDataActual = [
     mobImg: "../assets/toOptimize/salesEmpovServ.jpg",
     Description:
       "Deployment of strategic planning, advanced methodologies and tools to bolster your brand’s sales effectiveness, enhance performance, streamline processes, drive significant revenue growth and  larger customer acquisition.",
-    bulletPoints: [
-      "Presentations and Pitchbooks",
-      "Product Fact Sheets",
-      "Messaging Playbook",
-      "Objections & FAQs",
-      "Infographics",
-      "Case Studies & Reviews",
-    ],
+      bulletPoints: [
+        "Pitch Decks",
+        "Fact Sheets",
+        "Playbook",
+        "FAQs & Objs",
+        "Infographics",
+        "Case Studies",
+      ],
+      
     video: "../assets/videos/services/Animation_Services_SalesEmpowerment.mp4",
     images: [
       {
@@ -337,21 +339,22 @@ export const allServicesDataActual = [
     video: "../assets/videos/services/Animation_Services-MarketExpansion.mp4",
     Description:
       "Focuses on your brand’s growth journey, from insightful sourcing to strategic market positioning to ensuring flawless execution and delivery; driving sustained reach and impact.",
-    bulletPoints: [
-      "Market Insights & Analysis",
-      "Sourcing Brands",
-      "Sourcing Custom Teams",
-      "Sourcing Investors",
-      "Custom Online/Offline Mktg",
-      "Infra: Retail & Offices",
-      "Distribution & Logistics",
-      "Sales Conversion & Reports",
-      "After Sales Services",
-      "Integrated Solutions",
-    ],
+      bulletPoints: [
+        "Market Insights",
+        "Brand Sourcing",
+        "Custom Teams",
+        "Investor Sourcing",
+        "Custom Mktg",
+        "Retail & Offices",
+        "Logistics",
+        "Sales Reports",
+        "After Sales",
+        "Integrated Sol",
+      ],
+      
     images: [
       {
-        src: "../assets/toOptimize/brandingAndMarketing.jpg",
+        src: "../assets/toOptimize/BusinessSolutions_Background.jpg",
         title: "Market Insights & Analysis",
       },
       {
@@ -376,17 +379,17 @@ export const allServicesDataActual = [
     title: "Advertisements ",
     Description:
       "Execution of dynamic campaigns connecting with your brand’s target audiences through meticulously crafted ads that relate, rouse action and reinforce brand loyalty across multiple platforms.",
-    bulletPoints: [
-      "Targeted Reach",
-      "Increased Conversions",
-      "Audience Behavior Analysis",
-      "PPC Management",
-      "Launch & Monitor",
-      "Algorithmic Targeting",
-      "Maximize Lead Generation",
-      "Creative Ad Copy",
-
-    ],
+      bulletPoints: [
+        "Targeted Ads",
+        "More Conversions",
+        "Audience Insights",
+        "PPC Management",
+        "Launch & Track",
+        "AI Targeting",
+        "Lead Generation",
+        "Ad Copywriting",
+      ],
+      
     video: "../assets/videos/services/Animation_Services_Advertisements.mp4",
     images: [
       {
@@ -415,15 +418,17 @@ export const allServicesDataActual = [
     mobImg: "../assets/toOptimize/customerExperienceServ.jpg",
     Description:
       "Ensures tactical refinement of every touchpoint in your customer’s expedition to create immersive, intuitive, and emotionally reverberating brand image that drives long-term sustenance and engagement.",
-    bulletPoints: [
-      "Brand Exp. Principles",
-      "Current Cust. Journey Map",
-      "Enhanced Cust. Journey Map",
-      "Employee Training ",
-      "Customer Activation",
-      "Feedback & Engagement",
-
-    ],
+      bulletPoints: [
+        "Brand Principles",
+        "Current Journey",
+        "Enhanced Journey",
+        "Team Training",
+        "Cust. Activation",
+        "Feedback & Eng.",
+        "Loyalty Programs",
+        "CX Performance",
+      ],
+      
     video:
       "../assets/videos/services/Animation_Services_CustomerExperience.mp4",
     images: [
@@ -455,17 +460,18 @@ export const allServicesDataActual = [
     Description:
       "Leverages keen insights, trending technologies, scientific principles and creative thinking to develop breakthrough solutions that propel your brand forward meeting the constantly evolving customers’ needs and wants.",
     bulletPoints: [
-      "In/Ex Audience Analysis",
-      "Ethnographic Research",
-      "Audience Needs Insights",
-      "Comp & Compar Analysis",
-      "Cust. Touchpoint Analysis",
-      "Audience Behavior Analysis",
-      "Brand Messaging Analysis",
-      "Design Trend Analysis",
-      "User Experience Analysis",
-      "Innovation Insights",
-    ],
+  "Audience Study",
+  "Ethno Research",
+  "Needs Insights",
+  "Comp Analysis",
+  "Touchpoints",
+  "Behavior Study",
+  "Msg Analysis",
+  "Trend Analysis",
+  "UX Analysis",
+  "Innovation",
+],
+
     video:
       "../assets/videos/services/Animation_Services_ResearchDevelopment.mp4",
     images: [
