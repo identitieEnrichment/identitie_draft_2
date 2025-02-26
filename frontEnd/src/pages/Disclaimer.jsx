@@ -6,17 +6,19 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 gsap.registerPlugin(ScrollToPlugin);
 const Disclaimer = () => {
-    useEffect(() => {
-
-        if (window.location.hash) {
-          const target = window.location.hash; // e.g., "#privacy"
-          gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 50 }  });
-        }
-      }, []);
+  useEffect(() => {
+    if (window.location.hash) {
+      const target = window.location.hash; // e.g., "#privacy"
+      gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 50 } });
+    }
+  }, []);
   return (
     <div className="bg-[#0d1116] w-full min-h-screen">
       <Header page={"Home"} layout={"Services"} />
-      <div id="disclaimer" className="lg:px-20 px-4  pt-24 lg:pt-36">
+      <h1 className="text-white font-semibold lg:pt-36 pt-24 text-xl lg:text-xl lg:mb-10 lg: justify-center  lg:px-20 px-4 mb-5 ">
+        Legal & Policy Information
+      </h1>
+      <div id="disclaimer" className="lg:px-20 px-4  ">
         <h2 class="mb-2 text-lg font-semibold text-white ">DISCLAIMER</h2>
         <div className="text-[#A8A8A8]">
           <p>
@@ -55,7 +57,7 @@ const Disclaimer = () => {
             collect, use, and safeguard your information when you visit our
             website or engage our services.
           </p>
-          <ol class="ps-5 mt-2 space-y-4 list-decimal list-inside">
+          <ol class="ps-2 mt-2 space-y-4 list-decimal list-inside">
             <li className="text-lg">
               <strong> Information We collect</strong>
 
@@ -160,40 +162,50 @@ const Disclaimer = () => {
       </div>
 
       <div id="terms" className="lg:px-20 px-4 mb-12  ">
-        <h2 class="mb-2 text-lg font-semibold text-white ">TERMS & CONDITIONS</h2>
+        <h2 class="mb-2 text-lg font-semibold text-white ">
+          TERMS & CONDITIONS
+        </h2>
         <div className="text-[#A8A8A8]">
           <p>
-          By accessing or using the IDENTITIE website and services, you agree to the following Terms & Conditions. Please read them carefully.
+            By accessing or using the IDENTITIE website and services, you agree
+            to the following Terms & Conditions. Please read them carefully.
           </p>
-          <ol class="ps-5 mt-2 space-y-4 list-decimal list-inside">
+          <ol class="ps-2 mt-2 space-y-4 list-decimal list-inside">
             <li className="text-lg">
               <strong> Use of Our Services</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                  <span className="font-medium">Eligibility : </span> You must be at least 18 years old or have the necessary consent to use our services.
+                  <span className="font-medium">Eligibility : </span> You must
+                  be at least 18 years old or have the necessary consent to use
+                  our services.
                 </li>
                 <li>
-                  <span className="font-medium">Lawful Use : </span> You agree to use our website and services only for lawful purposes and in compliance with all applicable regulations.
+                  <span className="font-medium">Lawful Use : </span> You agree
+                  to use our website and services only for lawful purposes and
+                  in compliance with all applicable regulations.
                 </li>
                 <li>
-                  <span className="font-medium">
-                  Prohibited Conduct :{" "}
-                  </span>{" "}
-                  Unauthorized use, including but not limited to copying, distributing, or modifying our content without permission, is strictly prohibited.
+                  <span className="font-medium">Prohibited Conduct : </span>{" "}
+                  Unauthorized use, including but not limited to copying,
+                  distributing, or modifying our content without permission, is
+                  strictly prohibited.
                 </li>
               </ul>
             </li>
-                
+
             <li className="text-lg">
               <strong> Intellectual Property</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                All materials on our website—including text, graphics, logos, images, and software—are the property of IDENTITIE and are protected by applicable intellectual property laws.
+                  All materials on our website—including text, graphics, logos,
+                  images, and software—are the property of IDENTITIE and are
+                  protected by applicable intellectual property laws.
                 </li>
                 <li>
-                Unauthorized reproduction or distribution of our content is prohibited unless expressly permitted by us.
+                  Unauthorized reproduction or distribution of our content is
+                  prohibited unless expressly permitted by us.
                 </li>
               </ul>
             </li>
@@ -202,10 +214,13 @@ const Disclaimer = () => {
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                We reserve the right to modify, suspend, or discontinue our services (or any part thereof) at any time without notice.
+                  We reserve the right to modify, suspend, or discontinue our
+                  services (or any part thereof) at any time without notice.
                 </li>
                 <li>
-                We are not responsible for any interruptions, errors, or inaccuracies in our service due to maintenance, updates, or other factors.
+                  We are not responsible for any interruptions, errors, or
+                  inaccuracies in our service due to maintenance, updates, or
+                  other factors.
                 </li>
               </ul>
             </li>
@@ -214,10 +229,13 @@ const Disclaimer = () => {
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                Payment for our services must be made according to the terms agreed upon during the service engagement.
+                  Payment for our services must be made according to the terms
+                  agreed upon during the service engagement.
                 </li>
                 <li>
-                Refunds will be considered only when IDENTITIE fails to meet its contractual obligations, subject to the terms of your agreement with us.
+                  Refunds will be considered only when IDENTITIE fails to meet
+                  its contractual obligations, subject to the terms of your
+                  agreement with us.
                 </li>
               </ul>
             </li>
@@ -226,10 +244,13 @@ const Disclaimer = () => {
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                In no event shall IDENTITIE be liable for any indirect, incidental, consequential, or punitive damages arising out of your use of our website or services.
+                  In no event shall IDENTITIE be liable for any indirect,
+                  incidental, consequential, or punitive damages arising out of
+                  your use of our website or services.
                 </li>
                 <li>
-                Your use of our services is at your own risk, and we do not guarantee uninterrupted or error-free service.
+                  Your use of our services is at your own risk, and we do not
+                  guarantee uninterrupted or error-free service.
                 </li>
               </ul>
             </li>
@@ -238,10 +259,12 @@ const Disclaimer = () => {
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                These Terms & Conditions shall be governed by and construed in accordance with the laws of [Insert Jurisdiction].
+                  These Terms & Conditions shall be governed by and construed in
+                  accordance with the laws of [Insert Jurisdiction].
                 </li>
                 <li>
-                Any disputes arising from these terms will be subject to mediation or arbitration before pursuing legal action.
+                  Any disputes arising from these terms will be subject to
+                  mediation or arbitration before pursuing legal action.
                 </li>
               </ul>
             </li>
@@ -250,7 +273,10 @@ const Disclaimer = () => {
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
                 <li>
-                We may update this Disclaimer, Privacy Policy, and Terms & Conditions periodically. Changes will be posted on this page, and continued use of our website or services signifies your acceptance of those changes.
+                  We may update this Disclaimer, Privacy Policy, and Terms &
+                  Conditions periodically. Changes will be posted on this page,
+                  and continued use of our website or services signifies your
+                  acceptance of those changes.
                 </li>
               </ul>
             </li>
@@ -259,17 +285,21 @@ const Disclaimer = () => {
       </div>
 
       <div className="lg:px-20 px-4  mb-12">
-        <h2 class="mb-2 text-lg font-semibold text-white ">CONTACT INFORMATION</h2>
+        <h2 class="mb-2 text-lg font-semibold text-white ">
+          CONTACT INFORMATION
+        </h2>
         <div className="text-[#A8A8A8]">
           <p>
-          For any questions, concerns, or requests regarding our policies, please contact us at **identitie.ie@gmail.com**
-
-This policy is designed to protect both the rights and interests of both our users and IDENTITIE on a global scale, while ensuring transparency in all our operations. We encourage you to review it periodically and reach out if you have any questions.
+            For any questions, concerns, or requests regarding our policies,
+            please contact us at identitie.ie@gmail.com <br></br> This policy is
+            designed to protect both the rights and interests of both our users
+            and IDENTITIE on a global scale, while ensuring transparency in all
+            our operations. We encourage you to review it periodically and reach
+            out if you have any questions.
           </p>
-        
         </div>
       </div>
-                <ScrollToTopButton/>
+      <ScrollToTopButton />
       <Footer />
     </div>
   );

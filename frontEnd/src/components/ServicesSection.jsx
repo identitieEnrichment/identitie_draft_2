@@ -9,6 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import ServicesCardUpdated from "./ServiceCardUpdated";
 import { allServicesDataActual } from "../utils/constants";
+import useIsMobile from "../hooks/useIsMobile";
 
 const ServicesSection = () => {
 	const container = useRef(null);
@@ -57,8 +58,58 @@ const ServicesSection = () => {
 		allServicesDataActual.length,
 		...sortServices(allServicesDataActual)
 	  );
-	const slicedData = allServicesDataActual.slice(0,5)
-	console.log('sliced Data = '+slicedData[0]);
+		const isMobile = useIsMobile();
+		const brandingObject = {
+			title: "Branding",
+			Description:
+			  "Involves the art of defining and communicating the essence with the deliberate construction of visual and conceptual framework to build a recognizable and influential image of your brand.",
+			bulletPoints: [
+			  "Stakeholder Talks",
+			  "Employer Brand",
+			  "Market Study",
+			  "Launch Plan",
+			  "Brand Structure",
+			  "Tone & Voice",
+			  "Naming & Tagline",
+			  "Logo Creation",
+			  "Signage & Design",
+			  "Packaging Guide",
+			  "Brochure & Stationery",
+			  "Mascot Art",
+			  "Asset Library",
+			  "Brand Collab",
+			],
+			color: "#1C1E20",
+			colorMob: "#FFFFFF",
+			video: "../assets/videos/services/Animation_Services_Branding.mp4",
+			mobImg: "../assets/toOptimize/brandingServ.jpg",
+			images: [
+			  {
+				src: "../assets/non-optimized/Services_Resized_Branding.jpg",
+				title: "Logo Design",
+			  },
+			  {
+				src: "../assets/non-optimized/Services_Resized_Branding.jpg",
+				title: "Stakeholder Interviews",
+			  },
+			  {
+				src: "../assets/optimized/employerBranding.jpg",
+				title: "employerBranding",
+			  },
+			  {
+				src: "../assets/optimized/packageDesigning.jpg",
+				title: "Packaging Design & Guidelines",
+			  },
+			],
+			webp: "https://firebasestorage.googleapis.com/v0/b/identitie-d1dc6.appspot.com/o/branding-optimized.webp?alt=media&token=4a8d0284-5d94-49f8-95bb-f14f24538862",
+		  };
+		  
+		  const slicedData = isMobile
+			? [brandingObject, ...allServicesDataActual.slice(0, 5)]
+			: allServicesDataActual.slice(0, 5);
+
+
+	
 	return (
         <div ref={container} className='relative bg-transparent lg:bg-[#0d1117] -mt-32  lg:-translate-y-20 '>
         {
