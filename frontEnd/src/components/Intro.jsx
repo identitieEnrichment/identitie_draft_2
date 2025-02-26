@@ -230,7 +230,7 @@ const Intro = () => {
           muted
           playsInline
         
-          src={isMobile?"../assets/non-optimized/Identitie_Timeline_Video_Mobile_Compressed.mp4":"../assets/non-optimized/Identitie_Timeline_Video_Final_Compressed.mp4"}
+          src={isMobile?"../assets/non-optimized/Identitie_Timeline_Video_Mobile_Compressed_final.mp4":"../assets/non-optimized/Identitie_Timeline_Video_Final_Compressed_desktop.mp4"}
           alt=""
         /> 
     

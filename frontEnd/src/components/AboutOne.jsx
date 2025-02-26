@@ -83,7 +83,7 @@ const AboutOne = () => {
         loop
         playsInline
         muted
-        src={isMobile?"../assets/non-optimized/TimelineVideo_AboutUs_Mobile_Compressed (1).mp4":"../assets/non-optimized/Identitie_Timeline_Video_AboutUs_Compressed.mp4"}
+        src={isMobile?"../assets/non-optimized/TimelineVideo_AboutUs_Mobile_Compressed_final.mp4":"../assets/non-optimized/Identitie_Timeline_Video_AboutUs_Compressed_Desktop.mp4"}
         alt=""
       />
       </div>
