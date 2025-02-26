@@ -220,23 +220,85 @@ const Intro = () => {
 
   return (
     <div ref={container} className="bg-[#0d1116]   z-0 w-full relative ">
-      <div  className="lg:h-full h-72 flex justify-center items-center lg:pt-0 pt-20 w-full   lg:absolute bgVideo  ">
-
-         <video
+      <div  className="lg:h-full h-72 lg:flex hidden justify-center items-center lg:pt-0 pt-20 w-full   lg:absolute bgVideo  ">
+          {/* <img className="w-full h-full object-contain" src="../assets/non-optimized/dimension test.jpg"></img> */}
+     
+          <video
           className="w-full h-full object-cover"
           autoPlay
           loop
           muted
+          playsInline
         
           src={isMobile?"../assets/non-optimized/Identitie_Timeline_Video_Mobile_Compressed.mp4":"../assets/non-optimized/Identitie_Timeline_Video_Final_Compressed.mp4"}
           alt=""
-        />
+        /> 
     
       </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div
+          ref={first}
+          className=" lg:hidden   h-60 flex flex-col items-center     w-full relative z-20 lg:h-[85vh] "
+        >
+
+
+            <div ref={bulb} className="lg:hidden swing flex justify-center ">
+              <picture>
+                {/* <source srcSet="https://static.vecteezy.com/system/resources/previews/022/716/913/original/black-hanging-lamp-isolated-on-a-transparent-background-png.png" /> */}
+                <img
+                  className="h-56     z-20"
+                  src="/assets/non-optimized/black_bulb_extended.png"
+                  alt="hdk"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div className=" lg:hidden w-full h-96 flex justify-center   ">
+              <div className=" lamp_mobiles swing blur-[60px] inline-block w-0 h-0 border-solid rotate-[360deg] border-t-0 border-r-[122px] border-l-[122px] border-b-[211.3px] border-l-transparent border-r-transparent border-t-transparent border-b-[#898989] opacity-45 absolute "></div>
+            </div>
+
+         
+
+       
+
+          <div
+            ref={shad}
+            className="hidden lg:block absolute blur-[35px] bg-white bottom-12 w-96 h-2 right-56"
+          ></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className="">
         <div
           ref={first}
-          className="flex items-center  justify-center w-full relative z-20 lg:h-[85vh] "
+          className="flex items-center   justify-center w-full relative z-20 lg:h-[85vh] "
         >
           <div ref={bulb} className="hidden lg:block">
             <picture>
@@ -249,27 +311,30 @@ const Intro = () => {
               />
             </picture>
           </div>
-          <div className="hidden lg:block">
+          <div className=" hidden lg:block">
             <div className=" lamp swing "></div>
           </div>
 
           <div className="lg:absolute lg:left-12 lg:w-6/12 space-y-5 px-4 lg:pl-24 mt-12 md:mt-0 lg:top-[40%] lg:z-50  lg:mt-0 ">
-            <h1 className="text-white lg:text-6xl text-3xl font-poppins font-bold craft-identitie ">
-              Crafting Brands, Creating Legacies
+            <h1 className="text-white text-center lg:text-6xl  lg:text-start text-3xl  font-poppins font-bold craft-identitie ">
+              Crafting Brands, <br></br> Creating Legacies
             </h1>
-            <p className="text-gray-400 font-poppins w-full text-sm md:text-base des">
+            <p className="text-gray-400 text-center  lg:text-start  font-poppins w-full text-sm md:text-base des">
             Define your identity with Identitie. With a global footprint and extensive experience in a diverse range of products and services; we bring projects to life that inspire, empower, and engage.
             </p>
+            <div className="flex lg:block justify-center">
             <button
               onClick={() => navigate("/contactus")}
               id="getInTouchBtn"
-              class="rounded-full w-fit mt-8 hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full "
+              class="rounded-full  w-fit mt-8 hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full "
             >
               <span class="relative z-50 whitespace-nowrap px-2 font-poppins">
                 Know More About Us 
               </span>
               <span class="relative z-10 ml-2">&rarr; </span>
             </button>
+            </div>
+           
           </div>
 
           <div
@@ -277,6 +342,35 @@ const Intro = () => {
             className="hidden lg:block absolute blur-[35px] bg-white bottom-12 w-96 h-2 right-56"
           ></div>
         </div>
+
+
+
+        <div  className="lg:hidden h-72  justify-center items-center lg:pt-0 pt-20 w-full   lg:absolute bgVideo  ">
+
+                <video
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                
+                  src={isMobile?"../assets/non-optimized/Identitie_Timeline_Video_Mobile_Compressed.mp4":"../assets/non-optimized/Identitie_Timeline_Video_Final_Compressed.mp4"}
+                  alt=""
+                />
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
         <div
           ref={animateText}
           className=" py-8 md:hidden flex flex-col w-full items-center justify-center  text-white"
@@ -314,23 +408,26 @@ const Intro = () => {
         >
           <h1
 
-            className="text-white  lg:text-6xl text-3xl font-poppins font-bold title craft-identitie"
+            className="text-white  lg:text-6xl lg:text-start text-center text-3xl font-poppins font-bold title craft-identitie"
           >
             Your Perception,<br /> Our Prowess
           </h1>
-          <p className="text-gray-400 font-poppins w-full text-sm md:text-base descr ">
+          <p className="text-gray-400 lg:text-start font-poppins w-full text-center text-sm md:text-base descr ">
           Identitie is a purpose-driven Brand Architecture Fulfillment firm. We transform your vision into a standout success story with unmatched precision and pre-eminence. Every experience people have with your business should be substantial—we ensure it is. Ready to make a lasting impact?
           </p>
-          <button
-            onClick={() => navigate("/aboutus")}
-            ref={knowMoreButton}
-            class="rounded-full mt-8 w-fit hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full "
-          >
-            <span class="relative z-50 whitespace-nowrap px-2 font-poppins">
-              Partner with us
-            </span>
-            <span class="relative z-10 ml-2">&rarr; </span>
-          </button>
+          <div className="flex lg:block justify-center"> 
+                <button
+              onClick={() => navigate("/aboutus")}
+              ref={knowMoreButton}
+              class="rounded-full mt-8 w-fit hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full "
+            >
+              <span class="relative z-50 whitespace-nowrap px-2 font-poppins">
+                Partner with us
+              </span>
+              <span class="relative z-10 ml-2">&rarr; </span>
+            </button>   
+          </div>
+        
         </div>
         {/* <div
 					id="logoSlider"

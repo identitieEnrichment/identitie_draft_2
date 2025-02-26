@@ -24,6 +24,9 @@
     filter: blur(50px);
     z-index: 1;
   }
+
+
+  
 @keyframes swing {
     0% {
       transform: rotate(-20deg);
@@ -35,5 +38,5 @@
   
   .swing {
     animation: swing 1.5s infinite alternate ease-in-out;
-    transform-origin: 50% 50%;
+    transform-origin: 50% 0%;
   }
