@@ -135,6 +135,7 @@ const AboutUS = () => {
         <div className="w-full h-fit py-2 mt-20 relative hidden lg:block">
           <div className="relative">
             <video
+            playsInline
               className=" object-contain   "
               ref={videoRef}
               muted
@@ -200,7 +201,7 @@ const AboutUS = () => {
                         />
                       </div>
                       <p className="lg:max-w-2xl  max-w-full  py-2 ">
-                       " We founded Identitie to redefine the boundaries of
+                       "We founded Identitie to redefine the boundaries of
                         design and strategy. Every project we undertake is a
                         blend of creativity and precision—crafted to inspire and
                         transform. We believe in the power of design to change

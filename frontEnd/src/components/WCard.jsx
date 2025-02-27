@@ -51,7 +51,7 @@ const WCard = ({ Data, index ,IsAboutUsPage,imgSrc }) => {
 						<span className={`${"title" + index}  font-poppins uppercase font-bold text-4xl transition-colors duration-1000`}>
 							{IsAboutUsPage?Data?.title:Data?.title + "?"} 
 						</span>
-						<p className={`opacity-1 ${"description" + index} text-black w-full text-sm`}>{Data.description}</p>
+						<p className={`opacity-1 mt-6f ${"description" + index} text-black w-full text-sm`}>{Data.description}</p>
 
 					</div>
 

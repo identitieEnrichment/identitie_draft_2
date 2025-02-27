@@ -422,7 +422,7 @@ const Intro = () => {
               class="rounded-full mt-8 w-fit hover:before:bg-[#ed1e24] relative h-[40px] w-40 overflow-hidden border border-white bg-transparent px-3 text-white shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#ed1e24] before:transition-all before:duration-500  hover:shadow-[#ed1e24] hover:before:left-0 hover:before:w-full "
             >
               <span class="relative z-50 whitespace-nowrap px-2 font-poppins">
-                Partner with us
+                Partner With Us
               </span>
               <span class="relative z-10 ml-2">&rarr; </span>
             </button>   

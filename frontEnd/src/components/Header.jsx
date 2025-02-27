@@ -25,8 +25,9 @@ const Header = ({ layout,page}) => {
 					y: -80,
 					scrollTrigger: {
 						trigger: headerSection.current,
-						start: "bottom 10%",
+						start: "bottom -30%",
 						end: "bottom 20%",
+
 						scrub: 1,
 					},
 				});
@@ -128,7 +129,7 @@ const Header = ({ layout,page}) => {
 					<li className="space-x-2">
 						<button
 							className={` ${
-								layout === "Services" ? "text-white hover:bg-white hover:text-black transition-colors duration-500" : "text-black hover:bg-black hover:text-white transition-colors duration-500"
+								layout === "Services" ? "text-white hidden hover:bg-white hover:text-black transition-colors duration-500" : "text-black hover:bg-black hover:text-white transition-colors duration-500"
 							} ${
 								layout === "Services" ? "border-white" : "border-gray-900"
 							} border-2 border-white px-6 p-2 rounded-full font-poppins`}>

@@ -1,0 +1,81 @@
+.floating-products-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+  }
+  
+  .floating-products-container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .floating-products-container li {
+    position: relative;
+    filter: sepia(0.7);
+    transition: 0.8s;
+    cursor: pointer; /* Makes it clickable on mobile */
+  }
+  
+  .floating-products-container li:hover,
+  .floating-products-container li.active { /* Active class for mobile */
+    filter: sepia(0);
+    z-index: 2;
+  }
+  
+  .floating-products-container li img {
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    border: 8px solid white;
+    border-bottom-width: 30px;
+    box-sizing: border-box;
+    transition: 0.8s;
+  }
+  
+  /* Scattered effect */
+  .floating-products-container li:nth-child(odd) img {
+    transform: translateY(-15px) rotate(-8deg);
+  }
+  
+  .floating-products-container li:nth-child(even) img {
+    transform: translateY(15px) rotate(7deg);
+  }
+  
+  /* Hover & Click Effect */
+  .floating-products-container li:hover img,
+  .floating-products-container li.active img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1.5);
+  }
+  
+  /* 🔥 Responsive Breakpoints */
+  @media (max-width: 768px) {
+    .floating-products-container ul {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+  
+    .floating-products-container li img {
+      max-width: 140px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .floating-products-container ul {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  
+    .floating-products-container li img {
+      max-width: 120px;
+    }
+  
+    .floating-products-container li img:hover,
+    .floating-products-container li.active img {
+      transform: scale(1.3); /* Smaller zoom for mobile */
+    }
+  }
+  

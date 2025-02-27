@@ -157,10 +157,10 @@ const ServicesCardUpdated = ({
                 <div className="text-white text-xs md:text-sm  font-bold grid grid-cols-2 gap-y-1 md:gap-y-0 gap-x-3 mt-3 h-max font-poppins">
                   {bulletPoints?.slice(0, limit)?.map((item, index) => (
                     <div className="subServices flex items-center mt-2 space-x-2 transition-all  duration-500 bg-white md:bg-[#2A2A2A]   px-3 py-2 rounded-full border-[0.5px] border-[#ed1e24] md:border-none">
-                      <p className="text-sm md:text-base text-black md:text-[#ed1e24]">
+                      <p className="text-sm md:text-base hidden lg:block text-black md:text-[#ed1e24]">
                         {index < 9 ? "0" + (index + 1) : index + 1}
                       </p>
-                      <p className="truncate text-black md:text-white">
+                      <p className="truncate  w-full lg:text-start text-center text-black md:text-white">
                         {" "}
                         {item}
                       </p>
