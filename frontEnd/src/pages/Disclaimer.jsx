@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import { gsap } from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import NavigationBar from "../components/Navigation/NavigationBar";
 gsap.registerPlugin(ScrollToPlugin);
 const Disclaimer = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const Disclaimer = () => {
   return (
     <div className="bg-[#0d1116] w-full min-h-screen">
       <Header page={"Home"} layout={"Services"} />
-      <h1 className="text-white font-semibold lg:pt-36 pt-24 text-xl lg:text-xl lg:mb-10 lg: justify-center  lg:px-20 px-4 mb-5 ">
+      <NavigationBar />
+      <h1 className="text-white font-semibold lg:pt-36 pt-24 text-2xl  lg:text-3xl lg:mb-16 lg: justify-center  lg:px-20 px-4 mb-12 ">
         Legal & Policy Information
       </h1>
       <div id="disclaimer" className="lg:px-20 px-4  ">
@@ -58,7 +60,7 @@ const Disclaimer = () => {
             website or engage our services.
           </p>
           <ol class="ps-2 mt-2 space-y-4 list-decimal list-inside">
-            <li className="text-lg">
+            <li className="">
               <strong> Information We collect</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -84,7 +86,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> How We Use Your Information</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -109,7 +111,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Data Protection & Security</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -124,7 +126,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Third-Party Disclosures</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -139,7 +141,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Your Rights</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -171,7 +173,7 @@ const Disclaimer = () => {
             to the following Terms & Conditions. Please read them carefully.
           </p>
           <ol class="ps-2 mt-2 space-y-4 list-decimal list-inside">
-            <li className="text-lg">
+            <li className="">
               <strong> Use of Our Services</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -194,7 +196,7 @@ const Disclaimer = () => {
               </ul>
             </li>
 
-            <li className="text-lg">
+            <li className="">
               <strong> Intellectual Property</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -209,7 +211,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Service Terms & Modifications</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -224,7 +226,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Payments and Refunds</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -239,7 +241,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Limitation of Liability</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -254,7 +256,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Governing Law & Dispute Resolution</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">
@@ -268,7 +270,7 @@ const Disclaimer = () => {
                 </li>
               </ul>
             </li>
-            <li className="text-lg">
+            <li className="">
               <strong> Amendments</strong>
 
               <ul class=" space-y-1  ps-4 list-disc list-inside px-2 mt-2 ">

@@ -9,10 +9,9 @@ import Footer from '../components/Footer'
 const ProductsLanding = () => {
   return (
     <div id='producLandingMain' className='h-max lg:mt-24 mt-0'>
-      <div className='text-white '>
-      <NavigationBar />
-      </div>
-      
+
+      <NavigationBar layout={"About"} />
+
         <Header page={"PRODUCT"}/>
         <ProductOne />
         <FloatingProducts/> 
