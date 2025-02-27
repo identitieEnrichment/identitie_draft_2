@@ -4,6 +4,7 @@ import _ from "lodash";
 import React, { useRef } from "react";
 import { allServicesData } from "../utils/constants";
 import useIsMobile from "../hooks/useIsMobile";
+import NavigationBar from "./Navigation/NavigationBar";
 
 const ProductOne = () => {
     const cards = useRef([])
@@ -64,6 +65,7 @@ const ProductOne = () => {
     })
 	return (
 		<div ref={container} className="one md:h-[100vh] w-full flex flex-col justify-center items-center md:pt-16 md:gap-5 pt-32 ">
+              
 			<div className="md:w-6/12 space-y-6">
 				<h1 className="font-poppins text-2xl xl:text-4xl 2xl:text-6xl text-center font-bold px-4">
                 Unveil Your Unique Identity

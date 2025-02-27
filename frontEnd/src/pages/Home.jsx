@@ -16,6 +16,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../components/Header";
 import AboutCard from "../components/AboutCard";
 import AOS from "aos";
+
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import WCard from "../components/WCard";
 import ScrollToTopButton from "../components/ScrollToTopButton";

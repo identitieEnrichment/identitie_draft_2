@@ -421,12 +421,12 @@ export const allServicesDataActual = [
       bulletPoints: [
         "Brand Principles",
         "Current Journey",
-        "Enhanced Journey",
         "Team Training",
         "Cust. Activation",
         "Feedback & Eng.",
         "Loyalty Programs",
         "CX Performance",
+        "Enhanced Journey",
       ],
       
     video:
