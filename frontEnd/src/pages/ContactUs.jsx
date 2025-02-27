@@ -17,6 +17,7 @@ const ContactUs = () => {
 					<video
 					autoPlay
 					loop muted
+					playsInline
 						className="h-[60vh] object-cover  w-11/12 opacity-80 rounded-3xl hidden md:block"
 						src="../assets/optimized/contact_test1.mp4"
 						alt="contact"

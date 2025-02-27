@@ -5,6 +5,7 @@ import ProductOne from '../components/ProductOne'
 import FloatingProducts from '../components/FloatingProducts'
 import NavigationBar from '../components/Navigation/NavigationBar'
 import Footer from '../components/Footer'
+import FloatingProducts2 from '../components/FloatingProducts2'
 
 const ProductsLanding = () => {
   return (
@@ -14,7 +15,7 @@ const ProductsLanding = () => {
 
         <Header page={"PRODUCT"}/>
         <ProductOne />
-        <FloatingProducts/> 
+        <FloatingProducts2/> 
         <Footer />
         {/* <ProductsSection /> */}
     </div>

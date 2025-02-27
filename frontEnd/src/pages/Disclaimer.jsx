@@ -16,7 +16,8 @@ const Disclaimer = () => {
   return (
     <div className="bg-[#0d1116] w-full min-h-screen">
       <Header page={"Home"} layout={"Services"} />
-      <NavigationBar />
+      <NavigationBar layout={""} />
+
       <h1 className="text-white font-semibold lg:pt-36 pt-24 text-2xl  lg:text-3xl lg:mb-16 lg: justify-center  lg:px-20 px-4 mb-12 ">
         Legal & Policy Information
       </h1>
@@ -293,11 +294,18 @@ const Disclaimer = () => {
         <div className="text-[#A8A8A8]">
           <p>
             For any questions, concerns, or requests regarding our policies,
-            please contact us at identitie.ie@gmail.com <br></br> This policy is
-            designed to protect both the rights and interests of both our users
-            and IDENTITIE on a global scale, while ensuring transparency in all
-            our operations. We encourage you to review it periodically and reach
-            out if you have any questions.
+            please contact us at{""}
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=identitie.ie@gmail.com"
+              target="_blank"
+              class="text-current text-sm ml-3"
+            >
+              <strong className="underline">identitie.ie@gmail.com</strong>
+            </a>{" "}
+            <br></br> This policy is designed to protect both the rights and
+            interests of both our users and IDENTITIE on a global scale, while
+            ensuring transparency in all our operations. We encourage you to
+            review it periodically and reach out if you have any questions.
           </p>
         </div>
       </div>

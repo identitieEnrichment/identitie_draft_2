@@ -50,7 +50,7 @@ export default function NavigationBar({layout}) {
 							isActive ? styles.burgerActive : ""
 						} `}></div>
 					<div className={styles.label}>
-						<RiMenu3Fill className={` text-2xl translate-x-12 burgerMenu ${isActive ? "hidden" : "flex"} ${layout === "About" ? "text-black" : "text-white"}`} />
+						<RiMenu3Fill className={` text-2xl z-50 translate-x-12  burgerMenu ${isActive ? "hidden" : "flex"} ${layout === "About" ? "text-black" : "text-white"}`} />
 
 						<motion.button
 							variants={opacity}
