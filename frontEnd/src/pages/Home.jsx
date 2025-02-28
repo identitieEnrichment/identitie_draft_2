@@ -28,26 +28,23 @@ const Home = () => {
   const intro = useRef(null);
   const cards = useRef(null);
 
-  
-  
   useGSAP(() => {
     const mm = gsap.matchMedia();
     mm.add("(min-width : 769px)", () => {
-		gsap.to("#nav",{
-			opacity:1,
-			display:"block",
-			scrollTrigger:{
-				trigger: intro.current,
-				start: "1% top",
-				end: "2% 10%",
-				scrub: 1,
-			}
-		})
-		
+      gsap.to("#nav", {
+        opacity: 1,
+        display: "block",
+        scrollTrigger: {
+          trigger: intro.current,
+          start: "1% top",
+          end: "2% 10%",
+          scrub: 1,
+        },
+      });
     });
   });
   return (
-    <div className="">
+    <div className="w-full  ">
       <Header page={"Home"} layout={"Services"} />
       <NavigationBar />
       <Intro />
@@ -99,8 +96,8 @@ const Home = () => {
         <UserTestimonials />
       </div>
       <ContactUs />
-	  
-	<ScrollToTopButton />
+
+      <ScrollToTopButton />
 
       <Footer />
       {/* <Services /> */}

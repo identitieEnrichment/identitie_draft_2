@@ -132,7 +132,7 @@ const Header = ({ layout,page}) => {
 								layout === "Services" ? "text-white hidden hover:bg-white hover:text-black transition-colors duration-500" : "text-black hover:bg-black hover:text-white transition-colors duration-500"
 							} ${
 								layout === "Services" ? "border-white" : "border-gray-900"
-							} border-2 border-white px-6 p-2 rounded-full font-poppins`}>
+							} border-2  hidden border-white px-6 p-2 rounded-full font-poppins`}>
 							Login
 						</button>
 						<button

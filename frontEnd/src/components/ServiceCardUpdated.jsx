@@ -20,7 +20,6 @@ const ServicesCardUpdated = ({
   isLastCard,
   isFirstCard,
 }) => {
-  console.log("images are ", images);
   const navigate = useNavigate();
   const isMobile = useIsMobile();
   const container = useRef(null);
@@ -170,7 +169,7 @@ const ServicesCardUpdated = ({
               </div>
               <button
                 onClick={() =>
-                  navigate("/services", { state: { title: title } })
+                  navigate("/services")
                 }
                 class=" rounded-full md:rounded-none text-white md:rounded-tl-2xl md:rounded-br-2x my-3 md:my-0 bg-[#ed1e24] hover:bg-[#c8102e] p-3 font-poppins md:absolute right-0 bottom-0"
               >
