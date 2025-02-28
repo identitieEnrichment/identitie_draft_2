@@ -219,7 +219,7 @@ const Intro = () => {
   });
 
   return (
-    <div ref={container} className="bg-[#0d1116]   z-0 w-full relative ">
+    <div ref={container} className="bg-[#0d1116]   z-0  relative w-full overflow-x-hidden ">
       <div  className="lg:h-full h-72 lg:flex hidden justify-center items-center lg:pt-0 pt-20 w-full   lg:absolute bgVideo  ">
           {/* <img className="w-full h-full object-contain" src="../assets/non-optimized/dimension test.jpg"></img> */}
      
@@ -266,8 +266,8 @@ const Intro = () => {
                 />
               </picture>
             </div>
-            <div className=" lg:hidden w-full h-96 flex justify-center   ">
-              <div className=" lamp_mobiles swing blur-[60px] inline-block w-0 h-0 border-solid rotate-[360deg] border-t-0 border-r-[122px] border-l-[122px] border-b-[211.3px] border-l-transparent border-r-transparent border-t-transparent border-b-[#898989] opacity-45 absolute "></div>
+            <div className=" lg:hidden w-full h-96  flex justify-center   ">
+              <div className=" lamp_mobiles swing  inline-block w-0 h-0 blur-[50px] border-solid rotate-[360deg] border-t-0 border-r-[133px] border-l-[133px] border-b-[222.3px] border-l-transparent border-r-transparent border-t-transparent border-b-[#898989] opacity-45 absolute "></div>
             </div>
 
          
