@@ -23,11 +23,7 @@ const Footer = () => {
 				<div className="flex flex-col space-y-4 lg:w-4/12">
 				 <Link to={'/'}> <img className="h-7 object-contain w-fit " src="../assets/logo-red.png" alt="logo" /></Link>	
 					<p className="text-white font-poppins text-sm">
-						Identitie is your go-to partner for web development, digital
-						marketing, and a diverse range of solutions across various sectors.
-						We are committed to enhancing your presence, driving growth, and
-						scaling your success. Trust us for innovative strategies and
-						unparalleled results.
+					Identitie is your trusted partner for brand architecture and fulfillment. We craft iconic brands with precision—combining strategic design, digital marketing, and tailored solutions to boost growth and deliver unparalleled results.
 					</p>
 				</div>
 				<div className="lg:hidden">

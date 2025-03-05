@@ -148,16 +148,13 @@ const AboutUS = () => {
                   Our Mission
                 </h2>
                 <p className="text-2xl font-thin">
-                  To empower brands and individuals to define their unique
-                  identity and leave an enduring legacy.
+                To empower brands and individuals to define their unique identity, drive innovation, and build lasting value that leaves an enduring legacy for future generations.
                 </p>
               </div>
               <div id="vision" className="max-w-72">
                 <h2 className="text-5xl font-black font-poppins">Our Vision</h2>
                 <p className="text-2xl font-thin">
-                  A future where every project is a harmonious blend of
-                  creativity, technology, and strategic insight—paving the way
-                  for a more connected and inspired world.
+                To forge a future where every project unites creativity, technology, and strategic insight, forging meaningful connections and inspiring a world of limitless possibilities.
                 </p>
               </div>
             </div>
