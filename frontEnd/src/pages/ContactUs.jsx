@@ -64,12 +64,8 @@ const ContactUs = () => {
 						<input
 							type="hidden"
 							name="access_key"
-							value="71e40aaf-1327-4dbd-89ce-a3894eb838e5"
+							value="5df84430-8f84-4448-92ae-2362d5a20571"
 						/>
-						<input
-							hidden
-							name="access_key"
-							value={"5df84430-8f84-4448-92ae-2362d5a20571"}></input>
 						<input
 							name="name"
 							className="rounded-md p-3 bg-black  border  border-[#57606a]  md:w-9/12 w-full"
