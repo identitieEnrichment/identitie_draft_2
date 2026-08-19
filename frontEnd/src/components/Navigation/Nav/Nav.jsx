@@ -11,6 +11,8 @@ import {
 	FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
+import { BsBriefcaseFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const links = [
   {
@@ -78,6 +80,12 @@ export default function Nav() {
         <a href="https://api.whatsapp.com/send?phone=9444543659&text=Hi!%20I'm%20excited%20to%20learn%20how%20IDENTITIE's%20brand%20fulfillment%20can%20support%20my%20business.%20Could%20we%20chat?" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-md transition duration-300 hover:scale-110"> 
 					<FaWhatsapp  className='text-2xl md:text-3xl' />
 				</a>
+				<Link
+					to="/brand-deck"
+					title="Brand Architecture Deck"
+					className="p-3 bg-[#ed1e23] rounded-md transition duration-300 hover:scale-110 hover:bg-red-700">
+					<BsBriefcaseFill className='text-white text-2xl md:text-3xl' />
+				</Link>
 			</div>
     </motion.div>
   )

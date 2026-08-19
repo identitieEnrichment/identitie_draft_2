@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import ProductsLanding from './pages/ProductsLanding';
 import Services from './pages/Services';
 import Disclaimer from './pages/Disclaimer';
+import BrandDeck from './pages/BrandDeck';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/disclaimer",
         element: <Disclaimer />,
+      },
+      {
+        path: "/brand-deck",
+        element: <BrandDeck />,
       },
       
     ],

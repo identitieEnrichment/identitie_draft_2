@@ -5,6 +5,7 @@ import {
 	FaWhatsapp,
 	FaLinkedin,
 } from "react-icons/fa";
+import { BsBriefcaseFill } from "react-icons/bs";
 import { IoIosSend } from "react-icons/io";
 import FooterList from "./FooterList";
 import {
@@ -60,6 +61,12 @@ const Footer = () => {
 							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 							<FaWhatsapp />
 						</a>
+						<Link
+							to="/brand-deck"
+							title="Brand Architecture Deck"
+							className="p-3 bg-[#ed1e23] rounded-md transition duration-300 hover:scale-110 hover:bg-red-700">
+							<BsBriefcaseFill className="text-white" />
+						</Link>
 					</div>
 				</div>
 				<div className=" gap-4 mt-5 hidden lg:block">
@@ -96,6 +103,12 @@ const Footer = () => {
 							className="p-3 bg-white rounded-md transition duration-300 hover:scale-110">
 							<FaWhatsapp />
 						</a>
+						<Link
+							to="/brand-deck"
+							title="Brand Architecture Deck"
+							className="p-3 bg-[#ed1e23] rounded-md transition duration-300 hover:scale-110 hover:bg-red-700">
+							<BsBriefcaseFill className="text-white" />
+						</Link>
 						
 					</div>
 				</div>
